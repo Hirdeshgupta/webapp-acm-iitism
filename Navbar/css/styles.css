@@ -1,0 +1,16 @@
+.acm-logo {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  float: left;
+}
+.nav-item {
+  padding-right: 22px;
+}
+.active {
+  padding-left: 900px;
+}
+.acm-about {
+  font-size: 0.8rem;
+  width: 50px;
+}
