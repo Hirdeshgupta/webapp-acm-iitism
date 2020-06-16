@@ -1,8 +1,11 @@
 import React from "react"
+import Footer from './components/Footer'
+
 class App extends React.Component{
+
     render(){
         return(
-            <h1>This is a React App</h1>
+            <Footer />
         )
     }
 }
