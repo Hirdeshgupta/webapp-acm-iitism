@@ -1,11 +1,11 @@
 import React from "react"
-import Main from './Main'
+import Footer from './components/Footer'
 
 class App extends React.Component{
 
     render(){
         return(
-            <Main />
+            <Footer />
         )
     }
 }
