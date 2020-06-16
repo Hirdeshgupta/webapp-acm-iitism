@@ -17,11 +17,11 @@ function TopNav() {
   <Nav>
     <Nav.Link className="topNav-links" href="#deets">Home</Nav.Link>
     <Nav.Link className="topNav-links" href="#deets">About</Nav.Link>
-    <Nav.Link className="topNav-links" href="#deets">Team</Nav.Link>
     <Nav.Link className="topNav-links" href="#deets">Events</Nav.Link>
-    <Nav.Link className="topNav-links" href="#deets">Contact us</Nav.Link>
+    <Nav.Link className="topNav-links" href="#deets">Past sponsers</Nav.Link>
+    <Nav.Link className="topNav-links" href="#deets">Team</Nav.Link>
     <Nav.Link className="topNav-links" eventKey={2} href="#memes">
-      Past sponsers
+      Contact us
     </Nav.Link>
   </Nav>
 </Navbar.Collapse>
