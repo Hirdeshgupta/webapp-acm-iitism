@@ -99,9 +99,9 @@ body{
   }
   .picc{
    display: block;
-   padding-left: 20px;	
+   padding-left: 4px;	
  }
   .footer-acm p{
-    padding-left: 14px; 
+    padding-left: 4px; 
  }
 }
