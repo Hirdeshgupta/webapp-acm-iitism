@@ -23,6 +23,14 @@ body{
 
 /* Navbar ends */
 
+.home-carousel {
+	width: 100%;
+}
+.home-div {
+	width: 100%;
+	background-color: #ADD8E6;
+}
+
 /*footer starts*/
 #footer{
 	background: black;

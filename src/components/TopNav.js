@@ -15,12 +15,22 @@ function TopNav() {
 
   </Nav>
   <Nav>
-    <Nav.Link className="topNav-links" href="#deets">Home</Nav.Link>
-    <Nav.Link className="topNav-links" href="#deets">About</Nav.Link>
-    <Nav.Link className="topNav-links" href="#deets">Events</Nav.Link>
-    <Nav.Link className="topNav-links" href="#deets">Past sponsers</Nav.Link>
-    <Nav.Link className="topNav-links" href="#deets">Team</Nav.Link>
+  <Nav.Link className="topNav-links" eventKey={1} href="#memes">
+    Home
+  </Nav.Link>
     <Nav.Link className="topNav-links" eventKey={2} href="#memes">
+      About
+    </Nav.Link>
+    <Nav.Link className="topNav-links" eventKey={3} href="#memes">
+      Events
+    </Nav.Link>
+    <Nav.Link className="topNav-links" eventKey={4} href="#memes">
+      Past sponsers
+    </Nav.Link>
+    <Nav.Link className="topNav-links" eventKey={5} href="#memes">
+      Team
+    </Nav.Link>
+    <Nav.Link className="topNav-links" eventKey={6} href="#memes">
       Contact us
     </Nav.Link>
   </Nav>
