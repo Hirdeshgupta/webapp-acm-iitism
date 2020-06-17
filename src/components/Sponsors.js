@@ -20,7 +20,7 @@ function Sponsors(){
                <Col xs="12" lg="6"><img className="spons_img" src={require("./img/sponsors/code_ninjas.jpg")} alt="Coding Ninjas"></img></Col>
            </Row>
            <Row>
-               <Col xs="12" lg="6"><img className="spons_img" src={require("./img/sponsors/teqip.JPG")} alt="TEQIP"></img></Col>
+               <Col xs="12" lg="6"><img className="spons_img" src={require("./img/sponsors/teqip.png")} alt="TEQIP"></img></Col>
                <Col xs="12" lg="6"><img className="spons_img" src={require("./img/sponsors/geeks.png")} alt="GeeksforGeeks"></img></Col>
            </Row>
            <Row>
