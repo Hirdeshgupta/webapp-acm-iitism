@@ -1,21 +1,25 @@
 import React from "react"
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from "./components/Home";
 import Footer from './components/Footer'
 import TopNav from "./components/TopNav";
-import AboutUs from "./components/AboutUs";
-import Home from "./components/Home";
+import Sponsors from "./components/Sponsors"
 
-class App extends React.Component{
+class Main extends React.Component{
 
     render(){
         return(
+          <BrowserRouter>
           <div>
             <TopNav />
-            <Home />
-            <AboutUs/>
-
-            <Footer />
-          </div>
-        );
+              <Switch>
+               <Route path="/" component={Home} exact/>
+               <Route path="/sponsors" component={Sponsors}/> 
+             </Switch>
+             <Footer /> 
+          </div> 
+        </BrowserRouter>
+        )
     }
 }
-export default App;
+export default Main;
