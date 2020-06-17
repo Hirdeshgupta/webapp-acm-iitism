@@ -1,10 +1,17 @@
 import React from "react";
+import Sponsors from "./Sponsors"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
 
 function TopNav() {
   return (
+    <Router>
     <div>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 <Navbar.Brand href="#home">  <a href="https://ism.acm.org/"><img className="nav-logo" src={require("./img/logo.jpg")} alt="ACM"/></a> </Navbar.Brand>
@@ -36,7 +43,14 @@ function TopNav() {
   </Nav>
 </Navbar.Collapse>
 </Navbar>
+
+       <Switch>
+          <Route path="/sponsors">
+            <Sponsors />
+          </Route>
+        </Switch>
     </div>
+    </Router>
   );
 }
 
