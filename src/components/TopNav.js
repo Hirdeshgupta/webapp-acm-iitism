@@ -27,7 +27,7 @@ function TopNav() {
     <Nav.Link className="topNav-links" eventKey={4} href="/sponsors">
       Past sponsers
     </Nav.Link>
-    <Nav.Link className="topNav-links" eventKey={5} href="#memes">
+    <Nav.Link className="topNav-links" eventKey={5} href="./TeamPage">
       Team
     </Nav.Link>
     <Nav.Link className="topNav-links" eventKey={6} href="#memes">
