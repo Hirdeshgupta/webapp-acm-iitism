@@ -4,7 +4,11 @@ body{
 	font-family: "Baloo Tamma 2";
 	font-size: 20px;
 	color: white;
+	background-image: url("https://image.freepik.com/free-vector/technology-background-with-abstract-hud_23-2148250643.jpg");
+	background-position: center;
+	
 }
+
 
 /* Navbar starts */
 .topNav-links {
@@ -17,8 +21,6 @@ body{
 	margin-left: 40px;
 	border-radius: 10%;
 }
-
-
 
 
 /* Navbar ends */
@@ -116,9 +118,53 @@ body{
   }
   .picc{
    display: block;
-   padding-left: 20px;
+   padding-left: 4px;	
  }
   .footer-acm p{
-    padding-left: 14px;
+    padding-left: 4px; 
  }
 }
+
+/*footer ends*/
+
+/*Sponsers starts*/
+
+#sponsors{
+	margin-bottom: 50px;
+	margin-left: 25px;
+}
+
+.head_spons{
+	text-align: center;
+	color: wheat;
+	font-size:100px;
+	font-weight: 700;
+	text-shadow: 6px 6px rgb(125, 125, 125);
+	margin-bottom: 36px;
+	margin-top: 20px;
+}
+
+
+.spons_img{
+	height: 250px;
+	width: 92%;
+	margin: 8% auto;
+	border: 1.3px solid black;
+	box-shadow: 4px 4px wheat
+
+}
+.spons_img:hover{
+	transform: scale(1.1);
+	border: 3px solid black;
+	box-shadow: 8px 8px wheat;
+}
+
+@media only screen and (max-width:360px){
+	.head_spons{
+		font-size: 40px;
+		text-shadow: 3px 3px rgb(125, 125, 125);
+	}
+}
+
+/*Sponsers ends*/
+

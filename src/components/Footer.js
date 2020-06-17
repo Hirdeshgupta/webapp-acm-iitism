@@ -38,16 +38,16 @@ function Footer(){
          <h3 className="footer-h3">Get In Touch</h3>
              <div className="icons_uni">
               <a className="foot_icon" href="mailto:acm.ism@gmail.com">
-             <img src={require("./img/mail.gif")} alt="Mail"/></a>
+             <img src={require("./img/footer/mail.gif")} alt="Mail"/></a>
              &nbsp;&nbsp;&nbsp;
              <a className="foot_icon" href="https://www.linkedin.com/company/acm-student-chapter-iit-ism-dhanbad/">
-             <img src={require("./img/linkedin.png")} alt="Linkedin"/></a>
+             <img src={require("./img/footer/linkedin.png")} alt="Linkedin"/></a>
              &nbsp;&nbsp;&nbsp;
              <a className="foot_icon" href="https://www.facebook.com/acm.iitismdhn">
-              <img src={require("./img/fb.png")} alt="Facebook"/></a>
+              <img src={require("./img/footer/fb.png")} alt="Facebook"/></a>
              &nbsp;&nbsp;&nbsp;
              <a className="foot_icon" href="https://www.youtube.com/channel/UCaXEPdTHm08sxKlTJjRVxJA">
-              <img src={require("./img/utube.png")} alt="You Tube"/></a>
+              <img src={require("./img/footer/utube.png")} alt="You Tube"/></a>
            </div> 
          </Col>
          </Row>
