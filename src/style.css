@@ -139,7 +139,7 @@ body{
 
 #sponsors{
 	margin-bottom: 50px;
-	margin-left: 25px;
+	margin-left: 6%;
 }
 
 .head_spons{
@@ -150,27 +150,19 @@ body{
 	text-shadow: 6px 6px rgb(125, 125, 125);
 	margin-bottom: 36px;
 	margin-top: 20px;
+	margin-left: -12%;
 }
 
-
-.spons_img{
-	height: 250px;
-	width: 92%;
-	margin: 8% auto;
-	/* border: 1.3px solid black;
-	box-shadow: 4px 4px wheat */
-
-}
-.spons_img:hover{
-	transform: scale(1.1);
-	/* border: 3px solid black;
-	box-shadow: 8px 8px wheat; */
-}
 
 @media only screen and (max-width:360px){
 	.head_spons{
 		font-size: 40px;
 		text-shadow: 3px 3px rgb(125, 125, 125);
+		margin-left: 0;
+	}
+	#sponsors{
+		margin-bottom: 50px;
+		margin-left: -10%;
 	}
 }
 
