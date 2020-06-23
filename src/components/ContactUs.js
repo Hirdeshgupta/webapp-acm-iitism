@@ -8,7 +8,7 @@ return (
     <MDBCol  md="6">
      <MDBCard className="contact-card">
       <MDBCardBody>
-      <form action="mailto:acm.ism@gmail.com" method="post">
+      <form action="mailto:yash.19je0936@mech.iitism.ac.in" method="post">
         <p className="h5 text-center mb-4">Write to us</p>
         <div className="grey-text">
           <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
