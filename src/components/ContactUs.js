@@ -33,8 +33,35 @@ return (
       </MDBCard>
     </MDBCol>
     <MDBCol>
-      <div>
-        <a href="https://ism.acm.org/"><img className="contact-logo" src={require("./img/logo.jpg")} alt="ACM"/></a>
+      <div className="contact-right">
+        <h1 className="contact-right-h1">Reach us at</h1>
+        <a className="contact-anchor" href="">
+
+            <span className="contact-span"><i class="contact-right-icon fab fa-instagram fa-2x"></i><h5 className="contact-h5">@acmism</h5></span>
+
+        </a>
+        <a className="contact-anchor" href="https://www.facebook.com/acm.iitismdhn">
+
+            <span className="contact-span"><i class="contact-right-icon fab fa-facebook-f fa-2x"></i><h5 className="contact-h5">@ACM.IITISM</h5></span>
+
+        </a>
+        <a className="contact-anchor" href="">
+
+            <span className="contact-span"><i class="contact-right-icon fab fa-linkedin fa-2x"></i><h5 className="contact-h5">@ACM_ISM</h5></span>
+
+        </a>
+        <a className="contact-anchor" href="mailto:acm.ism@gmail.com">
+
+            <span className="contact-span"><i class="contact-right-icon far fa-envelope fa-2x"></i><h5 className="contact-h5">Mail</h5></span>
+        
+        </a>
+
+
+
+
+
+
+
       </div>
     </MDBCol>
   </MDBRow>

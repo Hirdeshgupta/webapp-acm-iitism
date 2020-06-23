@@ -8,7 +8,7 @@ function TopNav() {
 
 
   return (
-    <div>
+    <div className="navbar-fixed">
     <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
 <Navbar.Brand href="#home">  <a href="https://ism.acm.org/"><img className="nav-logo" src={require("./img/logo.jpg")} alt="ACM"/></a> </Navbar.Brand>
 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

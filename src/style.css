@@ -22,7 +22,20 @@ body{
 	border-radius: 10%;
 }
 
-
+.contact-icon-div {
+	padding-bottom: 10px;
+	vertical-align: middle;
+}
+.contact-right-icon {
+	padding-right: 200px;
+}
+.contact-h5 {
+	padding-left: 100px;
+}
+.contact-anchor {
+	text-decoration: none;
+	color: white;
+}
 
 /* Navbar ends */
 
@@ -181,12 +194,20 @@ body{
 .contact-container {
 	background-color: #E0EEEE;
 }
-.contact-logo {
-	width: 200px;
-	height: 200px;
-	border-radius: 20px;
-	margin-top: 140px;
-	margin-left: 140px;
+.contact-right {
+	width: 300px;
+	height: 400px;
+	border-radius: 10px;
+	margin-top: 60px;
+	margin-left: 70px;
+	background-color: #33A1C9;
+	color: white;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	text-align: center;
 }
+.contact-right-h1 {
+	padding-bottom: 40px;
+}
+
 
 /* contact card ends */
