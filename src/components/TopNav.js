@@ -4,9 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
 
 function TopNav() {
+
+
+
   return (
     <div>
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
 <Navbar.Brand href="#home">  <a href="https://ism.acm.org/"><img className="nav-logo" src={require("./img/logo.jpg")} alt="ACM"/></a> </Navbar.Brand>
 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 <Navbar.Collapse id="responsive-navbar-nav">
@@ -36,6 +39,7 @@ function TopNav() {
   </Nav>
 </Navbar.Collapse>
 </Navbar>
+
     </div>
   );
 }
