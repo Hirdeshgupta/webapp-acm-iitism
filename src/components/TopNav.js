@@ -33,7 +33,7 @@ function TopNav() {
     <Nav.Link className="topNav-links" eventKey={5} href="./TeamPage">
       Team
     </Nav.Link>
-    <Nav.Link className="topNav-links" eventKey={6} href="#memes">
+    <Nav.Link className="topNav-links" eventKey={6} href="/ContactUs">
       Contact us
     </Nav.Link>
   </Nav>

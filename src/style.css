@@ -168,3 +168,25 @@ body{
 }
 
 /*Sponsers ends*/
+
+/* contact card starts */
+
+.contact-card {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.contact-icon {
+	padding-left: 5px;
+}
+.contact-container {
+	background-color: #E0EEEE;
+}
+.contact-logo {
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	margin-top: 140px;
+	margin-left: 140px;
+}
+
+/* contact card ends */

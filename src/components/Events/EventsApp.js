@@ -18,7 +18,7 @@ class EventsApp extends React.Component{
 
     componentDidMount(){
         const previousEvents = this.state.EVENTS;
-    
+
         // DataSnapshot
         this.database.on('child_added', snap => {
           previousEvents.push({
@@ -26,7 +26,7 @@ class EventsApp extends React.Component{
             title: snap.val().title,
             date: snap.val().date,
           })
-    
+
           this.setState({
             EVENTS: previousEvents
           })
@@ -34,6 +34,7 @@ class EventsApp extends React.Component{
     }
 
     render(){
+      
         return(
             <div id="events">
                 <h1 className="event_head">EVENTS</h1>
@@ -55,9 +56,9 @@ class EventsApp extends React.Component{
                                         </tr>
                                     )
                                 })
-                           } 
+                           }
                 </table>
-            </div>  
+            </div>
         )
 }
 }
