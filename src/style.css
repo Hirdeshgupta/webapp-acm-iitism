@@ -182,6 +182,65 @@ body{
 
 /*Sponsers ends*/
 
+/* Events starts */
+
+#events{
+	margin: 20px;
+	margin-bottom: 40px;
+}
+
+.table{
+	margin-right: 20px;
+	margin-top: 30px;
+	
+}
+
+.event_head{
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+}
+.th_e{
+	text-align: center;
+	font-size: 20px;
+}
+
+table.table a {
+    margin: 0;
+	color: blue;
+	font-weight: bold;
+}
+
+.events_a{
+	font-size: 18px;
+	color: blue;
+}
+
+.events_a:hover{
+	font-size: 18px;
+	color: blue;
+	font-weight: bold;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+  }
+
+.table tr:nth-child(even) {
+	background-color: #eee;
+  }
+  .table tr:nth-child(odd) {
+	background-color: #fff;
+  }
+  .table th {
+	color: white;
+	background-color: black;
+  }
+
+/* Events ends */
+
 /* contact card starts */
 
 .contact-card {
