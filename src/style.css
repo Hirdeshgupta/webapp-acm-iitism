@@ -3,7 +3,7 @@
 body{
 	font-family: "Baloo Tamma 2";
 	font-size: 20px;
-	color: white;
+	color: #ADD8E6;
 	/* background-image: url("https://image.freepik.com/free-vector/technology-background-with-abstract-hud_23-2148250643.jpg");
 	background-position: center; */
 
@@ -45,6 +45,7 @@ body{
 .home-div {
 	width: 100%;
 	background-color: #ADD8E6;
+	margin-bottom: 20px;
 }
 
 /*footer starts*/
@@ -192,7 +193,7 @@ body{
 .table{
 	margin-right: 20px;
 	margin-top: 30px;
-	
+
 }
 
 .event_head{

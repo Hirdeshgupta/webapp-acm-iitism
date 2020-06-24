@@ -5,8 +5,9 @@ import AboutUs from "./AboutUs";
 function Home() {
   return (
     <div className="home-div">
-      <HomeComponent />
       <AboutUs />
+      <HomeComponent />
+
     </div>
   )
 }
