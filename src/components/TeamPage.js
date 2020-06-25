@@ -3,8 +3,8 @@ import {  MDBRow, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon } from "mdbre
 import TeamCard from "./TeamCard"
 const TeamPage = () => {
   return (
-      <div className="container-fluid px-0">
-    <MDBCard className="my-5  pb-5 text-center">
+      <div className="container-fluid px-0 z-depth-0" style={{marginTop:80}}>
+    <MDBCard className="my-5  pb-5 text-center z-depth-0 border-0">
         <MDBCardBody>
           <h2 className="h1-responsive font-weight-bold my-5">
             OUR TEAM
