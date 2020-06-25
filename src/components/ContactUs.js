@@ -1,10 +1,9 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { ListGroup } from 'react-bootstrap';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput, MDBCard, MDBCardBody } from 'mdbreact';
 
 const ContactUs = () => {
 return (
+  <div className="container-fluid " style={{marginTop:100,marginBottom:100}}>
 <MDBContainer className="contact-container">
   <MDBRow className="contact-row">
     <MDBCol  md="6">
@@ -37,9 +36,6 @@ return (
     <MDBCol>
       <div className="contact-right">
         <h1 className="contact-right-h1">Reach us at</h1>
-
-
-
         <a className="contact-anchor" href="">
 
             <span className="contact-span"><i class="contact-right-icon fab fa-instagram fa-2x"></i><h5 className="contact-h5">@acmism</h5></span>
@@ -50,7 +46,7 @@ return (
             <span className="contact-span"><i class="contact-right-icon fab fa-facebook-f fa-2x"></i><h5 className="contact-h5">@ACM.IITISM</h5></span>
 
         </a>
-        <a className="contact-anchor" href="https://www.linkedin.com/company/acm-student-chapter-iit-ism-dhanbad/?originalSubdomain=in">
+        <a className="contact-anchor" href="">
 
             <span className="contact-span"><i class="contact-right-icon fab fa-linkedin fa-2x"></i><h5 className="contact-h5">@ACM_ISM</h5></span>
 
@@ -58,7 +54,7 @@ return (
         <a className="contact-anchor" href="mailto:acm.ism@gmail.com">
 
             <span className="contact-span"><i class="contact-right-icon far fa-envelope fa-2x"></i><h5 className="contact-h5">Mail</h5></span>
-
+        
         </a>
 
 
@@ -71,6 +67,7 @@ return (
     </MDBCol>
   </MDBRow>
 </MDBContainer>
+</div>
 );
 };
 

@@ -36,7 +36,7 @@ class EventsApp extends React.Component{
     render(){
       
         return(
-            <div id="events">
+            <div id="events" style={{marginTop:100}}>
                 <h1 className="event_head">EVENTS</h1>
                 <table className="table">
                                 <tr>

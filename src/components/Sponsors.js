@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 function Sponsors(){
     return(
-        <section id="sponsors">
+        <section id="sponsors" style={{marginTop:100}}>
            <div>
            <h1 className="head_spons">Past Sponsors</h1>
        <Container>
