@@ -330,3 +330,52 @@ td {
 
 
 /* contact card ends */
+/* event carousel starts */
+.container {
+  margin: 10% auto;
+  padding: 80px 0;
+  text-align: center;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  background-color: #f5f5f5
+}
+.slick .slick-next:before, .slick .slick-prev:before {
+  color:#5A94F2;
+}
+
+.slick{
+  margin: 30px auto;
+  padding: 0px 40px 40px 40px;
+  width: 500px;
+  background-color: white;
+}
+.slick h3{
+    background: #5f9ea0;
+    color: #fff;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+.slick .center .slick-center h3 {
+  color: #e67e22;
+  opacity: 1;
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+.slick .center h3 {
+  transition: all .3s ease;
+}
+.slick-h2 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.slick-h6 {
+  padding-bottom: 10px;
+}
+.slick-hr {
+  color: black;
+  width: 300px;
+}
+/* event carousel ends */
