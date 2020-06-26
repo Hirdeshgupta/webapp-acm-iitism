@@ -3,17 +3,22 @@ import Events from './Events';
 import {DB_CONFIG} from '../../Config/config';
 import firebase from 'firebase/app';
 import 'firebase/database';
+// import firebase from '../firebase';
+import { Link } from 'react-router-dom';
 
 class EventsApp extends React.Component{
     constructor(props){
         super(props);
 
-        this.app = firebase.initializeApp(DB_CONFIG);
-        this.database = this.app.database().ref().child('EVENTS');
-
-       this.state={
-          EVENTS:[],
-       }
+        // console.log(firebase.name);
+        // console.log(firebase.database());
+        // this.app = firebase.initializeApp(DB_CONFIG);   
+        this.database = firebase.database().ref().child('EVENTS');
+        
+        this.state={
+            EVENTS:[],
+         }
+      
     }
 
     componentDidMount(){
@@ -25,6 +30,8 @@ class EventsApp extends React.Component{
             id: snap.key,
             title: snap.val().title,
             date: snap.val().date,
+            description: snap.val().description,
+            imageURL: snap.val().imageURL,
           })
 
           this.setState({
@@ -48,7 +55,21 @@ class EventsApp extends React.Component{
                                     return(
                                            <tr>
                                             <td>
-                                                <Events title={eve.title} key={eve.id}/>
+                                               <Link to={{
+                                                   pathname: `/events/${eve.id}`,
+                                                   state: {
+                                                    title: eve.title,
+                                                    imageURL :eve.imageURL,
+                                                    description :eve.description, 
+                                                    date: eve.date,
+                                                   }
+                                                   }}>
+                                                   <Events 
+                                                        title={eve.title} 
+                                                        imageURL={eve.imageURL} 
+                                                        description={eve.description} 
+                                                        key={eve.id}/>
+                                                </Link> 
                                             </td>
                                             <td>
                                                 <Events date={eve.date} key={eve.id} />

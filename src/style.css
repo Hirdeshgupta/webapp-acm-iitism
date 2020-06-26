@@ -281,6 +281,15 @@ td {
 /* Events ends */
 
 
+/* EventsDetails starts */
+
+.eventdetails{
+    margin: 25px;
+}
+
+/* EventsDetails ends */
+
+
 /* contact card starts */
 
 .contact-card {
