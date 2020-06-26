@@ -8,7 +8,7 @@ class TopNav extends React.Component {
     super()
     this.state={
       background:"rgba(2,3,4,0)",
-      color:"rgba(0,0,0,0.5)",
+      color:"rgb(192,192,192)",
     }
   }
   componentDidMount(){
@@ -16,11 +16,11 @@ class TopNav extends React.Component {
       let scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 20) {
         if (this.state.background == "rgba(2,3,4,0)") {
-          this.setState({ background: "rgba(52, 58, 64,0.9)",color:"white" });
+          this.setState({ background: " #36454f",color:"white" });
         }
       } else {
         if (this.state.background !== "rgba(2,3,4,0)") {
-          this.setState({ background: "rgba(2,3,4,0)",color:"rgba(0,0,0,0.5)" });
+          this.setState({ background: "rgba(2,3,4,0)",color:"rgb(192,192,192)" });
         }
       }
     })
