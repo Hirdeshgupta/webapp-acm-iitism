@@ -272,8 +272,8 @@ td {
 }
 
 #new-img{
-  height: 800px;
-  width: 100%;
+  height: 50%;
+  width: auto;
 }
 
 /* EventsDetails ends */
