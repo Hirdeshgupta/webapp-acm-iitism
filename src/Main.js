@@ -8,7 +8,6 @@ import EventsDetails from "./components/Events/EventsDetails";
 import Sponsors from "./components/Sponsors"
 import TeamPage from "./components/TeamPage"
 import ContactUs from "./components/ContactUs";
-import EventsCarouselApp from "./components/EventsCarousel/EventsCarouselApp";
 
 class Main extends React.Component{
 
@@ -26,7 +25,6 @@ class Main extends React.Component{
                <Route path="/ContactUS" component={ContactUs} />
                {/* <Route path="/events/:id" render={() => <div>404</div>}/> */}
              </Switch>
-             <EventsCarouselApp />
              <Footer />
 
           </div>

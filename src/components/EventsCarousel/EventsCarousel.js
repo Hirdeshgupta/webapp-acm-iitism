@@ -20,7 +20,7 @@ class EventsCarousel extends React.Component {
       <div>
       <div className="slick-div">
         <h6 className="slick-h6">{this.title}</h6>
-        <h6 className="slick-h6">{this.date}</h6>
+        <span><h6 className="slick-date">{this.date} <i class="far fa-calendar-alt"></i></h6></span>
       </div>
       </div>
     );

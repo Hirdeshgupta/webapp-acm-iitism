@@ -4,7 +4,7 @@ import {DB_CONFIG} from "../../Config/config";
 import firebase from "firebase/app";
 import "firebase/database";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Button } from 'react-bootstrap';
 import Slider from "react-slick";
 
 
@@ -74,8 +74,8 @@ class EventsCarouselApp extends React.Component {
       <div className="container slick text-center mt-3">
        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-         <h2 className="slick-h2"> Events </h2>
-         <hr className="slick-hr" />
+         <h2 className="slick-h2"> Events   <i class="fas fa-bullhorn"></i> </h2>
+
          <Slider {...settings}>
           {
            this.state.EVENTS.map((e) => {
@@ -91,6 +91,7 @@ class EventsCarouselApp extends React.Component {
             })
            }
        </Slider>
+       <Button variant="secondary" href="/events">Explore All!</Button>{' '}
       </div>
 
 

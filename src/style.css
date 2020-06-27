@@ -333,49 +333,52 @@ td {
 /* event carousel starts */
 .container {
   margin: 10% auto;
-  padding: 80px 0;
+  padding: 40px 0;
   text-align: center;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
   background-color: #f5f5f5
 }
 .slick .slick-next:before, .slick .slick-prev:before {
-  color:#5A94F2;
+  color:white;
 }
 
 .slick{
   margin: 30px auto;
-  padding: 0px 40px 40px 40px;
+  padding: 0px 20px 20px 20px;
   width: 500px;
-  background-color: white;
+  background: #780206;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+color: white;
 }
-.slick h3{
-    background: #5f9ea0;
-    color: #fff;
-    font-size: 36px;
-    line-height: 100px;
-    margin: 10px;
-    padding: 2%;
-    position: relative;
-    text-align: center;
-}
+
 .slick .center .slick-center h3 {
   color: #e67e22;
   opacity: 1;
   -ms-transform: scale(1.08);
   transform: scale(1.08);
 }
-.slick .center h3 {
-  transition: all .3s ease;
-}
+
 .slick-h2 {
+    font-family: 'Piedra', cursive;
     padding-top: 10px;
+    border-color: black;
+    border-bottom: solid;
     padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 .slick-h6 {
+  font-family: 'Piedra', cursive;
+  font-size: 1.5rem;
   padding-bottom: 10px;
 }
+.slick-date {
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 5px;
+}
 .slick-hr {
-  color: black;
-  width: 300px;
+  color: white;
+  width: 100px;
 }
 /* event carousel ends */
