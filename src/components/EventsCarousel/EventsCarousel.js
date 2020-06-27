@@ -2,7 +2,9 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from "prop-types";
 
+
 import { Card, Button } from 'react-bootstrap';
+
 
 
 class EventsCarousel extends React.Component {

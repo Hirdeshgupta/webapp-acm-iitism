@@ -9,15 +9,15 @@ return (
     <MDBCol  md="6">
      <MDBCard className="contact-card">
       <MDBCardBody>
-      <form action="mailto:yash.19je0936@mech.iitism.ac.in" method="post">
-        <p className="h5 text-center mb-4">Write to us</p>
+      <form action="mailto:acm.ism@gmail.com" method="post">
+        <p className="h5 text-center mb-4 contact-head"><h3>Write to us</h3></p>
         <div className="grey-text">
-          <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
+          <MDBInput label="Your name"  group type="text" validate error="wrong"
             success="right" />
-          <MDBInput label="Your email" icon="envelope" group type="email" validate error="wrong"
+          <MDBInput label="Your email"  group type="email" validate error="wrong"
             success="right" />
-          <MDBInput label="Subject" icon="tag" group type="text" validate error="wrong" success="right" />
-          <MDBInput type="textarea" rows="2" label="Your message" icon="pencil-alt" />
+          <MDBInput label="Subject"  group type="text" validate error="wrong" success="right" />
+          <MDBInput type="textarea" rows="2" label="Your message"  />
         </div>
         <div className="text-center">
 
@@ -35,33 +35,10 @@ return (
     </MDBCol>
     <MDBCol>
       <div className="contact-right">
-        <h1 className="contact-right-h1">Reach us at</h1>
-        <a className="contact-anchor" href="">
+        <h2 className="contact-right-h2">Reach us at</h2>
 
-            <span className="contact-span"><i class="contact-right-icon fab fa-instagram fa-2x"></i><h5 className="contact-h5">@acmism</h5></span>
-
-        </a>
-        <a className="contact-anchor" href="https://www.facebook.com/acm.iitismdhn">
-
-            <span className="contact-span"><i class="contact-right-icon fab fa-facebook-f fa-2x"></i><h5 className="contact-h5">@ACM.IITISM</h5></span>
-
-        </a>
-        <a className="contact-anchor" href="">
-
-            <span className="contact-span"><i class="contact-right-icon fab fa-linkedin fa-2x"></i><h5 className="contact-h5">@ACM_ISM</h5></span>
-
-        </a>
-        <a className="contact-anchor" href="mailto:acm.ism@gmail.com">
-
-            <span className="contact-span"><i class="contact-right-icon far fa-envelope fa-2x"></i><h5 className="contact-h5">Mail</h5></span>
-        
-        </a>
-
-
-
-
-
-
+            <span className="contact-insta"><a className="contact-anchor" href=""><i class="contact-right-icon fab fa-instagram fa-3x"></i></a><a className="contact-anchor" href="https://www.facebook.com/acm.iitismdhn"><i class="contact-right-icon fab fa-facebook-square fa-3x"></i></a></span><br />
+            <span className="contact-in"><a className="contact-anchor" href="https://www.linkedin.com/company/acm-student-chapter-iit-ism-dhanbad/?originalSubdomain=in"><i class="contact-right-icon fab fa-linkedin fa-3x"></i></a><a className="contact-anchor" href="mailto:acm.ism@gmail.com"><i class="contact-right-icon far fa-envelope fa-3x"></i></a></span><br />
 
       </div>
     </MDBCol>

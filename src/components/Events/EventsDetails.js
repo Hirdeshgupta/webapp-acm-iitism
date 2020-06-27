@@ -3,18 +3,18 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 import { Link } from "react-router-dom";
 var storageRef = firebase.storage().ref();
-
+ 
 
 class EventsDetails extends React.Component{
     constructor(props){
         super(props);
 
         this.database = firebase.database().ref().child('EVENTS');
-        
+
         this.state={
             EVENTS:[],
          }
-      
+
     }
 
     componentDidMount(){
@@ -29,18 +29,18 @@ class EventsDetails extends React.Component{
             description: snap.val().description,
             imageURL: snap.val().imageURL,
           })
-          
+
 
 
           this.setState({
             EVENTS: previousEvents
           })
         })
- 
+
     }
         // showImage = ()=>
- 
-   
+
+
     render(){
         return(
        <div className="eventdetails">
@@ -59,7 +59,7 @@ class EventsDetails extends React.Component{
                 })
                 }
               }
-               
+
           )
             }
            <h4>{this.props.location.state.date}</h4>
