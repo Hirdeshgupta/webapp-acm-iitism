@@ -1,14 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import EventsDetails from './EventsDetails'
 
 class Events extends React.Component{
     constructor(props){
         super(props);
         this.date=props.date;
-        this.title=props.title;      
-        // this.imageURL=props.imageURL;      
-        // this.description=props.description;      
+        this.title=props.title;           
         this.eventId=props.eventId;      
     }
     render(){

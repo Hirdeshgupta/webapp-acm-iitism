@@ -3,16 +3,13 @@ import Events from './Events';
 import {DB_CONFIG} from '../../Config/config';
 import firebase from 'firebase/app';
 import 'firebase/database';
-// import firebase from '../firebase';
 import { Link } from 'react-router-dom';
+
 
 class EventsApp extends React.Component{
     constructor(props){
         super(props);
 
-        // console.log(firebase.name);
-        // console.log(firebase.database());
-        // this.app = firebase.initializeApp(DB_CONFIG);   
         this.database = firebase.database().ref().child('EVENTS');
         
         this.state={
@@ -33,18 +30,23 @@ class EventsApp extends React.Component{
             description: snap.val().description,
             imageURL: snap.val().imageURL,
           })
+          
+
 
           this.setState({
             EVENTS: previousEvents
           })
         })
+ 
     }
 
     render(){
-      
+
+
         return(
             <div id="events" style={{marginTop:100}}>
                 <h1 className="event_head">EVENTS</h1>
+        
                 <table className="table">
                                 <tr>
                                     <th className="th_e">Title</th>
@@ -52,14 +54,17 @@ class EventsApp extends React.Component{
                                 </tr>
                             {
                                 this.state.EVENTS.map((eve) => {
+                                  
                                     return(
+
+                                        
                                            <tr>
                                             <td>
                                                <Link to={{
                                                    pathname: `/events/${eve.id}`,
                                                    state: {
+                                                    id: eve.id,
                                                     title: eve.title,
-                                                    imageURL :eve.imageURL,
                                                     description :eve.description, 
                                                     date: eve.date,
                                                    }

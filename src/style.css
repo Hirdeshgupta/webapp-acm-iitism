@@ -287,6 +287,11 @@ td {
     margin: 25px;
 }
 
+#new-img{
+  height: 800px;
+  width: 100%;
+}
+
 /* EventsDetails ends */
 
 
