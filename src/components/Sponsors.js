@@ -1,12 +1,16 @@
 import React from "react"
 import { Container, Row, Col } from 'reactstrap';
+import {MDBAnimation } from "mdbreact"
 
 function Sponsors(){
     return(
-        <section id="sponsors" style={{marginTop:100}}>
+        <section id="sponsors" style={{marginTop:150}}>
            <div>
-           <h1 className="head_spons">Past Sponsors</h1>
-       <Container>
+        <MDBAnimation reveal type="lightSpeedIn">
+           <h1 className="head_spons pl-lg-5 pl-1">PAST SPONSORS </h1>
+          </MDBAnimation>
+    <MDBAnimation reveal type="fadeInLeft">
+        <Container style={{marginTop:50}}>
            <Row>
                <Col lg="6" xs="12">
                <img className="spons_img" src={require("./img/sponsors/1.jpeg")} alt="Sponsors"></img>
@@ -30,6 +34,8 @@ function Sponsors(){
                {/* <Col xs="12" lg="6"><img className="spons_img" src={require("./img/sponsors/skillenza.png")} alt="Skillenza"></img></Col> */}
            </Row>
        </Container>
+          </MDBAnimation>
+
         </div>
         </section>
     )

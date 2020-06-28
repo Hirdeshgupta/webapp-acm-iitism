@@ -1,10 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from "prop-types";
-
-
+import {MDBAnimation } from "mdbreact"
 import { Card, Button } from 'react-bootstrap';
-
 
 
 class EventsCarousel extends React.Component {
@@ -19,12 +17,13 @@ class EventsCarousel extends React.Component {
   render() {
 
     return (
-      <div>
+      <MDBAnimation reveal type="fadeInUp">
       <div className="slick-div">
         <h6 className="slick-h6">{this.title}</h6>
-        <span><h6 className="slick-date">{this.date} <i class="far fa-calendar-alt"></i></h6></span>
+        <h6 className="slick-h6">{this.date}</h6>
       </div>
-      </div>
+      </MDBAnimation>
+
     );
   }
 }

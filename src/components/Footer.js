@@ -15,7 +15,7 @@ function Footer(){
       <Col xs="12" lg="4">
       <div className="footer-acm">
            <div className="picc">
-             <a href="/"><img className="logoo" src={require("./img/logo.jpg")} alt="ACM"/></a>
+             <a href="https://ism.acm.org/"><img className="logoo" src={require("./img/logo.jpg")} alt="ACM"/></a>
                    <a href="https://www.iitism.ac.in/"><img className="logoo1" src={require('./img/clg-logo.jpg')} alt="IIT Dhanbad"/></a>
            </div>
                    <p>
@@ -54,7 +54,7 @@ function Footer(){
            
        <hr/>
     <div className="foot">
-      <p>Made with &nbsp;<FontAwesomeIcon icon={faHeart}/>&nbsp; by ACM-IIT Dhanbad</p>
+      <p>Made with &nbsp;<FontAwesomeIcon icon={faHeart}/>&nbsp; by ACM-IIT Dhanbad<br/>ACM Student Chapter - IIT Dhanbad · © 2017</p>
      </div> 
    
    </Container>

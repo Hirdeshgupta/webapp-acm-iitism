@@ -6,6 +6,7 @@ import "firebase/database";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel, Button } from 'react-bootstrap';
 import Slider from "react-slick";
+import {MDBAnimation } from "mdbreact"
 
 
 class EventsCarouselApp extends React.Component {
@@ -71,6 +72,7 @@ class EventsCarouselApp extends React.Component {
   ]
 };
     return(
+      <MDBAnimation reveal type="fadeInUp">
       <div className="container slick text-center mt-3">
        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
@@ -93,6 +95,8 @@ class EventsCarouselApp extends React.Component {
        </Slider>
        <Button variant="secondary" href="/events">Explore All!</Button>{' '}
       </div>
+
+      </MDBAnimation>
 
 
 
