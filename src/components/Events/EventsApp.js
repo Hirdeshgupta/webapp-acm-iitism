@@ -15,6 +15,7 @@ class EventsApp extends React.Component{
         
         this.state={
             EVENTS:[],
+            // reverseArray: [],
          }
       
     }
@@ -51,14 +52,15 @@ class EventsApp extends React.Component{
 
           </MDBAnimation>
 
-        
+         {/* { this.state.reverseArray = this.state.EVENTS.reverse() } */}
                 <table className="table">
                                 <tr>
                                     <th className="th_e">Title</th>
                                      <th className="th_e">Date</th>
                                 </tr>
                             {
-                                this.state.EVENTS.map((eve) => {
+                                
+                                this.state.EVENTS.slice(0).reverse().map((eve) => {
                                   
                                     return(
 

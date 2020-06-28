@@ -26,6 +26,7 @@ class EventsCarousel extends React.Component {
         <Link to={{
           pathname: `events/${this.id}`,
           state: {
+            id: this.id,
             title: this.title,
             date: this.date,
             imageURL: this.imageURL,
