@@ -84,6 +84,7 @@ class EventsCarouselApp extends React.Component {
              return(
                <EventsCarousel
                   key={e.id}
+                  id={e.id}
                   title={e.title}
                   imageURL={e.imageURL}
                   description={e.description}

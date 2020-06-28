@@ -23,7 +23,7 @@ body {
 }
 
 .nav-link:hover::after {
-  transition-timing-function: cubic-bezier(.19, 1, .22, 1);  
+  transition-timing-function: cubic-bezier(.19, 1, .22, 1);
   transform: scaleX(1);
 } */
 
@@ -442,11 +442,12 @@ td {
     font-family: 'Roboto', sans-serif;
     padding-bottom: 5px;
 }
-
-.slick-hr {
-    color: white;
-    width: 100px;
+.slick-show {
+  text-decoration: none;
+  color: white;
 }
+
+
 
 
 /* event carousel ends */

@@ -22,16 +22,16 @@ const ContactPage = () => {
                 </div>
               </div>
               </div>
-      <form action="mailto:yash.19je0936@mech.iitism.ac.in" method="post">
+      <form action="mailto:acm.ism@gmail.com" method="post">
               <div className="md-form">
                 <MDBInput
                   icon="user"
                   label="Your name"
                   iconClass="grey-text"
                   type="text"
-                  group 
+                  group
                   id="form-name"
-                  validate 
+                  validate
                   error="wrong"
                   success="right"
                 />
@@ -41,9 +41,9 @@ const ContactPage = () => {
                   icon="envelope"
                   label="Your email"
                   iconClass="grey-text"
-                  group 
-                  type="email" 
-                  validate 
+                  group
+                  type="email"
+                  validate
                   error="wrong"
                   success="right"
                   id="form-email"
@@ -54,9 +54,9 @@ const ContactPage = () => {
                   icon="tag"
                   label="Subject"
                   iconClass="grey-text"
-                  group 
-                  type="email" 
-                  validate 
+                  group
+                  type="email"
+                  validate
                   error="wrong"
                   success="right"
                   id="form-subject"
@@ -65,7 +65,7 @@ const ContactPage = () => {
               <div className="md-form">
                 <MDBInput
                   icon="pencil-alt"
-                  label="Icon Prefix"
+                  label="Your Message"
                   iconClass="grey-text"
                   type="textarea"
                   id="form-text"
@@ -81,7 +81,7 @@ const ContactPage = () => {
       </MDBAnimation>
         </MDBCol>
         <MDBCol lg="7">
-      <MDBAnimation className="slow" reveal type="fadeInRight"> 
+      <MDBAnimation className="slow" reveal type="fadeInRight">
           <div
             id="map-container"
             className="rounded z-depth-1-half map-container"
@@ -99,42 +99,42 @@ const ContactPage = () => {
           <br />
           <MDBRow className="text-center">
             <MDBCol md="3">
-      <MDBAnimation className="delay-1s" reveal type="zoomIn"> 
-              <button tag="a" floating className="socialbtn" >
+      <MDBAnimation className="delay-1s" reveal type="zoomIn">
+              <a href="https://www.facebook.com/acm.iitismdhn"><button tag="a" floating className="socialbtn"  >
                 <MDBIcon fab icon="facebook-f" size="lg" />
-              </button>
-              <p>New York, 94126</p>
+              </button></a>
+              <p>Facebook</p>
       </MDBAnimation>
 
             </MDBCol>
             <MDBCol md="3">
-      <MDBAnimation className="delay-1s" reveal type="zoomIn"> 
+      <MDBAnimation className="delay-1s" reveal type="zoomIn">
 
-              <button tag="a" floating className="socialbtn" >
+              <a href="https://www.facebook.com/acm.iitismdhn"><button tag="a" floating className="socialbtn" href="" >
               <MDBIcon fab icon="instagram" size="lg" />
 
-              </button>
-              <p>+ 01 234 567 89</p>
+              </button></a>
+              <p>instagram</p>
       </MDBAnimation>
 
             </MDBCol>
             <MDBCol md="3">
-      <MDBAnimation className="delay-1s" reveal type="zoomIn"> 
+      <MDBAnimation className="delay-1s" reveal type="zoomIn">
 
-              <button tag="a" floating className="socialbtn" >
+              <a href="https://www.linkedin.com/company/acm-student-chapter-iit-ism-dhanbad/"><button tag="a" floating className="socialbtn"  >
                 <MDBIcon fab icon="linkedin-in" size="lg" />
-              </button>
-              <p>info@gmail.com</p>
+              </button></a>
+              <p>LinkedIn</p>
       </MDBAnimation>
 
             </MDBCol>
               <MDBCol md="3">
-      <MDBAnimation className="delay-1s" reveal type="zoomIn"> 
+      <MDBAnimation className="delay-1s" reveal type="zoomIn">
 
-              <button tag="a" floating className="socialbtn" >
+              <a href="https://www.youtube.com/channel/UCaXEPdTHm08sxKlTJjRVxJA"><button tag="a" floating className="socialbtn"  >
                 <MDBIcon fab icon="youtube" size="lg" />
-              </button>
-              <p>info@gmail.com</p>
+              </button></a>
+              <p>YouTube</p>
       </MDBAnimation>
 
             </MDBCol>
@@ -149,5 +149,3 @@ const ContactPage = () => {
 }
 
 export default ContactPage;
-
-
