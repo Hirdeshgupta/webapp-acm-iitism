@@ -6,10 +6,10 @@ function Sponsors(){
     return(
         <section id="sponsors" style={{marginTop:150}}>
            <div>
-        <MDBAnimation reveal type="lightSpeedIn">
+        <MDBAnimation reveal type="lightSpeedIn" className="delay-2s">
            <h1 className="head_spons pl-lg-5 pl-1">PAST SPONSORS </h1>
           </MDBAnimation>
-    <MDBAnimation reveal type="fadeInLeft">
+    <MDBAnimation reveal type="fadeInLeft" className="delay-2s">
         <Container style={{marginTop:50}}>
            <Row>
                <Col lg="6" xs="12">

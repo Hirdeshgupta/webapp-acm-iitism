@@ -8,7 +8,7 @@ function Home() {
     <div className="home-div">
       <HomeComponent />
       <AboutUs />
-      <EventsCarouselApp />
+      <EventsCarouselApp style={{marginTop:80}}/>
     </div>
   )
 }

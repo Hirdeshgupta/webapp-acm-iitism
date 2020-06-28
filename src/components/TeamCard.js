@@ -5,7 +5,7 @@ import {MDBAnimation } from "mdbreact"
 const TeamCard = (props) => {
   return (
     <MDBCol lg="2" sm="4"   className="mb-lg-0 mb-5 z-depth-3 p-4 mx-4 rounded">
-      <MDBAnimation reveal type="zoomIn" className="delay-0.5s">
+      <MDBAnimation reveal type="zoomIn">
     <img
       src={"https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"}
       className="rounded-circle z-depth-1 img-fluid"

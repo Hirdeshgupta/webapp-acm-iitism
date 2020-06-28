@@ -46,7 +46,7 @@ class EventsApp extends React.Component{
 
 
         return(
-            <div id="events" style={{marginTop:100}}>
+            <div id="events" style={{marginTop:150,marginTop:150}}>
             <MDBAnimation reveal type="lightSpeedIn">
                 <h1 className="event_head">EVENTS</h1>
 
