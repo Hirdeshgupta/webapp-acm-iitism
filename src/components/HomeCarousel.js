@@ -1,4 +1,5 @@
 import React from "react";
+import HomeEvents from "./HomeEvents";
 import { MDBCarousel,MDBAnimation, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
 "mdbreact";
 import AwesomeSlider from 'react-awesome-slider';
@@ -6,9 +7,12 @@ import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
 import AnimationStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
 const AutoplaySlider = withAutoplay(AwesomeSlider);
+
+
 const HomeCarousel = () => {
-  return (
-    <div className="container-fluid px-0" style={{background:"rgb(106, 106, 106)"}} >
+
+    return (
+     <div className="container-fluid px-0" style={{background:"rgb(106, 106, 106)"}} >
       {/* <MDBCarousel
       activeItem={1}
       length={3}
@@ -23,7 +27,7 @@ const HomeCarousel = () => {
             play={true} // should stop playing on user interaction
             interval={6000}
            >
-          <MDBView>
+         <MDBView>
             <img
               className="d-block w-100 img-fluid "
               src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
@@ -31,6 +35,7 @@ const HomeCarousel = () => {
               style={{height:"125vh"}}
 
             />
+
           <MDBMask overlay="black-slight" />
           </MDBView>
           {/* <MDBCarouselCaption>
@@ -41,7 +46,7 @@ const HomeCarousel = () => {
           </MDBCarouselCaption> */}
         {/* </MDBCarouselItem> */}
         {/* <MDBCarouselItem itemId="2"> */}
-          <MDBView>
+         <MDBView>
             <img
               className="d-block w-100 img-fluid "
               src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
@@ -69,12 +74,20 @@ const HomeCarousel = () => {
             <h3 className="h3-responsive">Another Event</h3>
             <p>Another Event Description</p>
           </MDBCarouselCaption> */}
+
+
+
+
+
+
+
                   </AutoplaySlider>
         {/* </MDBCarouselItem>
       </MDBCarouselInner> */}
     {/* </MDBCarousel> */}
     </div>
   );
+
 }
 
 export default HomeCarousel;

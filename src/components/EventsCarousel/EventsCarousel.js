@@ -6,6 +6,7 @@ import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
+
 class EventsCarousel extends React.Component {
   constructor(props){
     super(props);
