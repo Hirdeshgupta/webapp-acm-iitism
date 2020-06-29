@@ -395,7 +395,8 @@ td {
     padding: 80px 0;
     text-align: center;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    background-color: #f5f5f5
+    background-color: #f5f5f5;
+    max-height: 550px;
 }
 
 .slick .slick-next:before,
@@ -414,6 +415,8 @@ td {
     background: linear-gradient(to right, #061161, #780206);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
+    text-align: center;
+
 }
 
 .slick .center .slick-center h3 {
@@ -432,9 +435,9 @@ td {
     margin-bottom: 20px;
 }
 
-.slick-h6 {
+.slick-h1 {
     font-family: 'Piedra', cursive;
-    font-size: 1.5rem;
+    font-size: 3rem;
     padding-bottom: 10px;
 }
 
@@ -445,6 +448,12 @@ td {
 .slick-show {
   text-decoration: none;
   color: white;
+}
+.slick-image {
+  width: 300px;
+  height: 200px;
+  margin-left: 35%;
+  margin-bottom: 5%;
 }
 
 

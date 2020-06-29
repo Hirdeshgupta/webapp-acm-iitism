@@ -42,14 +42,14 @@ class EventsCarouselApp extends React.Component {
   centerMode: true,
   infinite: true,
   centerPadding: "60px",
-  slidesToShow: 3,
+  slidesToShow: 1,
   speed: 500,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
@@ -57,8 +57,8 @@ class EventsCarouselApp extends React.Component {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         initialSlide: 2
       }
     },
