@@ -14,27 +14,27 @@ const TeamPage = () => {
           </h2>
           </MDBAnimation>
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard column="6" imgUrl={require("./img/Team-Members/Swapnil narayan.jpg")}/>
-            <TeamCard column="6" />
-            <TeamCard/>
+            <TeamCard column="6"  name="Swapnil Narayan" position="Chairperson" imgURL="./img/Team-Members/Swapnil Narayan.jpg" />
+            <TeamCard column="6"  name="Abhishek Raj" position="Vice Chairperson"/>
+            <TeamCard name="Sahil Siyag" position="Secretary and Management Team Head"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard/>
-            <TeamCard/>
-            <TeamCard/>
-            <TeamCard/>
+            <TeamCard  name="Sameer Jain" position="Treasurer" />
+            <TeamCard name="Satyavart" position="Membership Chairperson"/>
+            <TeamCard name="Prince Kumar" position="PR Team Head"/>
+            <TeamCard name="Dhyey Mistry" position="Technical Head"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard/>
-            <TeamCard/>
-            <TeamCard/>
-            <TeamCard/>
+            <TeamCard name="Ishan Thapa" position="Promotion Team Head"/>
+            <TeamCard name="Akash Kulshreshtha" position="Designing Team Head"/>
+            <TeamCard  name="Aditya Shrivastava" position="Sponsor Team Head"/>
+            <TeamCard name="Madhav Agarwal" position="Content Writing Team Head"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
-          <TeamCard/>
-            <TeamCard/>
-            <TeamCard/>
-            <TeamCard/>
+            <TeamCard name="Rashmikiran Pandit" position="Sponsor Team Head"/>
+            <TeamCard  name="Shubhagyata Swaraj Jaiswal" position="Content Writing and Promotional Head"/>
+            <TeamCard name="Saurabh Raj" position="Designing Team Head"/>
+            <TeamCard name="Avinash" position="Campus Ambassador Program Head"/>
           </MDBRow>
         </MDBCardBody>
       </MDBCard>
