@@ -10,7 +10,7 @@ function Sponsors(){
            <h1 className="head_spons pl-lg-5 pl-1">PAST SPONSORS </h1>
           </MDBAnimation>
     <MDBAnimation reveal type="fadeInLeft" className="delay-2s">
-        <Container style={{marginTop:50}}>
+        <Container>
            <Row>
                <Col lg="6" xs="12">
                <img className="spons_img" src={require("./img/sponsors/1.jpeg")} alt="Sponsors"></img>

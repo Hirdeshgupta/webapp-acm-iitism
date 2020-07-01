@@ -8,12 +8,12 @@ const ContactPage = () => {
            <h1 className="head_spons pl-lg-5 pl-1">CONTACT US</h1>
       </MDBAnimation>
       <MDBRow  className="justify-content-center mt-5">
-        <MDBCol lg="4" className="lg-0 mb-4">
+        <MDBCol lg="5" className="lg-0 mb-4">
       <MDBAnimation reveal type="fadeInLeft" className="delay-2s">
 
           <MDBCard>
             <MDBCardBody>
-            <div style={{position:"absolute",top:-20,width:400,zIndex:3,left:40}}>
+            <div style={{position:"absolute",top:-20,width:400,zIndex:3,left:100}}>
               <div className="form-header  accent-1 z-depth-1" style={{background:"#377293"}}>
               <div className="row justify-content-center">
                 <h3 className="mt-2 col-6 white-text">
@@ -80,7 +80,7 @@ const ContactPage = () => {
           </MDBCard>
       </MDBAnimation>
         </MDBCol>
-        <MDBCol lg="7">
+        <MDBCol lg="6">
       <MDBAnimation className="slow delay-2s"  reveal type="fadeInRight" >
           <div
             id="map-container"
@@ -99,7 +99,7 @@ const ContactPage = () => {
           <br />
           <MDBRow className="text-center">
             <MDBCol md="3">
-      <MDBAnimation className="delay-3s" reveal type="zoomIn">
+      <MDBAnimation  reveal type="zoomIn">
               <a href="https://www.facebook.com/acm.iitismdhn"><button tag="a" floating className="socialbtn"  >
                 <MDBIcon fab icon="facebook-f" size="lg" />
               </button></a>
@@ -108,7 +108,7 @@ const ContactPage = () => {
 
             </MDBCol>
             <MDBCol md="3">
-      <MDBAnimation className="delay-3s" reveal type="zoomIn">
+      <MDBAnimation  reveal type="zoomIn">
 
               <a href="https://www.facebook.com/acm.iitismdhn"><button tag="a" floating className="socialbtn" href="" >
               <MDBIcon fab icon="instagram" size="lg" />
@@ -119,7 +119,7 @@ const ContactPage = () => {
 
             </MDBCol>
             <MDBCol md="3">
-      <MDBAnimation className="delay-3s" reveal type="zoomIn">
+      <MDBAnimation  reveal type="zoomIn">
 
               <a href="https://www.linkedin.com/company/acm-student-chapter-iit-ism-dhanbad/"><button tag="a" floating className="socialbtn"  >
                 <MDBIcon fab icon="linkedin-in" size="lg" />
@@ -129,7 +129,7 @@ const ContactPage = () => {
 
             </MDBCol>
               <MDBCol md="3">
-      <MDBAnimation className="delay-3s" reveal type="zoomIn">
+      <MDBAnimation  reveal type="zoomIn">
 
               <a href="https://www.youtube.com/channel/UCaXEPdTHm08sxKlTJjRVxJA"><button tag="a" floating className="socialbtn"  >
                 <MDBIcon fab icon="youtube" size="lg" />
