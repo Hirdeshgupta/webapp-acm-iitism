@@ -12,12 +12,12 @@ class EventsApp extends React.Component{
         super(props);
 
         this.database = firebase.database().ref().child('EVENTS');
-        
+
         this.state={
             EVENTS:[],
             // reverseArray: [],
          }
-      
+
     }
 
     componentDidMount(){
@@ -32,14 +32,14 @@ class EventsApp extends React.Component{
             description: snap.val().description,
             imageURL: snap.val().imageURL,
           })
-          
+
 
 
           this.setState({
             EVENTS: previousEvents
           })
         })
- 
+
     }
 
     render(){
@@ -47,24 +47,24 @@ class EventsApp extends React.Component{
 
         return(
             <div id="events" style={{marginTop:150,marginTop:150}}>
-            <MDBAnimation reveal type="lightSpeedIn">
-                <h1 className="event_head">EVENTS</h1>
-
-          </MDBAnimation>
+            <MDBAnimation reveal type="lightSpeedIn" className="delay-2s">
+               <h1 className="head_spons pl-lg-5 pl-1">EVENTS </h1>
+              </MDBAnimation>
 
          {/* { this.state.reverseArray = this.state.EVENTS.reverse() } */}
+         <MDBAnimation reveal type="fadeInLeft" className="delay-2s">
                 <table className="table">
                                 <tr>
                                     <th className="th_e">Title</th>
                                      <th className="th_e">Date</th>
                                 </tr>
                             {
-                                
+
                                 this.state.EVENTS.slice(0).reverse().map((eve) => {
-                                  
+
                                     return(
 
-                                        
+
                                            <tr>
                                             <td>
                                                <Link to={{
@@ -72,16 +72,16 @@ class EventsApp extends React.Component{
                                                    state: {
                                                     id: eve.id,
                                                     title: eve.title,
-                                                    description :eve.description, 
+                                                    description :eve.description,
                                                     date: eve.date,
                                                    }
                                                    }}>
-                                                   <Events 
-                                                        title={eve.title} 
-                                                        imageURL={eve.imageURL} 
-                                                        description={eve.description} 
+                                                   <Events
+                                                        title={eve.title}
+                                                        imageURL={eve.imageURL}
+                                                        description={eve.description}
                                                         key={eve.id}/>
-                                                </Link> 
+                                                </Link>
                                             </td>
                                             <td>
                                                 <Events date={eve.date} key={eve.id} />
@@ -91,6 +91,7 @@ class EventsApp extends React.Component{
                                 })
                            }
                 </table>
+                </MDBAnimation>
             </div>
         )
 }

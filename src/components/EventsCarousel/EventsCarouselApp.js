@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import {MDBAnimation } from "mdbreact"
 
 
+
 class EventsCarouselApp extends React.Component {
   constructor(props){
     super(props);
@@ -76,8 +77,10 @@ class EventsCarouselApp extends React.Component {
       <div className="container slick text-center mt-3">
        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+         <MDBAnimation reveal type="lightSpeedIn" className="delay-2s">
          <h2 className="slick-h2"> Events   <i class="fas fa-bullhorn"></i> </h2>
-
+         </MDBAnimation>
+         
          <Slider {...settings}>
           {
            this.state.EVENTS.map((e) => {
