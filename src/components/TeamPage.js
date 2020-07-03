@@ -14,7 +14,7 @@ const TeamPage = () => {
           </h2>
           </MDBAnimation>
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard column="6"  name="Swapnil Narayan" position="Chairperson" imgURL="./img/Team-Members/Swapnil Narayan.jpg" />
+            <TeamCard column="6"  name="Swapnil narayan" position="Chairperson" imgURL="./img/Team-Members/Swapnil Narayan.jpg" />
             <TeamCard column="6"  name="Abhishek Raj" position="Vice Chairperson"/>
             <TeamCard name="Sahil Siyag" position="Secretary and Management Team Head"/>
           </MDBRow>
@@ -27,14 +27,14 @@ const TeamPage = () => {
           <MDBRow className="justify-content-center  mt-5">
             <TeamCard name="Ishan Thapa" position="Promotion Team Head"/>
             <TeamCard name="Akash Kulshreshtha" position="Designing Team Head"/>
-            <TeamCard  name="Aditya Shrivastava" position="Sponsor Team Head"/>
+            <TeamCard  name="Aditya shrivastava" position="Sponsor Team Head"/>
             <TeamCard name="Madhav Agarwal" position="Content Writing Team Head"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard name="Rashmikiran Pandit" position="Sponsor Team Head"/>
+            <TeamCard name="Rashmikiran pandit" position="Sponsor Team Head"/>
             <TeamCard  name="Shubhagyata Swaraj Jaiswal" position="Content Writing and Promotional Head"/>
             <TeamCard name="Saurabh Raj" position="Designing Team Head"/>
-            <TeamCard name="Avinash" position="Campus Ambassador Program Head"/>
+            <TeamCard name="AVINASH" position="Campus Ambassador Program Head"/>
           </MDBRow>
         </MDBCardBody>
       </MDBCard>
