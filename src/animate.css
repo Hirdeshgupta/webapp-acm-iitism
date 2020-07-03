@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(26, 18, 69, 1);
+    background-image: linear-gradient(0deg, rgba(26, 18, 69, 1) 40%, rgba(55, 114, 147, 1) 100%);
+    height: 100vh;
+}
+
+#logo {
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    fill: none;
+    stroke: white;
+    stroke-width: 50;
+    animation: anime-logo 1s ease forwards 1.2s;
+}
+
+path:nth-child(1) {
+    stroke-dasharray: 15386.603515625;
+    stroke-dashoffset: 15386.603515625;
+    animation: anime 1s ease forwards;
+}
+
+path:nth-child(2) {
+    stroke-dasharray: 11150.564453125;
+    stroke-dashoffset: 11150.564453125;
+    animation: anime 1s ease forwards 0.3s;
+}
+
+path:nth-child(3) {
+    stroke-dasharray: 5488.74072265625;
+    stroke-dashoffset: 5488.74072265625;
+    animation: anime 1s ease forwards 0.6s;
+}
+
+path:nth-child(4) {
+    stroke-dasharray: 1263.864013671875;
+    stroke-dashoffset: 1263.864013671875;
+    animation: anime 1s ease forwards 0.9s;
+}
+
+@keyframes anime {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes anime-logo {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
