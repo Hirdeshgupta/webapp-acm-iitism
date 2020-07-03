@@ -5,10 +5,10 @@ import {MDBAnimation } from "mdbreact"
 
 const TeamPage = () => {
   return (
-      <div className="container-fluid px-0 z-depth-0" style={{marginTop:150}}>
+      <div className="container-fluid px-0 z-depth-0" style={{marginTop:100}}>
     <MDBCard className="my-5  pb-5 text-center z-depth-0 border-0">
         <MDBCardBody>
-          <MDBAnimation reveal type="lightSpeedIn"  className="delay-1s">
+          <MDBAnimation reveal type="lightSpeedIn" >
           <h2 className="h1-responsive team_head  font-weight-bold my-5">
             OUR TEAM
           </h2>

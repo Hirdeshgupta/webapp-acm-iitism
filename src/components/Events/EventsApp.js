@@ -46,13 +46,13 @@ class EventsApp extends React.Component{
 
 
         return(
-            <div id="events" style={{marginTop:150,marginTop:150}}>
-            <MDBAnimation reveal type="lightSpeedIn" className="delay-2s">
+            <div id="events" style={{marginTop:100}}>
+            <MDBAnimation reveal type="lightSpeedIn" >
                <h1 className="head_spons pl-lg-5 pl-1">EVENTS </h1>
               </MDBAnimation>
 
          {/* { this.state.reverseArray = this.state.EVENTS.reverse() } */}
-         <MDBAnimation reveal type="fadeInLeft" className="delay-2s">
+         <MDBAnimation reveal type="fadeInLeft">
                 <table className="table">
                                 <tr>
                                     <th className="th_e">Title</th>

@@ -4,12 +4,12 @@ import {MDBAnimation, MDBContainer,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon
 const ContactPage = () => {
   return (
     <section style={{marginTop:120}}>
-      <MDBAnimation reveal type="lightSpeedIn" className="delay-2s">
+      <MDBAnimation reveal type="lightSpeedIn" >
            <h1 className="head_spons pl-lg-5 pl-1">CONTACT US</h1>
       </MDBAnimation>
       <MDBRow  className="justify-content-center mt-5">
         <MDBCol lg="5" className="lg-0 mb-4">
-      <MDBAnimation reveal type="fadeInLeft" className="delay-2s">
+      <MDBAnimation reveal type="fadeInLeft" >
 
           <MDBCard>
             <MDBCardBody>
@@ -81,7 +81,7 @@ const ContactPage = () => {
       </MDBAnimation>
         </MDBCol>
         <MDBCol lg="6">
-      <MDBAnimation className="slow delay-2s"  reveal type="fadeInRight" >
+      <MDBAnimation   reveal type="fadeInRight" >
           <div
             id="map-container"
             className="rounded z-depth-1-half map-container"

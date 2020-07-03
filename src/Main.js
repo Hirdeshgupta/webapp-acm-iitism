@@ -9,7 +9,7 @@ import Sponsors from "./components/Sponsors"
 import TeamPage from "./components/TeamPage"
 import ContactUs from "./components/ContactUs";
 import './animate.css';
-
+import {MDBAnimation } from "mdbreact"
 class Main extends React.Component{
 
     constructor(props)
@@ -25,15 +25,16 @@ class Main extends React.Component{
 			this.setState({
 				isLoading:false
 			})
-		},3000)
+		},2000,()=>{
+			document.getElementById("root").style.animation="anime-entry 10s ease forwards";
+		})
 	
 	}
     render(){
 		if(this.state.isLoading)
 		{
 			return(
-			<div>
-				<div class="container">
+				<div className="container_">
 					<svg id="logo" version="1.0" xmlns="http://www.w3.org/2000/svg" width="828.000000pt" height="804.000000pt" viewBox="0 0 828.000000 804.000000" preserveAspectRatio="xMidYMid meet">
 			<metadata>
 			Created by potrace 1.16, written by Peter Selinger 2001-2019
@@ -72,11 +73,10 @@ class Main extends React.Component{
 			</g>
 			</svg>
 				</div>
-			</div>
 			)}
 		else{
 			return(
-
+				<MDBAnimation  type="fadeIn">
 			<BrowserRouter>
 			<div>
 				<TopNav />
@@ -94,6 +94,8 @@ class Main extends React.Component{
 
 			</div>
 			</BrowserRouter>
+			   </MDBAnimation>
+			
 			)
 		}
     }
