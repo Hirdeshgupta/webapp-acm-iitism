@@ -453,7 +453,21 @@ td {
     width: 300px;
     height: 200px;
     margin-left: 35%;
+
     margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .slick-image {
+      width: 300px;
+      height: 200px;
+      margin-left: 10%;
+
+      margin-bottom: 5%;
+  }
+}
+.slick-div {
+  text-align: center;
 }
 
 

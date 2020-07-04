@@ -5,7 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 class TopNav extends React.Component {
     state={
       background:"rgba(2,3,4,0)",
-      color:"#1a1245",
+      color:"white",
       height:"auto"
     }
 
@@ -18,7 +18,7 @@ class TopNav extends React.Component {
         }
       } else {
         if (this.state.background !== "rgba(2,3,4,0)") {
-          this.setState({ background: "rgba(2,3,4,0)",color:" #1a1245",height:"auto"  });
+          this.setState({ background: "rgba(2,3,4,0)",color:"white",height:"auto"  });
         }
       }
     })
@@ -34,19 +34,19 @@ render(){
   </Nav>
   <Nav>
   <Nav.Link className="topNav-links" style={{color:this.state.color}} onMouseOver={this.handlemouseover}  eventKey={1} href="/">
-    Home 
+    Home
   </Nav.Link>
     <Nav.Link className="topNav-links" style={{color:this.state.color}}  eventKey={3} href="/events">
-      Events 
+      Events
     </Nav.Link>
     <Nav.Link className="topNav-links" style={{color:this.state.color}}  eventKey={4} href="/sponsors">
-      Past sponsers 
+      Past sponsers
     </Nav.Link>
     <Nav.Link className="topNav-links" style={{color:this.state.color}}  eventKey={5} href="./TeamPage">
-      Team 
+      Team
     </Nav.Link>
     <Nav.Link className="topNav-links" style={{color:this.state.color}}  eventKey={6} href="/ContactUs">
-      Contact us 
+      Contact us
     </Nav.Link>
   </Nav>
 </Navbar.Collapse>
