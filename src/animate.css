@@ -1,8 +1,13 @@
 .container_ {
-    background-color: rgba(26, 18, 69, 1);
-    background-image: linear-gradient(0deg, rgba(26, 18, 69, 1) 40%, rgba(55, 114, 147, 1) 100%);
+    background: white;
     height: 100vh;
     width: 100vw;
+}
+
+.shadow {
+    -webkit-filter: drop-shadow( 5px 5px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    /* Similar syntax to box-shadow */
 }
 
 #logo {
@@ -13,33 +18,35 @@
     right: 50%;
     transform: translate(50%, -50%);
     fill: none;
-    stroke: white;
     stroke-width: 50;
-    animation: anime-logo 1s ease forwards 1.2s;
 }
 
 path:nth-child(1) {
+    stroke: #12232e;
     stroke-dasharray: 15386.603515625;
     stroke-dashoffset: 15386.603515625;
-    animation: anime 1s ease forwards;
+    animation: anime 1s ease forwards, anime-logo1 1s ease forwards 1.2s;
 }
 
 path:nth-child(2) {
+    stroke: #191345;
     stroke-dasharray: 11150.564453125;
     stroke-dashoffset: 11150.564453125;
-    animation: anime 1s ease forwards 0.3s;
+    animation: anime 1s ease forwards 0.3s, anime-logo2 1s ease forwards 1.2s;
 }
 
 path:nth-child(3) {
+    stroke: #0c5885;
     stroke-dasharray: 5488.74072265625;
     stroke-dashoffset: 5488.74072265625;
-    animation: anime 1s ease forwards 0.6s;
+    animation: anime 1s ease forwards 0.6s, anime-logo3 1s ease forwards 1.2s;
 }
 
 path:nth-child(4) {
+    stroke: #0c5885;
     stroke-dasharray: 1263.864013671875;
     stroke-dashoffset: 1263.864013671875;
-    animation: anime 1s ease forwards 0.9s;
+    animation: anime 1s ease forwards 0.9s, anime-logo3 1s ease forwards 1.2s;
 }
 
 @keyframes anime {
@@ -48,11 +55,29 @@ path:nth-child(4) {
     }
 }
 
-@keyframes anime-logo {
+@keyframes anime-logo1 {
     from {
         fill: transparent;
     }
     to {
-        fill: white;
+        fill: #12232e;
+    }
+}
+
+@keyframes anime-logo2 {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #191345;
+    }
+}
+
+@keyframes anime-logo3 {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #0c5885;
     }
 }
