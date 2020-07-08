@@ -1,13 +1,14 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
 class TopNav extends React.Component {
     state={
       background:"rgba(2,3,4,0)",
-      color:"white",
+      color:"black",
       height:"auto"
     }
+
 
   componentDidMount(){
     document.addEventListener("scroll",()=>{
@@ -18,7 +19,7 @@ class TopNav extends React.Component {
         }
       } else {
         if (this.state.background !== "rgba(2,3,4,0)") {
-          this.setState({ background: "rgba(2,3,4,0)",color:"white",height:"auto"  });
+          this.setState({ background: "rgba(2,3,4,0)",color:"black",height:"auto"  });
         }
       }
     })
@@ -26,7 +27,7 @@ class TopNav extends React.Component {
 
 render(){
   return (
-    <Navbar id="navbar"  className="z-depth-1"  collapseOnSelect expand="lg"    fixed="top" style={{background:this.state.background,height:this.state.height}}  >
+    <Navbar id="navbar"  className="z-depth-1"  collapseOnSelect expand="lg"   fixed="top"  style={{background:this.state.background,height:this.state.height}}  >
     <Navbar.Brand href="#home">  <a href="/"><img className="nav-logo" src={require("./img/logo.jpg")} alt="ACM"/></a> </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
