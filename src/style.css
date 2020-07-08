@@ -418,20 +418,16 @@ td {
 
 .slick .slick-next:before,
 .slick .slick-prev:before {
-    color: white;
+    font-size: 2rem;
+    color: black;
 }
 
 .slick {
     margin: 30px auto;
     padding: 0px 20px 20px 20px;
     width: 500px;
-    background: #780206;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #061161, #780206);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #061161, #780206);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+    background: #F5FFFA;
+    color: black;
     text-align: center;
 }
 
@@ -490,3 +486,21 @@ td {
 
 
 /* event carousel ends */
+.event-card {
+  margin-left: 9.6%;
+}
+@media only screen and (max-width: 600px) {
+  .event-card {
+      margin-left: 3%;
+      margin-right: 5%;
+      padding-right: 5%;
+  }
+}
+.card-image {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+.card-title {
+  color: black;
+}

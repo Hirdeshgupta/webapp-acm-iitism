@@ -30,7 +30,7 @@ const HomeCarousel = () => {
          <MDBView>
             <img
               className="d-block w-100 img-fluid "
-              src="https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/74371756_1935244246620722_3579241692252864512_o.jpg?_nc_cat=110&_nc_sid=730e14&_nc_oc=AQmpwVuwvl4Yqyd4fmKbNVucgMjfq79RRQslNOp6YFcXiskxfeUvRZkwI7csV8O37UMdRqlyelBzFBs6n9ECYyzu&_nc_ht=scontent.fpat2-1.fna&oh=569ceafef82193c55c57786526861ddf&oe=5F23DE88"
+              src="https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/69845538_2539278436167186_231316922698825728_o.jpg?_nc_cat=105&_nc_sid=cdbe9c&_nc_oc=AQmw0Y5ML5KF3Q6NuyDY7vSaHHkH-s3ZfMErM5WOgP_zaATqWl_9kqagi8h5MBgGqr4oeLitwR-OkUzBACgOo89C&_nc_ht=scontent.fpat2-1.fna&oh=b7e5480b5faa3d1f353c999a8bf432bf&oe=5F2B7003"
               alt="Third slide"
               style={{height:"125vh"}}
 
@@ -49,7 +49,7 @@ const HomeCarousel = () => {
          <MDBView>
             <img
               className="d-block w-100 img-fluid "
-              src="https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/72952460_1935244139954066_6725720620039929856_o.jpg?_nc_cat=106&_nc_sid=730e14&_nc_oc=AQlCbMYdNxkUBwd1wPBafVcUIbBumIIa7521Ycr3n_ErkB4lN77GXKFoSEIaupBmV_L0l0_YX7szureDXz9cvdtc&_nc_ht=scontent.fpat2-1.fna&oh=5ce7bea2eab3d9586357be2c2476f52a&oe=5F247B6C"
+              src="https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/67481161_2464510183644012_2108314121786097664_o.jpg?_nc_cat=102&_nc_sid=cdbe9c&_nc_oc=AQl84pwGtbd3NHM0q3H8rChMxTcR-w5DJvuxmbqsMQ8ujKGXiwNekYWs29Cn9YGdwVPZuTrltx6_VBSKUFKgIoNi&_nc_ht=scontent.fpat2-1.fna&oh=8bc740aee3f19ff59c8be69837d1dfd2&oe=5F2B3B2B"
               alt="Third slide"
               style={{height:"125vh"}}
             />
@@ -64,7 +64,7 @@ const HomeCarousel = () => {
           <MDBView>
             <img
               className="d-block w-100 img-fluid "
-              src="https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/74673202_1935245046620642_8926980097559232512_o.jpg?_nc_cat=101&_nc_sid=730e14&_nc_oc=AQmEFZLL9pw8jTMpdB0fZw0F3OzUoB2Do-A5dRcqfqhms3fM6FHXODvu1NIzjGiZ6OTuSscCwKgh7yz0gGHgOZea&_nc_ht=scontent.fpat2-1.fna&oh=2d699778bb937dcfe39145b383d14777&oe=5F2533BD"
+              src="https://www.ecelliitism.org/img/00.jpg"
               alt="Third slide"
               style={{height:"125vh"}}
             />
