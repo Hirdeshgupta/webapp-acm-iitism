@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import {DB_CONFIG} from "../../Config/config";
 import firebase from "firebase/app";
 import "firebase/database";
-import {MDBAnimation } from "mdbreact"
+import { MDBAnimation,MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from "mdbreact"
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -67,24 +67,31 @@ class EventsCarousel extends React.Component {
 
     return (
       <MDBAnimation reveal type="fadeInUp">
-      <div className="slick-div">
-        <h1 className="slick-h1">{this.title}</h1>
-        <img src={this.state.source} className="slick-image"></img>
 
-        <h4 className="slick-date">{this.date} <i class="far fa-calendar-alt"></i></h4>
-        <Link to={{
-          pathname: `events/${this.id}`,
-          state: {
-            id: this.id,
-            title: this.title,
-            date: this.date,
-            imageURL: this.imageURL,
-            description: this.description
-          }
-        }}>
-        <h6 classNam="slick-show">show more</h6>
-        </Link>
-      </div>
+      <MDBCol style={{ maxWidth: "25rem" }} className="event-card">
+        <MDBCard>
+          <MDBCardImage className="card-image" src={this.state.source} waves />
+          <MDBCardBody>
+            <MDBCardTitle className="card-title">{this.title}</MDBCardTitle>
+            <MDBCardText>{this.date} <i class="far fa-calendar-alt"></i></MDBCardText>
+            <Link to={{
+              pathname: `events/${this.id}`,
+              state: {
+                id: this.id,
+                title: this.title,
+                date: this.date,
+                imageURL: this.imageURL,
+                description: this.description
+              }
+            }}>
+            <h6 classNam="slick-show">show more</h6>
+            </Link>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+
+
+
       </MDBAnimation>
 
     );
