@@ -80,7 +80,7 @@ class EventsCarouselApp extends React.Component {
          <MDBAnimation reveal type="lightSpeedIn" className="delay-2s">
          <h2 className="slick-h2"> Events   <i class="fas fa-bullhorn"></i> </h2>
          </MDBAnimation>
-         
+
          <Slider {...settings}>
           {
            this.state.EVENTS.map((e) => {
