@@ -4,6 +4,20 @@
     width: 100vw;
 }
 
+.anime-links::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.anime-linksanime::after {
+    width: 100%;
+    transition: width .3s;
+}
+
 .shadow {
     -webkit-filter: drop-shadow( 5px 5px 2px rgba(0, 0, 0, .7));
     filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
