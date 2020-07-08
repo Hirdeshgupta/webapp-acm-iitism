@@ -5,7 +5,7 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 import { Link } from 'react-router-dom';
 import {MDBAnimation } from "mdbreact"
-
+import Skeleton from 'react-loading-skeleton';
 
 class EventsApp extends React.Component{
     constructor(props){
@@ -15,11 +15,11 @@ class EventsApp extends React.Component{
 
         this.state={
             EVENTS:[],
+            is_loading:true,
             // reverseArray: [],
          }
 
     }
-
     componentDidMount(){
         const previousEvents = this.state.EVENTS;
 
@@ -36,15 +36,28 @@ class EventsApp extends React.Component{
 
 
           this.setState({
-            EVENTS: previousEvents
+            EVENTS: previousEvents,
+            is_loading:false,
           })
+          console.log("hello there ")
         })
 
     }
 
     render(){
-
-
+        const preloaderArr=[];
+        for(let i=0;i<10;i++){
+            preloaderArr.push(
+                <tr>
+                <td>
+                    <Skeleton />
+                </td>
+                <td>
+                    <Skeleton />
+                </td>
+            </tr>
+            )
+        }
         return(
             <div id="events" style={{marginTop:100}}>
             <MDBAnimation reveal type="lightSpeedIn" >
@@ -59,12 +72,12 @@ class EventsApp extends React.Component{
                                      <th className="th_e">Date</th>
                                 </tr>
                             {
-
-                                this.state.EVENTS.slice(0).reverse().map((eve) => {
-
+                                this.state.is_loading ? 
+                                preloaderArr
+                                : 
+                                (
+                                    this.state.EVENTS.slice(0).reverse().map((eve) => {
                                     return(
-
-
                                            <tr>
                                             <td>
                                                <Link to={{
@@ -88,7 +101,8 @@ class EventsApp extends React.Component{
                                             </td>
                                         </tr>
                                     )
-                                })
+                                })   
+                                )
                            }
                 </table>
                 </MDBAnimation>
