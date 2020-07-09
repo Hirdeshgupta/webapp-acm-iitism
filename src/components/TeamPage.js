@@ -19,21 +19,21 @@ const TeamPage = () => {
           <MDBRow className="justify-content-center  mt-5">
             <TeamCard column="6"  name="Swapnil narayan" position="Chairperson"  />
             <TeamCard column="6"  name="Abhishek Raj" position="Vice Chairperson"/>
-            <TeamCard name="Sahil Siyag" position="Secretary and Management Team Head"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
+            <TeamCard name="Sahil Siyag" position="Secretary and Management Team Head"/>
             <TeamCard  name="Sameer Jain" position="Treasurer" />
             <TeamCard name="Satyavart" position="Membership Chairperson"/>
+          </MDBRow>
+          <MDBRow className="justify-content-center  mt-5">
             <TeamCard name="Prince Kumar" position="PR Team Head"/>
             <TeamCard name="Dhyey Mistry" position="Technical Head"/>
-          </MDBRow>
-          <MDBRow className="justify-content-center  mt-5">
             <TeamCard name="Ishan Thapa" position="Promotion Team Head"/>
             <TeamCard name="Madhav Agarwal" position="Content Writing Team Head"/>
-            <TeamCard name="Rashmikiran pandit" position="Sponsor Team Head"/>
-            <TeamCard  name="Shubhagyata Swaraj Jaiswal" position="Content Writing and Promotional Head"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
+            <TeamCard name="Rashmikiran pandit" position="Sponsor Team Head"/>
+            <TeamCard  name="Shubhagyata Swaraj Jaiswal" position="Content Writing and Promotional Head"/>
             <TeamCard name="Saurabh Raj" position="Designing Team Head"/>
             <TeamCard name="AVINASH" position="Campus Ambassador Program Head"/>
           </MDBRow>
