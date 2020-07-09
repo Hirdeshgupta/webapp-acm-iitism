@@ -194,7 +194,7 @@ body {
 }
 
 @media only screen and (max-width:360px) {
-    
+
     #footer {
         padding-top: 30px;
         padding-bottom: 10px;
@@ -223,7 +223,7 @@ body {
         height: 60px;
         margin-left: 90px;
     }
-    
+
     .logoo1 {
         width: 60px;
         height: 60px;
@@ -500,7 +500,7 @@ td {
 
 .slick-show {
     text-decoration: none;
-    color: white;
+    color: grey;
 }
 
 .slick-image {
@@ -545,4 +545,3 @@ td {
   .card-title {
     color: black;
   }
-  
