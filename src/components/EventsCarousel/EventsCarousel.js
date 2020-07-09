@@ -47,6 +47,8 @@ class EventsCarousel extends React.Component {
         })
       })
 
+        this.state.EVENTS.reverse();
+        console.log(this.state.EVENTS);
 
         this.state.EVENTS.map((e, index) => {
           if(e.id === this.id){

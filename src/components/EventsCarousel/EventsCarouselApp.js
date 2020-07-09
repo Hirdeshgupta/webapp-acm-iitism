@@ -83,7 +83,8 @@ class EventsCarouselApp extends React.Component {
 
          <Slider {...settings}>
           {
-           this.state.EVENTS.map((e) => {
+
+           this.state.EVENTS.slice(this.state.EVENTS.length-7, this.state.EVENTS.length-1).map((e) => {
              return(
                <EventsCarousel
                   key={e.id}
