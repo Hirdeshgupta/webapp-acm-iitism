@@ -11,6 +11,7 @@ import {MDBAnimation } from "mdbreact"
 
 
 class EventsCarouselApp extends React.Component {
+
   constructor(props){
     super(props);
 
@@ -31,10 +32,15 @@ class EventsCarouselApp extends React.Component {
         description: snap.val().description,
         imageURL: snap.val().imageURL,
       })
+
       this.setState({
         EVENTS: previousEvents
       })
+
     })
+
+
+    console.log(previousEvents);
   }
 
   render() {
@@ -58,7 +64,7 @@ class EventsCarouselApp extends React.Component {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 0,
         slidesToScroll: 1,
         initialSlide: 2
       }
@@ -83,7 +89,9 @@ class EventsCarouselApp extends React.Component {
 
          <Slider {...settings}>
           {
-           this.state.EVENTS.map((e) => {
+
+
+           this.state.EVENTS.reverse().slice(0, 5).map((e) => {
              return(
                <EventsCarousel
                   key={e.id}
