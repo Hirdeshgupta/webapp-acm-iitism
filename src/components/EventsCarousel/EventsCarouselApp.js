@@ -58,7 +58,7 @@ class EventsCarouselApp extends React.Component {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 0,
         slidesToScroll: 1,
         initialSlide: 2
       }

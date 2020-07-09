@@ -29,7 +29,7 @@ const HomeCarousel = () => {
            >
          <MDBView>
             <img
-              className="d-block w-100 img-fluid "
+              className="d-block w-100 img-fluid heritage-image"
               src="https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/69845538_2539278436167186_231316922698825728_o.jpg?_nc_cat=105&_nc_sid=cdbe9c&_nc_oc=AQmw0Y5ML5KF3Q6NuyDY7vSaHHkH-s3ZfMErM5WOgP_zaATqWl_9kqagi8h5MBgGqr4oeLitwR-OkUzBACgOo89C&_nc_ht=scontent.fpat2-1.fna&oh=b7e5480b5faa3d1f353c999a8bf432bf&oe=5F2B7003"
               alt="Third slide"
               style={{height:"125vh"}}
@@ -48,7 +48,7 @@ const HomeCarousel = () => {
         {/* <MDBCarouselItem itemId="2"> */}
          <MDBView>
             <img
-              className="d-block w-100 img-fluid "
+              className="d-block w-100 img-fluid heritage-image"
               src="https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/67481161_2464510183644012_2108314121786097664_o.jpg?_nc_cat=102&_nc_sid=cdbe9c&_nc_oc=AQl84pwGtbd3NHM0q3H8rChMxTcR-w5DJvuxmbqsMQ8ujKGXiwNekYWs29Cn9YGdwVPZuTrltx6_VBSKUFKgIoNi&_nc_ht=scontent.fpat2-1.fna&oh=8bc740aee3f19ff59c8be69837d1dfd2&oe=5F2B3B2B"
               alt="Third slide"
               style={{height:"125vh"}}
@@ -63,7 +63,7 @@ const HomeCarousel = () => {
         {/* <MDBCarouselItem itemId="3"> */}
           <MDBView>
             <img
-              className="d-block w-100 img-fluid "
+              className="d-block w-100 img-fluid heritage-image"
               src="https://www.ecelliitism.org/img/00.jpg"
               alt="Third slide"
               style={{height:"125vh"}}

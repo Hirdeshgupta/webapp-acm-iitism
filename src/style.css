@@ -494,10 +494,16 @@ td {
 
 
 /* event carousel ends */
-<<<<<<< Updated upstream
+
 .event-card {
   margin-left: 9.6%;
 }
+.event-card:hover {
+
+   box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+   z-index: 500;
+   border-radius: 10px;
+ }
 @media only screen and (max-width: 600px) {
   .event-card {
       margin-left: 3%;
@@ -513,7 +519,8 @@ td {
 .card-title {
   color: black;
 }
-=======
-
-
->>>>>>> Stashed changes
+@media only screen and (max-width: 600px) {
+  .heritage-image {
+      height: 10px;
+  }
+}

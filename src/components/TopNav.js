@@ -1,8 +1,7 @@
-<<<<<<< Updated upstream
-import React from "react";
-=======
+
+
+
 import React,{useState,useEffect} from "react";
->>>>>>> Stashed changes
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
@@ -10,7 +9,7 @@ import { setGlobalCssModule } from "reactstrap/lib/utils";
 
 
 class TopNav extends React.Component {
- 
+
     state={
       background:"white",
       color:"black",
@@ -18,7 +17,7 @@ class TopNav extends React.Component {
     }
 
   componentDidMount(){
-  
+
     document.addEventListener("scroll",()=>{
       let scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 20) {
@@ -27,16 +26,17 @@ class TopNav extends React.Component {
           this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
         }
       } else {
-<<<<<<< Updated upstream
+
         if (this.state.background !== "rgba(2,3,4,0)") {
           this.setState({ background: "rgba(2,3,4,0)",color:"black",height:"auto"  });
           this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-=======
+
         if (this.state.background !== "white") {
           this.setState({ background: "white",color:"black",height:"auto"  });
->>>>>>> Stashed changes
+
         }
       }
+    }
     })
 this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
   }
@@ -50,7 +50,7 @@ this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
           sheet.insertRule(selector + "{" + propText + "}", sheet.cssRules.length);
       };
   })(document.createElement("style"));
-  
+
   addRule(".anime-links::after", {
       background:color ,
   });
