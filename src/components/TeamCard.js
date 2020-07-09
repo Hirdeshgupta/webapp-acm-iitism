@@ -4,7 +4,8 @@ import {MDBAnimation } from "mdbreact"
 
 const TeamCard = (props) => {
   return (
-    <MDBCol lg="2" sm="4"   className="mb-lg-0 mb-5 z-depth-3 p-4 mx-4 rounded">
+    <MDBCol lg="2" sm="4"   className="mb-lg-0 mb-5 z-depth-3 hoverable p-4 mx-4 rounded">
+      
       <MDBAnimation reveal type="zoomIn">
     <img
       src={require("./img/Team-Members/"+props.name+".jpg")}
@@ -15,13 +16,7 @@ const TeamCard = (props) => {
     <p className="text-uppercase " style={{color:'#377293'}}>{props.position}</p>
     <ul className="list-unstyled mb-0">
       <a href="#!" className="p-2 fa-lg">
-        <MDBIcon fab icon="facebook-f" style={{color:'#377293'}} />
-      </a>
-      <a href="#!" className="p-2 fa-lg">
-        <MDBIcon fab icon="twitter" style={{color:'#377293'}} />
-      </a>
-      <a href="#!" className="p-2 fa-lg">
-        <MDBIcon fab icon="instagram" style={{color:'#377293'}} />
+      <MDBIcon far icon="envelope" style={{color:'#377293'}} />
       </a>
     </ul>
           </MDBAnimation>
