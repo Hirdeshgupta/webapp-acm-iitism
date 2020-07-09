@@ -1,7 +1,4 @@
-
-
-
-import React,{useState,useEffect} from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
@@ -65,7 +62,7 @@ this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
 render(){
 
   return (
-    <Navbar id="navbar"  className="z-depth-1"  collapseOnSelect expand="lg"    fixed="top" style={{background:this.state.background,height:this.state.height}}  >
+    <Navbar id="navbar"  className="z-depth-1"  collapseOnSelect expand="lg"  fixed="top" style={{background:this.state.background,height:this.state.height}}  >
     <Navbar.Brand href="#home">  <a href="/"><img className="nav-logo" src={require("./img/logo.jpg")} alt="ACM"/></a> </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">

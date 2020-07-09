@@ -86,7 +86,7 @@ class EventsCarousel extends React.Component {
                 description: this.description
               }
             }}>
-            <h6 classNam="slick-show">show more</h6>
+            <h6 className="slick-show">Show More</h6>
             </Link>
           </MDBCardBody>
         </MDBCard>

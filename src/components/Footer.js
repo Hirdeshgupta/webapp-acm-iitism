@@ -51,7 +51,6 @@ function Footer(){
          </Col>
          </Row>
            
-       <hr/>
     <div className="foot">
       <p>Made with &nbsp;<MDBIcon icon="heart" />&nbsp; by ACM-IIT Dhanbad</p>
      </div> 

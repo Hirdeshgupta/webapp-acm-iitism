@@ -142,7 +142,7 @@ body {
 }
 
 .footer-acm p {
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 20px;
     color: white;
     padding-left: 65px;
@@ -170,7 +170,7 @@ body {
 }
 
 .icons_uni {
-    padding-top: 15px;
+    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -194,21 +194,53 @@ body {
 }
 
 @media only screen and (max-width:360px) {
+    
+    #footer {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
     .footer-h3 {
-        padding-top: 12px;
+        padding-top: 8px;
     }
     .icons_uni {
-        padding-top: 7px;
+        padding-top: 4px;
     }
     .location2 {
-        padding-top: 5px;
+        padding-top: 3px;
     }
     .picc {
         display: block;
         padding-left: 4px;
     }
     .footer-acm p {
+        margin-bottom: 3px;
         padding-left: 4px;
+        font-size: 16px;
+    }
+    .logoo {
+        width: 60px;
+        height: 60px;
+        margin-left: 90px;
+    }
+    
+    .logoo1 {
+        width: 60px;
+        height: 60px;
+    }
+    .location2 {
+        padding-top: 5px;
+        font-size: 16px;
+
+    }
+    .foot_icon img {
+        width: 30px;
+        height: 30px;
+        border-radius: 10%;
+    }
+    .footer-h3{
+        font-size: 25px;
+        margin: 4px;
     }
 }
 
@@ -496,31 +528,21 @@ td {
 /* event carousel ends */
 
 .event-card {
-  margin-left: 9.6%;
-}
-.event-card:hover {
-
-   box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
-   z-index: 500;
-   border-radius: 10px;
- }
-@media only screen and (max-width: 600px) {
-  .event-card {
-      margin-left: 3%;
-      margin-right: 5%;
-      padding-right: 5%;
+    margin-left: 9.6%;
   }
-}
-.card-image {
-  width: 400px;
-  height: 200px;
-  object-fit: cover;
-}
-.card-title {
-  color: black;
-}
-@media only screen and (max-width: 600px) {
-  .heritage-image {
-      height: 10px;
+  @media only screen and (max-width: 600px) {
+    .event-card {
+        margin-left: 3%;
+        margin-right: 5%;
+        padding-right: 5%;
+    }
   }
-}
+  .card-image {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .card-title {
+    color: black;
+  }
+  
