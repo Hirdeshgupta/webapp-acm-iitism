@@ -180,6 +180,7 @@ body {
     color: red
 }
 
+
 .foot {
     padding-top: 20px;
     text-align: center;
@@ -233,8 +234,8 @@ body {
     color: #1a1245;
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 36px;
-    margin-top: 20px;
+    /* margin-bottom: 36px; */
+    /* margin-top: 20px; */
     margin-left: -12%;
 }
 
@@ -245,7 +246,6 @@ body {
         margin-left: 20px;
     }
     #sponsors {
-        margin-bottom: 50px;
         margin-left: -10%;
     }
 }
@@ -395,6 +395,14 @@ td {
     padding-bottom: 40px;
 }
 
+/* .writeToUs{
+    position:"absolute";
+    top:-20;
+    width:400;
+    z-index:3;
+    left:100;
+} */
+
 
 /* .navbar-fixed {
     position: fixed;
@@ -486,6 +494,7 @@ td {
 
 
 /* event carousel ends */
+<<<<<<< Updated upstream
 .event-card {
   margin-left: 9.6%;
 }
@@ -504,3 +513,7 @@ td {
 .card-title {
   color: black;
 }
+=======
+
+
+>>>>>>> Stashed changes

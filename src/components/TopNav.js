@@ -1,26 +1,40 @@
+<<<<<<< Updated upstream
 import React from "react";
+=======
+import React,{useState,useEffect} from "react";
+>>>>>>> Stashed changes
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
+import { setGlobalCssModule } from "reactstrap/lib/utils";
+
+
 class TopNav extends React.Component {
+ 
     state={
-      background:"rgba(2,3,4,0)",
+      background:"white",
       color:"black",
-      height:"auto"
+      height:"auto",
     }
 
   componentDidMount(){
+  
     document.addEventListener("scroll",()=>{
       let scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 20) {
-        if (this.state.background == "rgba(2,3,4,0)") {
+        if (this.state.background == "white") {
           this.setState({ background: " #1a1245",color:"white",height:"70" });
           this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
         }
       } else {
+<<<<<<< Updated upstream
         if (this.state.background !== "rgba(2,3,4,0)") {
           this.setState({ background: "rgba(2,3,4,0)",color:"black",height:"auto"  });
           this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+=======
+        if (this.state.background !== "white") {
+          this.setState({ background: "white",color:"black",height:"auto"  });
+>>>>>>> Stashed changes
         }
       }
     })
@@ -49,6 +63,7 @@ this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
   }
 
 render(){
+
   return (
     <Navbar id="navbar"  className="z-depth-1"  collapseOnSelect expand="lg"    fixed="top" style={{background:this.state.background,height:this.state.height}}  >
     <Navbar.Brand href="#home">  <a href="/"><img className="nav-logo" src={require("./img/logo.jpg")} alt="ACM"/></a> </Navbar.Brand>

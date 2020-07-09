@@ -50,7 +50,6 @@ class Main extends React.Component{
 				<Route path="/sponsors" component={Sponsors}/>
 				<Route path="/TeamPage" component={TeamPage}/>
 				<Route path="/ContactUS" component={ContactUs} />
-				{/* <Route path="/events/:id" render={() => <div>404</div>}/> */}
 				</Switch>
 				
 				<Footer />

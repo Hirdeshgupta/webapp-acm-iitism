@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { MDBIcon } from "mdbreact";
 
 
 
@@ -54,7 +53,7 @@ function Footer(){
            
        <hr/>
     <div className="foot">
-      <p>Made with &nbsp;<FontAwesomeIcon icon={faHeart}/>&nbsp; by ACM-IIT Dhanbad</p>
+      <p>Made with &nbsp;<MDBIcon icon="heart" />&nbsp; by ACM-IIT Dhanbad</p>
      </div> 
    
    </Container>
