@@ -11,9 +11,9 @@ const ContactPage = () => {
         <MDBCol lg="5" className="lg-0 mb-4">
       <MDBAnimation reveal type="fadeInLeft" >
 
-          <MDBCard>
+          <MDBCard className="mail-card">
             <MDBCardBody>
-            <div style={{position:"absolute",top:-20,width:400,zIndex:3,left:100}}>
+            <div  style={{position:"absolute",top:-20,width:400,zIndex:3,left:100}}>
               <div className="form-header  accent-1 z-depth-1" style={{background:"#377293"}}>
               <div className="row justify-content-center">
                 <h3 className="mt-2 col-6 white-text">
@@ -22,7 +22,7 @@ const ContactPage = () => {
                 </div>
               </div>
               </div>
-      <form action="mailto:acm.ism@gmail.com" method="post">
+      <form action="mailto:acm.ism@gmail.com" method="post" className=" mail-form">
               <div className="md-form">
                 <MDBInput
                   icon="user"
@@ -78,9 +78,32 @@ const ContactPage = () => {
 
             </MDBCardBody>
           </MDBCard>
-      </MDBAnimation>
+        </MDBAnimation>
         </MDBCol>
-        <MDBCol lg="6">
+
+        <MDBCol lg="5" className="lg-0 mb-4 contact-card">
+          <div className="contact-social">
+            <div className="reach-us"><h3>Reach Us at</h3></div>
+            <div className="contact-links">
+              <h5 className="social-handles"><a href="https://www.facebook.com/acm.iitismdhn" className="link-anchor"><button tag="a" floating className="socialbtn"  >
+                <MDBIcon fab icon="facebook-f" size="lg" />
+              </button><span className="contact-icon-text">@acm.iitismdhn</span></a></h5>
+              <h5 className="social-handles"><a href="https://instagram.com/acm_iitism?igshid=1h4g8ng88jmbl" className="link-anchor"><button tag="a" floating className="socialbtn" href="" >
+              <MDBIcon fab icon="instagram" size="lg" />
+              </button><span className="contact-icon-text">@acm_iitism</span></a></h5>
+              <h5 className="social-handles"><a href="https://www.linkedin.com/company/acm-student-chapter-iit-ism-dhanbad/" className="link-anchor"><button tag="a" floating className="socialbtn"  >
+                <MDBIcon fab icon="linkedin-in" size="lg" />
+              </button><span className="contact-icon-text">@acm.iitism</span></a></h5>
+              <h5 className="social-handles"><a href="https://www.youtube.com/channel/UCaXEPdTHm08sxKlTJjRVxJA" className="link-anchor"><button tag="a" floating className="socialbtn"  >
+                <MDBIcon fab icon="youtube" size="lg" />
+              </button><span className="contact-icon-text">@acmiitdhn</span></a></h5>
+            </div>
+          </div>
+        </MDBCol>
+
+        </MDBRow>
+        <MDBRow className="map-row">
+        <MDBCol>
       <MDBAnimation   reveal type="fadeInRight" >
           <div
             id="map-container"
@@ -97,48 +120,7 @@ const ContactPage = () => {
             />
           </div>
           <br />
-          <MDBRow className="text-center">
-            <MDBCol md="3">
-      <MDBAnimation  reveal type="zoomIn">
-              <a href="https://www.facebook.com/acm.iitismdhn"><button tag="a" floating className="socialbtn"  >
-                <MDBIcon fab icon="facebook-f" size="lg" />
-              </button></a>
-              <p>Facebook</p>
-      </MDBAnimation>
 
-            </MDBCol>
-            <MDBCol md="3">
-      <MDBAnimation  reveal type="zoomIn">
-
-              <a href="https://www.facebook.com/acm.iitismdhn"><button tag="a" floating className="socialbtn" href="" >
-              <MDBIcon fab icon="instagram" size="lg" />
-
-              </button></a>
-              <p>instagram</p>
-      </MDBAnimation>
-
-            </MDBCol>
-            <MDBCol md="3">
-      <MDBAnimation  reveal type="zoomIn">
-
-              <a href="https://www.linkedin.com/company/acm-student-chapter-iit-ism-dhanbad/"><button tag="a" floating className="socialbtn"  >
-                <MDBIcon fab icon="linkedin-in" size="lg" />
-              </button></a>
-              <p>LinkedIn</p>
-      </MDBAnimation>
-
-            </MDBCol>
-              <MDBCol md="3">
-      <MDBAnimation  reveal type="zoomIn">
-
-              <a href="https://www.youtube.com/channel/UCaXEPdTHm08sxKlTJjRVxJA"><button tag="a" floating className="socialbtn"  >
-                <MDBIcon fab icon="youtube" size="lg" />
-              </button></a>
-              <p>YouTube</p>
-      </MDBAnimation>
-
-            </MDBCol>
-          </MDBRow>
       </MDBAnimation>
 
         </MDBCol>
