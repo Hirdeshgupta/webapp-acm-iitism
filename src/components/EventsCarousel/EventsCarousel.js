@@ -75,7 +75,7 @@ class EventsCarousel extends React.Component {
           <MDBCardImage className="card-image" src={this.state.source} waves />
           <MDBCardBody>
             <MDBCardTitle className="card-title">{this.title}</MDBCardTitle>
-            <MDBCardText>{this.date} <i class="far fa-calendar-alt"></i></MDBCardText>
+            <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
             <Link to={{
               pathname: `events/${this.id}`,
               state: {
@@ -86,7 +86,7 @@ class EventsCarousel extends React.Component {
                 description: this.description
               }
             }}>
-            <h6 className="slick-show">Show More</h6>
+            <h6 className="slick-show" style={{color: "blue"}}>Show More</h6>
             </Link>
           </MDBCardBody>
         </MDBCard>

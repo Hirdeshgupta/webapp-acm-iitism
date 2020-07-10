@@ -46,7 +46,7 @@ class EventsCarouselApp extends React.Component {
   render() {
     var settings = {
   className: "center",
-  centerMode: true,
+  centerMode: false,
   infinite: true,
   centerPadding: "60px",
   slidesToShow: 2,
@@ -91,8 +91,8 @@ class EventsCarouselApp extends React.Component {
 
          <Slider {...settings}>
           {
-           this.state.EVENTS.slice(1).reverse().map((e) => {
-            //  console.log(e.title);
+           this.state.EVENTS.slice(0).reverse().map((e) => {
+             console.log(e.title);
              return(
                <EventsCarousel
                   key={e.id}
@@ -106,7 +106,7 @@ class EventsCarouselApp extends React.Component {
             })
            }
        </Slider>
-       <Button variant="secondary" href="/events">Explore All!</Button>{' '}
+       <Button variant="secondary" style={{marginTop:"10px", marginLeft:"-35px"}} href="/events">Explore All</Button>{' '}
       </div>
 
       </MDBAnimation>
