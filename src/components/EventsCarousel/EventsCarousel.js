@@ -47,14 +47,14 @@ class EventsCarousel extends React.Component {
         })
       })
 
-        this.state.EVENTS.reverse();
-        console.log(this.state.EVENTS);
+        // this.state.EVENTS.reverse();
+        // console.log(this.state.EVENTS);
 
         this.state.EVENTS.map((e, index) => {
           if(e.id === this.id){
             let spaceRef = storageRef.child("IMAGES/" + this.state.EVENTS[index].imageURL)
             storageRef.child("IMAGES/" + this.state.EVENTS[index].imageURL).getDownloadURL().then((url) => {
-                  console.log(url);
+                  // console.log(url);
                   this.setState({
                     source: url
                   })

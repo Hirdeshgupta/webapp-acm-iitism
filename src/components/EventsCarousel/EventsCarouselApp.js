@@ -40,7 +40,7 @@ class EventsCarouselApp extends React.Component {
     })
 
 
-    console.log(previousEvents);
+    // console.log(previousEvents);
   }
 
   render() {
@@ -73,9 +73,10 @@ class EventsCarouselApp extends React.Component {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       }
     }
+    
   ]
 };
     return(
@@ -87,11 +88,11 @@ class EventsCarouselApp extends React.Component {
          <h2 className="slick-h2"> Events   <i class="fas fa-bullhorn"></i> </h2>
          </MDBAnimation>
 
+
          <Slider {...settings}>
           {
-
-
-           this.state.EVENTS.reverse().slice(0, 5).map((e) => {
+           this.state.EVENTS.slice(1).reverse().map((e) => {
+            //  console.log(e.title);
              return(
                <EventsCarousel
                   key={e.id}

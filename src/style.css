@@ -193,6 +193,7 @@ body {
 }
 
 @media only screen and (max-width:360px) {
+    
     #footer {
         padding-top: 30px;
         padding-bottom: 10px;
@@ -221,6 +222,7 @@ body {
         height: 60px;
         margin-left: 90px;
     }
+    
     .logoo1 {
         width: 60px;
         height: 60px;
@@ -234,7 +236,7 @@ body {
         height: 30px;
         border-radius: 10%;
     }
-    .footer-h3 {
+    .footer-h3{
         font-size: 25px;
         margin: 4px;
     }
@@ -457,9 +459,19 @@ td {
 
 .slick .slick-next:before,
 .slick .slick-prev:before {
-    font-size: 2rem;
-    color: black;
+    font-size: 6rem;
+    color: rgb(206, 192, 192);
 }
+
+.slick .slick-next:before{
+    margin-left: 50px;
+
+}
+
+.slick .slick-prev:before{
+    margin-left: -150px;
+}
+
 
 .slick {
     margin: 30px auto;
@@ -508,3 +520,54 @@ td {
     margin-left: 35%;
     margin-bottom: 5%;
 }
+
+@media only screen and (max-width: 600px) {
+  .slick-image {
+      width: 300px;
+      height: 200px;
+      margin-left: 10%;
+      margin-bottom: 5%;
+  }
+}
+
+.slick-div {
+  text-align: center;
+}
+
+@media only screen and (max-width: 360px) {
+    .slick .slick-next:before,
+    .slick .slick-prev:before {
+    font-size: 3rem;
+}
+.slick .slick-next:before{
+    margin-left: -35px;
+
+}
+
+.slick .slick-prev:before{
+    margin-left: 1px;
+}
+}
+
+
+/* event carousel ends */
+
+.event-card {
+    margin-left: 9.6%;
+  }
+  @media only screen and (max-width: 600px) {
+    .event-card {
+        margin-left: 3%;
+        margin-right: 5%;
+        padding-right: 5%;
+    }
+  }
+  .card-image {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .card-title {
+    color: black;
+  }
+  
