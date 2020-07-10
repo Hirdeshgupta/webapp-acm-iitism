@@ -43,7 +43,7 @@ const TeamPage = () => {
         <MDBCardBody>
           <MDBAnimation reveal type="lightSpeedIn" >
           <h2 className="h1-responsive team_head  font-weight-bold my-5">
-            DEVELOPER TEAM 
+            DEVELOPERS
           </h2>
           </MDBAnimation>
           <MDBRow className="justify-content-center  mt-5">
