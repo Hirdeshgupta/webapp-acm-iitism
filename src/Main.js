@@ -13,31 +13,25 @@ import Preloader from "./components/Preloader"
 import {MDBAnimation } from "mdbreact"
 class Main extends React.Component{
 
-    constructor(props)
-    {
-      super(props);
-      this.state = {
-        isLoading:true
-      }
-	}
-	componentDidMount()
-	{
-		setTimeout(()=>{
-			this.setState({
-				isLoading:false
-			})
-		},2000,()=>{
-			document.getElementById("root").style.animation="anime-entry 10s ease forwards";
-		})
+    // constructor(props)
+    // {
+    //   super(props);
+    //   this.state = {
+    //     isLoading:true
+    //   }
+	// }
+	// componentDidMount()
+	// {
+	// 	setTimeout(()=>{
+	// 		this.setState({
+	// 			isLoading:false
+	// 		})
+	// 	},2000,()=>{
+	// 		document.getElementById("root").style.animation="anime-entry 10s ease forwards";
+	// 	})
 	
-	}
+	// }
     render(){
-		if(this.state.isLoading)
-		{
-			return(
-				<Preloader/>
-			)}
-		else{
 			return(
 				<MDBAnimation  type="fadeIn">
 			<BrowserRouter>
@@ -59,7 +53,6 @@ class Main extends React.Component{
 			   </MDBAnimation>
 			
 			)
-		}
     }
 }
 export default Main;

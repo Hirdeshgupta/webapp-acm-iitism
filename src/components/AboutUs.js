@@ -4,7 +4,7 @@ function AboutUs() {
   return (
       <div className="container-fluid px-0" style={{marginTop:80}}>
 <section className="text-center my-0 my-md-5 z-depth-2 mx-0 mx-md-5 py-2 px-2">
-        <MDBAnimation reveal type="lightSpeedIn">
+        <MDBAnimation reveal type="fadeInUp">
             <h2 className="h1-responsive font-weight-bold my-5" style={{color:"#1a1245"}}>
               ABOUT US
             </h2>

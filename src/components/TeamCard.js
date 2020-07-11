@@ -15,7 +15,7 @@ const TeamCard = (props) => {
     <h5 className="font-weight-bold mt-4 mb-3" style={{color:'#1a1245'}}>{props.name}</h5>
     <p className="text-uppercase " style={{color:'#377293'}}>{props.position}</p>
     <ul className="list-unstyled mb-0">
-      <a href="#!" className="p-2 fa-lg">
+      <a href={props.email} className="p-2 fa-lg">
       <MDBIcon far icon="envelope" style={{color:'#377293'}} />
       </a>
     </ul>
