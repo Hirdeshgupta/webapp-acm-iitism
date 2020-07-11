@@ -193,7 +193,6 @@ body {
 }
 
 @media only screen and (max-width:360px) {
-
     #footer {
         padding-top: 30px;
         padding-bottom: 10px;
@@ -222,7 +221,6 @@ body {
         height: 60px;
         margin-left: 90px;
     }
-
     .logoo1 {
         width: 60px;
         height: 60px;
@@ -502,7 +500,6 @@ td {
     color: rgb(206, 192, 192);
 }
 
-
 .slick {
     margin: 30px auto;
     padding: 0px 20px 20px 20px;
@@ -550,7 +547,6 @@ td {
 }
 
 .slick-image {
-
     width: 300px;
     height: 200px;
     margin-left: 35%;
@@ -560,7 +556,6 @@ td {
 .event-card {
     margin-top: 15px;
 }
-
 
 @media only screen and (max-width: 600px) {
     .slick-image {
@@ -591,6 +586,7 @@ td {
 
 /* event carousel ends */
 
+
 /* .event-card {
     margin-left: 9.6%;
 } */
@@ -602,10 +598,11 @@ td {
         padding-right: 5%;
     }
     .home-nav {
-      width: 600px;
+        width: 600px;
     }
-  }
-  .card-image {
+}
+
+.card-image {
     width: 400px;
     height: 200px;
     object-fit: cover;
@@ -662,31 +659,29 @@ td {
 }
 
 @media only screen and (max-width: 361px) {
-     .slick{
+    .slick {
         margin: 10px 0 10px 30px;
         /* width: 1200%; */
     }
-    
     .slick .slick-prev:before {
         left: 3px;
     }
     .slick .slick-next:before,
-   .slick .slick-prev:before {
-       border: 3px solid #1A1245;
-       padding: 4px;
-       border-radius: 5px;
-       padding-top: 20px;
-       padding-bottom: 20px;
-       font-size: 1rem;
-       color: #1A1245;
-   }
-   .slick-track {
-    height: 530px;
+    .slick .slick-prev:before {
+        border: 3px solid #1A1245;
+        padding: 4px;
+        border-radius: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 1rem;
+        color: #1A1245;
+    }
+    .slick-track {
+        height: 530px;
+    }
+    .card-image {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+    }
 }
-.card-image {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-}
-   }
-

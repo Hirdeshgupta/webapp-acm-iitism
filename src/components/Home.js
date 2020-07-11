@@ -14,11 +14,16 @@ class  Home extends React.Component {
 componentDidMount()
 {
   document.querySelector("nav").style.opacity=0;
+  document.querySelector("#footer").style.opacity=0;
+  document.querySelector("body").style.overflow="hidden";
   setTimeout(()=>{
-    document.querySelector("nav").style.opacity=1;
     this.setState({
       isLoading:false
     })
+    document.querySelector("nav").style.opacity=1;
+    document.querySelector("#footer").style.opacity=1;
+    document.querySelector("body").style.overflow="scroll";
+
   },2000,()=>{
     document.getElementById("root").style.animation="anime-entry 10s ease forwards";
   })
