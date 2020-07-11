@@ -72,7 +72,7 @@ class EventsCarousel extends React.Component {
   <MDBCard className="z-depth-2">
     <MDBCardImage className="card-image" src={this.state.source} waves />
     <MDBCardBody>
-      <MDBCardTitle className="card-title h5-responsive">{this.title}</MDBCardTitle>
+      <MDBCardTitle className="card-title h5-responsive">{this.title.length <= 27 ? this.title.substring(0, 27) : this.title.substring(0, 27) + "..."}</MDBCardTitle>
       <MDBCardText>{this.date} <i class="far fa-calendar-alt"></i></MDBCardText>
       <Link to={{
         pathname: `events/${this.id}`,
