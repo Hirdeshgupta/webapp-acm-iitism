@@ -18,8 +18,8 @@ class TopNav extends React.Component {
     document.addEventListener("scroll",()=>{
       let scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 20) {
-        if (this.state.background == "rgba(255,255,255,0.9)") {
-          this.setState({ background: " #1a1245",color:"white",height:"70" });
+        if (this.state.background == "transparent") {
+          this.setState({ background: "#1a1245",color:"white",height:"70" });
           this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
         }
       } else {

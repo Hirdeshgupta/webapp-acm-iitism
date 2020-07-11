@@ -63,7 +63,7 @@ render() {
       <br></br>
     <MDBCol style={{ maxWidth: "100%" }}>
           <MDBCard>
-            <MDBCardImage className="img-fluid" id="new-img" waves />
+            <MDBCardImage  id="new-img" waves />
               {
                 !this.state.done ? (
                  <ReactLoading type={"bars"} color={"black"}  className="loading-events"/>
@@ -81,11 +81,14 @@ render() {
 
                 }
 
-            <MDBCardBody className="txt_body">
-              <h1 style={{fontStyle: "bold"}}>{this.props.location.state.title}</h1>
-              <h5>{this.props.location.state.date}</h5>
+            {/* <MDBCardBody > */}
+            <div className="txt_body"> 
+            <h1 style={{fontStyle: "bold"}}>{this.props.location.state.title}</h1>
+              <h5><i class="far fa-calendar-alt"></i> {this.props.location.state.date}</h5>
               <pre className="pre">{this.props.location.state.description}</pre>
-            </MDBCardBody>
+            </div>
+             
+            {/* </MDBCardBody> */}
           </MDBCard>
         <MDBBtn outline color="primary" className="backToEvents"><Link style={{ fontSize: "19px", padding: "7px" }} to={'/events'}>Back to Events List</Link></MDBBtn>
         </MDBCol>
