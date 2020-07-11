@@ -9,6 +9,10 @@ body {
 	background-position: center; */
 }
 
+#root {
+    overflow-x: hidden;
+}
+
 
 /* .nav-link::after {
   position: absolute;
@@ -688,4 +692,10 @@ td {
 
 .loading-events {
     margin-left: 47%;
+}
+
+.spinner-border {
+    position: absolute;
+    top: 45%;
+    left: 45%;
 }

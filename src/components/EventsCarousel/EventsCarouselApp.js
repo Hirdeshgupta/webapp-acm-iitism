@@ -24,7 +24,9 @@ class EventsCarouselApp extends React.Component {
      }
   }
   componentDidMount() {
-    
+    document.querySelectorAll(".card").forEach(x=>{
+      x.style.height="350px";
+    })
     const previousEvents = this.state.EVENTS;
 
     this.database.on("child_added", snap => {
@@ -38,8 +40,17 @@ class EventsCarouselApp extends React.Component {
 
       this.setState({
         EVENTS: previousEvents,
-        is_loading:false,
-      })
+      });
+      setTimeout(()=>{
+        this.setState({
+          is_loading:false,
+        });    
+      },1000,()=>{
+        document.querySelectorAll(".card").forEach(x=>{
+          x.style.height="auto";
+        });
+      });
+      
 
     })
 
@@ -47,12 +58,20 @@ class EventsCarouselApp extends React.Component {
   }
 
   render() {
+    const eventPreloaderArr =  [];
+    for(let i=0;i<7;i++){
+      eventPreloaderArr.push(
+        <div>
+        <EventsCarousel />
+     </div>
+      )
+    }
     
     var settings = {
   className: "center",
   centerMode: false,
   lazyLoad:"progressive",
-  infinite: true,
+  infinite: false,
   centerPadding: "60px",
   slidesToShow: 3,
   speed: 500,
@@ -85,54 +104,87 @@ class EventsCarouselApp extends React.Component {
 
   ]
 };
+if(this.state.is_loading){
+  return(
+    <MDBAnimation reveal type="fadeInUp">
+      <div className="row">
+    <div className="col-8 col-sm-9 col-md-10 col-lg-11 slick text-center mt-3">
+     <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+       <MDBAnimation reveal type="fadeInUp" >
+       <h2 className="h1-responsive" style={{fontWeight:700,color:"rgb(26, 18, 69)"}}> EVENTS   </h2><hr style={{height:5}}></hr>
+       </MDBAnimation>
 
 
-    return(
-      <MDBAnimation reveal type="fadeInUp">
-        <div className="row">
-      <div className="col-8 col-sm-9 col-md-10 col-lg-11 slick text-center mt-3">
-       <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-         <MDBAnimation reveal type="fadeInUp" >
-         <h2 className="h1-responsive" style={{fontWeight:700,color:"rgb(26, 18, 69)"}}> EVENTS   </h2><hr style={{height:5}}></hr>
-         </MDBAnimation>
-
-
-         <Slider  {...settings} >
-          {
-             
-           this.state.EVENTS.slice(0).reverse().slice(0, 7).map((e) => {
-            //  console.log(e.title);
-             return(
-               <div>
-              <EventsCarousel
-                  key={e.id}
-                  id={e.id}
-                  title={e.title}
-                  imageURL={e.imageURL}
-                  description={e.description}
-                  date={e.date}
-               />
-               </div>
-
-              )
-            })
-           }
-       </Slider>
-       <div className="row justify-content-center">
-         <div className="col-2">
-         <Button variant="secondary" style={{marginTop: "-120px"}} href="/events">Explore All!</Button>{' '}
-         </div>
+       <Slider  {...settings} >
+        {  
+        eventPreloaderArr
+         }
+     </Slider>
+     <div className="row justify-content-center">
+       <div className="col-2">
+       <Button variant="secondary" style={{marginTop: "-120px"}} href="/events">Explore All!</Button>{' '}
        </div>
-      </div>
+     </div>
+    </div>
 
-      </div>
+    </div>
 
-      </MDBAnimation>
+    </MDBAnimation>
 
 
 
-    );
+  );
+}
+else{
+  return(
+    <MDBAnimation reveal type="fadeInUp">
+      <div className="row">
+    <div className="col-8 col-sm-9 col-md-10 col-lg-11 slick text-center mt-3">
+     <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+       <MDBAnimation reveal type="fadeInUp" >
+       <h2 className="h1-responsive" style={{fontWeight:700,color:"rgb(26, 18, 69)"}}> EVENTS   </h2><hr style={{height:5}}></hr>
+       </MDBAnimation>
+
+
+       <Slider  {...settings} >
+        {  
+         this.state.EVENTS.slice(0).reverse().slice(0, 7).map((e) => {
+          //  console.log(e.title);
+           return(
+             <div>
+            <EventsCarousel
+                key={e.id}
+                id={e.id}
+                title={e.title}
+                imageURL={e.imageURL}
+                description={e.description}
+                date={e.date}
+             />
+             </div>
+
+            )
+          })
+         }
+     </Slider>
+     <div className="row justify-content-center">
+       <div className="col-2">
+       <Button variant="secondary" style={{marginTop: "-120px"}} href="/events">Explore All!</Button>{' '}
+       </div>
+     </div>
+    </div>
+
+    </div>
+
+    </MDBAnimation>
+
+
+
+  );
+}
+
+
 
   }
 

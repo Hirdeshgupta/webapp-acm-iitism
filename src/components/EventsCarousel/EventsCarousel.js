@@ -23,7 +23,8 @@ class EventsCarousel extends React.Component {
 
     this.state={
         EVENTS: [],
-        source: ""
+        source: "",
+        is_loading:true,
      }
   }
 
@@ -31,20 +32,30 @@ class EventsCarousel extends React.Component {
       const previousEvents = this.state.EVENTS;
 
       // DataSnapshot
-      this.database.on('child_added', snap => {
+        this.database.on('child_added', snap => {
         previousEvents.push({
           id: snap.key,
           title: snap.val().title,
           date: snap.val().date,
           description: snap.val().description,
           imageURL: snap.val().imageURL,
-        })
-
-
-
+        });
         this.setState({
-          EVENTS: previousEvents
+          EVENTS: previousEvents,
+        });
+        document.querySelectorAll(".card").forEach(x=>{
+          x.style.height="350px";
         })
+        setTimeout(()=>{
+          this.setState({
+            is_loading:false,
+          });    
+        },1000,()=>{
+          document.querySelectorAll(".card").forEach(x=>{
+            x.style.height="auto";
+          });
+        });
+
       })
 
         // this.state.EVENTS.reverse();
@@ -67,29 +78,62 @@ class EventsCarousel extends React.Component {
 
   render() {
 
-    return (
-<MDBCol style={{ width:"110%" }}  className="event-card mx-5">
-  <MDBCard className="z-depth-2">
-    <MDBCardImage className="card-image" src={this.state.source} waves />
-    <MDBCardBody>
-      <MDBCardTitle className="card-title h5-responsive">{this.title.length <= 27 ? this.title.substring(0, 27) : this.title.substring(0, 27) + "..."}</MDBCardTitle>
-      <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
-      <Link to={{
-        pathname: `events/${this.id}`,
-        state: {
-          id: this.id,
-          title: this.title,
-          date: this.date,
-          imageURL: this.imageURL,
-          description: this.description
-        }
-      }}>
-      <h6 className="slick-show">Show More</h6>
-      </Link>
-    </MDBCardBody>
-  </MDBCard>
-</MDBCol>
-    );
+
+      if(this.state.is_loading){
+        return (
+          <MDBCol style={{ width:"110%" }}  className="event-card mx-5">
+          <MDBCard className="z-depth-2">
+          <div className="spinner-border text-primary" role="status">
+              <span className="sr-only">Loading...</span>
+            </div>
+            {/* <MDBCardImage className="card-image" src={this.state.source} waves />
+            <MDBCardBody>
+              <MDBCardTitle className="card-title h5-responsive">{this.title.length <= 27 ? this.title.substring(0, 27) : this.title.substring(0, 27) + "..."}</MDBCardTitle>
+              <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
+              <Link to={{
+                pathname: `events/${this.id}`,
+                state: {
+                  id: this.id,
+                  title: this.title,
+                  date: this.date,
+                  imageURL: this.imageURL,
+                  description: this.description
+                }
+              }}>
+              <h6 className="slick-show">Show More</h6>
+              </Link>
+            </MDBCardBody> */}
+          </MDBCard>
+        </MDBCol> 
+            );
+      }
+      else{
+        return(
+          <MDBCol style={{ width:"110%" }}  className="event-card mx-5">
+          <MDBCard className="z-depth-2">
+            <MDBCardImage className="card-image" src={this.state.source} waves />
+            <MDBCardBody>
+              <MDBCardTitle className="card-title h5-responsive">{this.title.length <= 27 ? this.title.substring(0, 27) : this.title.substring(0, 27) + "..."}</MDBCardTitle>
+              <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
+              <Link to={{
+                pathname: `events/${this.id}`,
+                state: {
+                  id: this.id,
+                  title: this.title,
+                  date: this.date,
+                  imageURL: this.imageURL,
+                  description: this.description
+                }
+              }}>
+              <h6 className="slick-show">Show More</h6>
+              </Link>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol> 
+        )
+      }
+
+
   }
 }
 
