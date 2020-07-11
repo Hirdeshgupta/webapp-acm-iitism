@@ -14,7 +14,7 @@ const TeamPage = () => {
           </h2>
           </MDBAnimation>
           <MDBRow className="justify-content-center  mt-5">
-          <TeamCard column="6"  name="Madhulika Mohanty" position="Faculty Coordinator"  email=""/>
+          <TeamCard   name="Madhulika Mohanty" position="Faculty Coordinator"  email=""/>
             <TeamCard column="6"  name="Swapnil narayan" position="Chairperson"   email="mailto:swapism7@gmail.com"/>
             <TeamCard column="6"  name="Abhishek Raj" position="Vice Chairperson" email="mailto:abhishekraj29011998@gmail.com"/>
           </MDBRow>

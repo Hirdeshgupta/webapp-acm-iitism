@@ -83,26 +83,9 @@ class EventsCarousel extends React.Component {
         return (
           <MDBCol style={{ width:"110%" }}  className="event-card mx-5">
           <MDBCard className="z-depth-2">
-          <div className="spinner-border text-primary" role="status">
+            <div className="spinner-border text-primary" role="status">
               <span className="sr-only">Loading...</span>
             </div>
-            {/* <MDBCardImage className="card-image" src={this.state.source} waves />
-            <MDBCardBody>
-              <MDBCardTitle className="card-title h5-responsive">{this.title.length <= 27 ? this.title.substring(0, 27) : this.title.substring(0, 27) + "..."}</MDBCardTitle>
-              <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
-              <Link to={{
-                pathname: `events/${this.id}`,
-                state: {
-                  id: this.id,
-                  title: this.title,
-                  date: this.date,
-                  imageURL: this.imageURL,
-                  description: this.description
-                }
-              }}>
-              <h6 className="slick-show">Show More</h6>
-              </Link>
-            </MDBCardBody> */}
           </MDBCard>
         </MDBCol> 
             );

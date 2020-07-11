@@ -4,7 +4,7 @@ import {MDBAnimation } from "mdbreact"
 
 const TeamCard = (props) => {
   return (
-    <MDBCol lg="2" sm="4"   className="mb-lg-0 mb-5 z-depth-3 hoverable p-4 mx-4 rounded">
+    <div   className="col-sm-4 col-lg-2   mb-lg-0 mb-5 z-depth-3 hoverable p-4 mx-4 rounded">
       
       <MDBAnimation reveal type="zoomIn">
     <img
@@ -21,7 +21,7 @@ const TeamCard = (props) => {
     </ul>
           </MDBAnimation>
 
-  </MDBCol>
+  </div>
   );
 }
 
