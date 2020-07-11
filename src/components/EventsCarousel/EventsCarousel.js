@@ -29,6 +29,9 @@ class EventsCarousel extends React.Component {
   }
 
   componentDidMount(){
+    document.querySelectorAll(".card").forEach(x=>{
+      x.style.height="350px";
+    })
       const previousEvents = this.state.EVENTS;
 
       // DataSnapshot
@@ -43,9 +46,6 @@ class EventsCarousel extends React.Component {
         this.setState({
           EVENTS: previousEvents,
         });
-        document.querySelectorAll(".card").forEach(x=>{
-          x.style.height="350px";
-        })
         setTimeout(()=>{
           this.setState({
             is_loading:false,
