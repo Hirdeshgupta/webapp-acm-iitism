@@ -699,3 +699,7 @@ td {
     top: 45%;
     left: 45%;
 }
+
+.slick-slide img {
+    width: 100%;
+}
