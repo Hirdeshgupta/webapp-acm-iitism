@@ -7,13 +7,13 @@ const ContactPage = () => {
       <MDBAnimation reveal type="lightSpeedIn" >
            <h1 className="head_spons pl-lg-5 pl-1">CONTACT US</h1>
       </MDBAnimation>
-      <MDBRow  className="justify-content-center mt-5">
-        <MDBCol lg="5" className="lg-0 mb-4">
+      <MDBRow  className="justify-content-center align-items-center mt-5">
+        <MDBCol lg="4" className="lg-0 mb-4">
       <MDBAnimation reveal type="fadeInLeft" >
 
           <MDBCard className="mail-card">
             <MDBCardBody>
-            <div  style={{position:"absolute",top:-20,width:400,zIndex:3,left:100}}>
+            <div  style={{width:"100%"}}>
               <div className="form-header  accent-1 z-depth-1" style={{background:"#377293"}}>
               <div className="row justify-content-center">
                 <h3 className="mt-2 col-6 white-text">
@@ -82,6 +82,7 @@ const ContactPage = () => {
         </MDBCol>
 
         <MDBCol lg="5" className="lg-0 mb-4 contact-card">
+        <MDBAnimation reveal type="fadeInRight" >
           <div className="contact-social">
             <div className="reach-us"><h3>Reach Us at</h3></div>
             <div className="contact-links">
@@ -99,6 +100,7 @@ const ContactPage = () => {
               </button><span className="contact-icon-text">@acmiitdhn</span></a></h5>
             </div>
           </div>
+          </MDBAnimation>
         </MDBCol>
 
         </MDBRow>
@@ -108,7 +110,7 @@ const ContactPage = () => {
           <div
             id="map-container"
             className="rounded z-depth-1-half map-container"
-            style={{ height: "400px" }}
+            style={{ height: "500px" }}
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1185838921524!2d86.43901351493429!3d23.814381884557864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bc9fac678481%3A0x122cb1d133a89995!2sIndian%20Institute%20of%20Technology%20(Indian%20School%20of%20Mines)%2C%20Dhanbad!5e0!3m2!1sen!2sin!4v1593296068669!5m2!1sen!2sin"

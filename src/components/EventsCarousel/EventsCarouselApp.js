@@ -22,6 +22,7 @@ class EventsCarouselApp extends React.Component {
      }
   }
   componentDidMount() {
+    
     const previousEvents = this.state.EVENTS;
 
     this.database.on("child_added", snap => {
@@ -39,34 +40,34 @@ class EventsCarouselApp extends React.Component {
 
     })
 
-
     // console.log(previousEvents);
   }
 
   render() {
     var settings = {
   className: "center",
-  centerMode: false,
+  centerMode: true,
+  lazyLoad:"progressive",
   infinite: true,
   centerPadding: "60px",
-  slidesToShow: 2,
+  slidesToShow: 3,
   speed: 500,
+  // prevArrow:"<a><i class='fas fa-chevron-left'></i></a>",
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1400,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true,
-        dots: true
+        initialSlide:1,
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 850,
       settings: {
-        slidesToShow: 0,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 2
+        initialSlide:1,
       }
     },
     {
@@ -74,22 +75,26 @@ class EventsCarouselApp extends React.Component {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        initialSlide:1,
       }
     }
     
   ]
 };
+
+
     return(
       <MDBAnimation reveal type="fadeInUp">
-      <div className="container slick text-center mt-3">
+        <div className="row">
+      <div className="col-8 col-sm-9 col-md-10 col-lg-11 slick text-center mt-3">
        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-         <MDBAnimation reveal type="lightSpeedIn" className="delay-2s">
-         <h2 className="slick-h2"> Events   <i class="fas fa-bullhorn"></i> </h2>
+         <MDBAnimation reveal type="fadeInUp" >
+         <h2 className="h1-responsive" style={{fontWeight:700,color:"rgb(26, 18, 69)"}}> EVENTS   </h2><hr style={{height:5}}></hr>
          </MDBAnimation>
 
 
-         <Slider {...settings}>
+         <Slider  {...settings} >
           {
            this.state.EVENTS.slice(0).reverse().slice(0, 6).map((e) => {
              console.log(e.title);
@@ -109,7 +114,13 @@ class EventsCarouselApp extends React.Component {
             })
            }
        </Slider>
-       <Button variant="secondary" style={{marginTop:"10px", marginLeft:"-35px"}} href="/events">Explore All</Button>{' '}
+       <div className="row justify-content-center">
+         <div className="col-2">
+         <Button variant="secondary" href="/events">Explore All!</Button>{' '}
+         </div>
+       </div>
+      </div>
+
       </div>
 
       </MDBAnimation>
@@ -117,6 +128,7 @@ class EventsCarouselApp extends React.Component {
 
 
     );
+
   }
 
 }

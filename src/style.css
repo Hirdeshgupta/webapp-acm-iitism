@@ -193,7 +193,6 @@ body {
 }
 
 @media only screen and (max-width:360px) {
-    
     #footer {
         padding-top: 30px;
         padding-bottom: 10px;
@@ -222,7 +221,6 @@ body {
         height: 60px;
         margin-left: 90px;
     }
-    
     .logoo1 {
         width: 60px;
         height: 60px;
@@ -236,7 +234,7 @@ body {
         height: 30px;
         border-radius: 10%;
     }
-    .footer-h3{
+    .footer-h3 {
         font-size: 25px;
         margin: 4px;
     }
@@ -397,67 +395,73 @@ td {
 
 
 /* contact card starts */
+
 .contact-social {
-  text-align: left;
-  margin-left: 25%;
-  margin-right: 20%;
-  padding-left: 10%;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  font-family: 'Roboto', sans-serif;
-  color: #377293;
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 20%;
+    padding-left: 10%;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-family: 'Roboto', sans-serif;
+    color: #377293;
 }
+
 .reach-us {
-  padding-left: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
+
 .social-handles {
-  padding-bottom: 12%;
+    padding-bottom: 12%;
 }
 
 .contact-card {
-  text-align: center;
-  height: 80%;
+    text-align: center;
+    height: 80%;
 }
 
 .contact-icon-text {
-  padding-left: 25%;
-  margin-bottom: 10%;
-  font-family: 'Roboto', sans-serif;
-}
-@media only screen and (max-width: 600px) {
-  .contact-social {
-    text-align: left;
-    margin-left: 15%;
-    margin-right: 22%;
-    padding-left: 10%;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding-left: 25%;
+    margin-bottom: 10%;
     font-family: 'Roboto', sans-serif;
-    color: #377293;
-  }
-  .mail-form {
-    width: 600px;
-  }
-  .form-input {
-    width: 600px;
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-social {
+        text-align: left;
+        margin-left: 15%;
+        margin-right: 22%;
+        padding-left: 10%;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        font-family: 'Roboto', sans-serif;
+        color: #377293;
+    }
+    .mail-form {
+        width: 600px;
+    }
+    .form-input {
+        width: 600px;
+    }
 }
 
 .map-row {
-  text-align: center;
+    text-align: center;
 }
+
 .mail-form-text {
-  position:"absolute";
-  top:-20;
-  width:400;
-  zIndex:3;
-  left:100;
+    position: "absolute";
+    top: -20;
+    width: 400;
+    zIndex: 3;
+    left: 100;
 }
+
 .link-anchor {
-  text-decoration: none;
-  color: #377293;
+    text-decoration: none;
+    color: #377293;
 }
 
 
@@ -492,25 +496,15 @@ td {
 
 .slick .slick-next:before,
 .slick .slick-prev:before {
-    font-size: 6rem;
+    font-size: 2rem;
     color: rgb(206, 192, 192);
 }
-
-.slick .slick-next:before{
-    margin-left: 50px;
-
-}
-
-.slick .slick-prev:before{
-    margin-left: -150px;
-}
-
 
 .slick {
     margin: 30px auto;
     padding: 0px 20px 20px 20px;
     width: 500px;
-    background: rgb(243, 243, 243);
+    background: #fff;
     color: black;
     text-align: center;
 }
@@ -548,46 +542,40 @@ td {
 }
 
 .slick-image {
-    
     width: 300px;
     height: 200px;
     margin-left: 35%;
     margin-bottom: 5%;
 }
 
+.event-card {
+    margin-top: 15px;
+}
+
 @media only screen and (max-width: 600px) {
-  .slick-image {
-      width: 300px;
-      height: 200px;
-      margin-left: 10%;
-      margin-bottom: 5%;
-  }
+    .slick-image {
+        width: 300px;
+        height: 200px;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
 }
 
 .slick-div {
-  text-align: center;
-}
-
-.card .card-body .card-text {
-    color: rgb(46, 29, 29);
-    opacity: 1;
-    font-weight: bold;
-    font-size: medium;
+    text-align: center;
 }
 
 @media only screen and (max-width: 360px) {
     .slick .slick-next:before,
     .slick .slick-prev:before {
-    font-size: 3rem;
-}
-.slick .slick-next:before{
-    margin-left: -35px;
-
-}
-
-.slick .slick-prev:before{
-    margin-left: -2px;
-}
+        font-size: 3rem;
+    }
+    .slick .slick-next:before {
+        margin-left: -35px;
+    }
+    .slick .slick-prev:before {
+        margin-left: -2px;
+    }
 }
 
 
@@ -595,23 +583,67 @@ td {
 
 .event-card {
     margin-left: 9.6%;
-  }
-  @media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 600px) {
     .event-card {
-        /* margin-left: 3%; */
+        margin-left: 3%;
         margin-right: 5%;
         padding-right: 5%;
-    padding-left: 0;
-    margin-left: 0;
-
     }
-  }
-  .card-image {
-    width: 400px;
+}
+
+.card-image {
+    width: 100%;
     height: 200px;
     object-fit: cover;
-  }
-  .card-title {
+}
+
+.card-title {
     color: black;
-  }
-  
+}
+
+.slick .slick-prev:before {
+    z-index: 10001;
+    /* margin-left: -150px; */
+    position: absolute;
+    left: -35px;
+    /* margin-bottom: 40px; */
+    top: -80px;
+}
+
+.slick .slick-next:before {
+    /* margin-left: 50px; */
+    position: absolute;
+    z-index: 10001;
+    right: 20;
+    right: -35px;
+    top: -80px;
+}
+
+@media only screen and (max-width: 900px) {
+    .slick .slick-prev:before {
+        left: -45px;
+    }
+    .slick .slick-next:before {
+        right: -45px;
+    }
+    .card-body {
+        height: 180px;
+    }
+}
+
+.slick .slick-next:before,
+.slick .slick-prev:before {
+    border: 5px solid #1A1245;
+    padding: 8px;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 2rem;
+    color: #1A1245;
+}
+
+.slick-track {
+    height: 500px;
+}

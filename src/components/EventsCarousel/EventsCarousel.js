@@ -68,34 +68,27 @@ class EventsCarousel extends React.Component {
   render() {
 
     return (
-      <MDBAnimation reveal type="fadeInUp">
-
-      <MDBCol style={{ maxWidth: "25rem" }} className="event-card">
-        <MDBCard>
-          <MDBCardImage className="card-image" src={this.state.source} waves />
-          <MDBCardBody>
-            <MDBCardTitle className="card-title">{this.title}</MDBCardTitle>
-            <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
-            <Link to={{
-              pathname: `events/${this.id}`,
-              state: {
-                id: this.id,
-                title: this.title,
-                date: this.date,
-                imageURL: this.imageURL,
-                description: this.description
-              }
-            }}>
-            <h6 className="slick-show" style={{color: "blue"}}>Show More</h6>
-            </Link>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-
-
-
-      </MDBAnimation>
-
+<MDBCol style={{ width:"110%" }}  className="event-card mx-5">
+  <MDBCard className="z-depth-2">
+    <MDBCardImage className="card-image" src={this.state.source} waves />
+    <MDBCardBody>
+      <MDBCardTitle className="card-title h5-responsive">{this.title}</MDBCardTitle>
+      <MDBCardText>{this.date} <i class="far fa-calendar-alt"></i></MDBCardText>
+      <Link to={{
+        pathname: `events/${this.id}`,
+        state: {
+          id: this.id,
+          title: this.title,
+          date: this.date,
+          imageURL: this.imageURL,
+          description: this.description
+        }
+      }}>
+      <h6 className="slick-show">Show More</h6>
+      </Link>
+    </MDBCardBody>
+  </MDBCard>
+</MDBCol>
     );
   }
 }
