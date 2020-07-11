@@ -91,10 +91,11 @@ class EventsCarouselApp extends React.Component {
 
          <Slider {...settings}>
           {
-           this.state.EVENTS.slice(0).reverse().map((e) => {
+           this.state.EVENTS.slice(0).reverse().slice(0, 6).map((e) => {
              console.log(e.title);
              return(
-               <EventsCarousel
+               <div>
+              <EventsCarousel
                   key={e.id}
                   id={e.id}
                   title={e.title}
@@ -102,6 +103,8 @@ class EventsCarouselApp extends React.Component {
                   description={e.description}
                   date={e.date}
                />
+               </div>
+               
               )
             })
            }

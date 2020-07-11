@@ -510,7 +510,7 @@ td {
     margin: 30px auto;
     padding: 0px 20px 20px 20px;
     width: 500px;
-    background: #F5FFFA;
+    background: rgb(243, 243, 243);
     color: black;
     text-align: center;
 }
@@ -548,6 +548,7 @@ td {
 }
 
 .slick-image {
+    
     width: 300px;
     height: 200px;
     margin-left: 35%;
@@ -567,6 +568,13 @@ td {
   text-align: center;
 }
 
+.card .card-body .card-text {
+    color: rgb(46, 29, 29);
+    opacity: 1;
+    font-weight: bold;
+    font-size: medium;
+}
+
 @media only screen and (max-width: 360px) {
     .slick .slick-next:before,
     .slick .slick-prev:before {
@@ -578,7 +586,7 @@ td {
 }
 
 .slick .slick-prev:before{
-    margin-left: 18px;
+    margin-left: -2px;
 }
 }
 
@@ -590,9 +598,12 @@ td {
   }
   @media only screen and (max-width: 600px) {
     .event-card {
-        margin-left: 3%;
+        /* margin-left: 3%; */
         margin-right: 5%;
         padding-right: 5%;
+    padding-left: 0;
+    margin-left: 0;
+
     }
   }
   .card-image {
