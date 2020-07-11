@@ -561,6 +561,7 @@ td {
     margin-top: 15px;
 }
 
+
 @media only screen and (max-width: 600px) {
     .slick-image {
         width: 300px;
@@ -661,13 +662,11 @@ td {
 }
 
 @media only screen and (max-width: 361px) {
-    /* .slick{
+     .slick{
         margin: 10px 0 10px 30px;
-        width: 120%;
+        /* width: 1200%; */
     }
-    .slick .slick-next:before{
-       right: -65px;
-    } */
+    
     .slick .slick-prev:before {
         left: 3px;
     }
@@ -683,6 +682,11 @@ td {
    }
    .slick-track {
     height: 530px;
+}
+.card-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
 }
    }
 
