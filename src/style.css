@@ -193,6 +193,7 @@ body {
 }
 
 @media only screen and (max-width:360px) {
+
     #footer {
         padding-top: 30px;
         padding-bottom: 10px;
@@ -221,6 +222,7 @@ body {
         height: 60px;
         margin-left: 90px;
     }
+
     .logoo1 {
         width: 60px;
         height: 60px;
@@ -548,6 +550,7 @@ td {
 }
 
 .slick-image {
+
     width: 300px;
     height: 200px;
     margin-left: 35%;
@@ -597,10 +600,12 @@ td {
         margin-right: 5%;
         padding-right: 5%;
     }
-}
-
-.card-image {
-    width: 100%;
+    .home-nav {
+      width: 600px;
+    }
+  }
+  .card-image {
+    width: 400px;
     height: 200px;
     object-fit: cover;
 }
@@ -680,3 +685,4 @@ td {
     height: 530px;
 }
    }
+

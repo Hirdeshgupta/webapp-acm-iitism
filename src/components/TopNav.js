@@ -6,31 +6,29 @@ import { setGlobalCssModule } from "reactstrap/lib/utils";
 
 
 class TopNav extends React.Component {
- 
+
     state={
-      background:"rgba(255,255,255,0.9)",
-      color:"black",
+      background: "transparent",
+      color:"#1a1245",
       height:"auto",
     }
 
   componentDidMount(){
-  
+
     document.addEventListener("scroll",()=>{
       let scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 20) {
-        if (this.state.background == "rgba(255,255,255,0.9)") {
+        if (this.state.background == "transparent") {
           this.setState({ background: " #1a1245",color:"white",height:"70" });
           this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
         }
       } else {
-        if (this.state.background !== "rgba(2,3,4,0)") {
-          this.setState({ background: "rgba(2,3,4,0)",color:"black",height:"auto"  });
-          this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-        if (this.state.background !== "rgba(255,255,255,0.9)") {
-          this.setState({ background: "rgba(255,255,255,0.9)",color:"black",height:"auto"  });
+        if (this.state.background === "#1a1245") {
+          this.setState({ background: "transparent",color:"black",height:"auto"  });
           this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
 
-        }
+
+
       }
     }})
   }
@@ -44,7 +42,7 @@ class TopNav extends React.Component {
           sheet.insertRule(selector + "{" + propText + "}", sheet.cssRules.length);
       };
   })(document.createElement("style"));
-  
+
   addRule(".anime-links::after", {
       background:color ,
   });

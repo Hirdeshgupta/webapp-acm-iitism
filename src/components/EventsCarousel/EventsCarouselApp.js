@@ -82,7 +82,7 @@ class EventsCarouselApp extends React.Component {
         initialSlide:1,
       }
     }
-    
+
   ]
 };
 
@@ -114,7 +114,7 @@ class EventsCarouselApp extends React.Component {
                   date={e.date}
                />
                </div>
-               
+
               )
             })
            }
