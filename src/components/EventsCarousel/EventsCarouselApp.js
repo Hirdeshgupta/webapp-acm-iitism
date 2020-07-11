@@ -76,7 +76,7 @@ class EventsCarouselApp extends React.Component {
         slidesToScroll: 1,
       }
     }
-    
+
   ]
 };
     return(
@@ -104,7 +104,7 @@ class EventsCarouselApp extends React.Component {
                   date={e.date}
                />
                </div>
-               
+
               )
             })
            }

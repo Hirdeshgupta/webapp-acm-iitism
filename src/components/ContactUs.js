@@ -1,7 +1,29 @@
 import React from "react";
 import {MDBAnimation, MDBContainer,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
+import { MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
 
-const ContactPage = () => {
+class ContactPage extends React.Component {
+  state = {
+      modal: false,
+      showModal: false
+    }
+
+
+
+  toggle = () => {
+    return(
+      this.setState({
+       modal: !this.state.modal,
+     })
+    )
+}
+ setModal = () => {
+   this.setState({
+     showModal: !this.state.showModal,
+   })
+ }
+
+  render() {
   return (
     <section style={{marginTop:120}}>
       <MDBAnimation reveal type="lightSpeedIn" >
@@ -72,7 +94,7 @@ const ContactPage = () => {
                 />
               </div>
               <div className="text-center">
-                <MDBBtn color="white-text py-2 px-4" style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon icon="paper-plane" /></MDBBtn>
+                <MDBBtn color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon icon="paper-plane" /></MDBBtn>
               </div>
       </ form >
 
@@ -126,8 +148,27 @@ const ContactPage = () => {
         </MDBCol>
       </MDBRow>
 
+      {
+        this.state.showModal ?  <MDBContainer>
+
+        <MDBModal isOpen={this.state.showModal} toggle={this.setModal}>
+          <MDBModalHeader toggle={this.setModal}>Thanks for contacting us!</MDBModalHeader>
+          <MDBModalBody>
+            We'll get back to you soon :)
+          </MDBModalBody>
+          <MDBModalFooter>
+            <MDBBtn color="secondary" onClick={this.setModal}>Close</MDBBtn>
+            
+          </MDBModalFooter>
+        </MDBModal>
+      </MDBContainer> : null
+      }
+
+
+
     </section>
   );
+}
 }
 
 export default ContactPage;
