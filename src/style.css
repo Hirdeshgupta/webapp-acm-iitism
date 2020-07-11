@@ -500,6 +500,7 @@ td {
     color: rgb(206, 192, 192);
 }
 
+
 .slick {
     margin: 30px auto;
     padding: 0px 20px 20px 20px;
@@ -531,6 +532,11 @@ td {
     padding-bottom: 10px;
 }
 
+.card .card-body .card-text {
+    color: brown;
+    font-weight: bold;
+}
+
 .slick-date {
     font-family: 'Roboto', sans-serif;
     padding-bottom: 5px;
@@ -538,7 +544,7 @@ td {
 
 .slick-show {
     text-decoration: none;
-    color: grey;
+    color: blue;
 }
 
 .slick-image {
@@ -581,9 +587,9 @@ td {
 
 /* event carousel ends */
 
-.event-card {
+/* .event-card {
     margin-left: 9.6%;
-}
+} */
 
 @media only screen and (max-width: 600px) {
     .event-card {
@@ -629,7 +635,8 @@ td {
         right: -45px;
     }
     .card-body {
-        height: 180px;
+        height: 200px;
+        width: 95%;
     }
 }
 
@@ -647,3 +654,29 @@ td {
 .slick-track {
     height: 500px;
 }
+
+@media only screen and (max-width: 361px) {
+    /* .slick{
+        margin: 10px 0 10px 30px;
+        width: 120%;
+    }
+    .slick .slick-next:before{
+       right: -65px;
+    } */
+    .slick .slick-prev:before {
+        left: 3px;
+    }
+    .slick .slick-next:before,
+   .slick .slick-prev:before {
+       border: 3px solid #1A1245;
+       padding: 4px;
+       border-radius: 5px;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       font-size: 1rem;
+       color: #1A1245;
+   }
+   .slick-track {
+    height: 530px;
+}
+   }

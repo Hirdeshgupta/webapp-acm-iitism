@@ -10,6 +10,7 @@ import {MDBAnimation } from "mdbreact"
 
 
 
+
 class EventsCarouselApp extends React.Component {
 
   constructor(props){
@@ -19,6 +20,7 @@ class EventsCarouselApp extends React.Component {
 
      this.state = {
        EVENTS: [],
+       is_loading:true,
      }
   }
   componentDidMount() {
@@ -35,7 +37,8 @@ class EventsCarouselApp extends React.Component {
       })
 
       this.setState({
-        EVENTS: previousEvents
+        EVENTS: previousEvents,
+        is_loading:false,
       })
 
     })
@@ -44,9 +47,10 @@ class EventsCarouselApp extends React.Component {
   }
 
   render() {
+    
     var settings = {
   className: "center",
-  centerMode: true,
+  centerMode: false,
   lazyLoad:"progressive",
   infinite: true,
   centerPadding: "60px",
@@ -96,8 +100,9 @@ class EventsCarouselApp extends React.Component {
 
          <Slider  {...settings} >
           {
-           this.state.EVENTS.slice(0).reverse().slice(0, 6).map((e) => {
-             console.log(e.title);
+             
+           this.state.EVENTS.slice(0).reverse().slice(0, 7).map((e) => {
+            //  console.log(e.title);
              return(
                <div>
               <EventsCarousel
@@ -116,7 +121,7 @@ class EventsCarouselApp extends React.Component {
        </Slider>
        <div className="row justify-content-center">
          <div className="col-2">
-         <Button variant="secondary" href="/events">Explore All!</Button>{' '}
+         <Button variant="secondary" style={{marginTop: "-120px"}} href="/events">Explore All!</Button>{' '}
          </div>
        </div>
       </div>
