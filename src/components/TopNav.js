@@ -7,37 +7,33 @@ import { setGlobalCssModule } from "reactstrap/lib/utils";
 
 class TopNav extends React.Component {
 
-    state={
-      background: "rgba(255,255,255,0.9)",
-      color:"#1a1245",
-      height:"auto",
-    }
-
-  componentDidMount(){
-
-    document.addEventListener("scroll",()=>{
-      let scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 20) {
-        if (this.state.background == "transparent") {
-          this.setState({ background: "#1a1245",color:"white",height:"70" });
-          this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-          // document.querySelector(".navbar.navbar-light .navbar-toggler-icon").style.backgroundImage="url('data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E)"
-        }
-      } else {
-        if (this.state.background !== "rgba(2,3,4,0)") {
-          this.setState({ background: "rgba(2,3,4,0)",color:"black",height:"auto"  });
-          this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-          // document.querySelector(".navbar.navbar-light .navbar-toggler-icon").style.backgroundImage="url('data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E)"
-
-        if (this.state.background !== "rgba(255,255,255,0.9)") {
-          this.setState({ background: "rgba(255,255,255,0.9)",color:"black",height:"auto"  });
-          this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-          // document.querySelector(".navbar.navbar-light .navbar-toggler-icon").style.backgroundImage="url('data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E)"
-
-        }
-      }
-    }})
+  state={
+    background:"rgba(255,255,255,0.9)",
+    color:"black",
+    height:"auto",
   }
+
+componentDidMount(){
+
+  document.addEventListener("scroll",()=>{
+    let scrolled = document.scrollingElement.scrollTop;
+    if (scrolled >= 20) {
+      if (this.state.background == "rgba(255,255,255,0.9)") {
+        this.setState({ background: " #1a1245",color:"white",height:"70" });
+        this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+      }
+    } else {
+      if (this.state.background !== "rgba(2,3,4,0)") {
+        this.setState({ background: "rgba(2,3,4,0)",color:"black",height:"auto"  });
+        this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+      if (this.state.background !== "rgba(255,255,255,0.9)") {
+        this.setState({ background: "rgba(255,255,255,0.9)",color:"black",height:"auto"  });
+        this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+
+      }
+    }
+  }})
+}
   animeLinkChangeColor(color){
     var addRule = (function (style) {
       var sheet = document.head.appendChild(style).sheet;
