@@ -685,3 +685,7 @@ td {
         object-fit: cover;
     }
 }
+
+.loading-events {
+    margin-left: 47%;
+}

@@ -3,6 +3,7 @@ import HomeComponent from "./HomeCarousel";
 import AboutUs from "./AboutUs";
 import EventsCarouselApp from "./EventsCarousel/EventsCarouselApp";
 import Preloader from "./Preloader";
+import {MDBAnimation } from "mdbreact"
 class  Home extends React.Component {
   constructor(props)
   {
@@ -24,9 +25,7 @@ componentDidMount()
     document.querySelector("#footer").style.opacity=1;
     document.querySelector("body").style.overflow="scroll";
 
-  },2000,()=>{
-    document.getElementById("root").style.animation="anime-entry 10s ease forwards";
-  })
+  },2000);
 
 
 }
@@ -40,9 +39,12 @@ componentDidMount()
 		else{
     return (
       <div className="home-div">
-        <HomeComponent />
+        <MDBAnimation type="fadeIn" >
+          <HomeComponent />
         <AboutUs />
         <EventsCarouselApp style={{marginTop:80}}/>
+        </MDBAnimation>
+
       </div>
     )
     }
