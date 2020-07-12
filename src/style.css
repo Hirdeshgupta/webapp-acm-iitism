@@ -768,3 +768,9 @@ td {
     z-index: 1;
     opacity: 0.1;
 }
+
+@media only screen and (max-width: 361px) {
+    .about img {
+        height: 107%;
+    }
+}
