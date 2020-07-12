@@ -806,6 +806,9 @@ td {
     .about img {
         height: 107%;
     }
+    .con{
+        font-size: 15px;
+    }
 }
 
 
@@ -816,3 +819,4 @@ td {
         margin-top: 80px;
     }
 }
+

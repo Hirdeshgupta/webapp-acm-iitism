@@ -10,7 +10,7 @@ function AboutUs() {
             </h2>
           </MDBAnimation>
           <MDBAnimation reveal type="fadeInUp">
-        <p className="p-responsive para dark-text w-responsive mx-auto px-auto mb-5 ">
+        <p className="p-responsive para dark-text w-responsive mx-auto px-auto mb-5 con">
         IIT (ISM) Dhanbad ACM Student Chapter was established in 2011 under the aegis of Department of Computer Science and Engineering, IIT(ISM) Dhanbad.
 The chapter aims at serving as a dynamic hub of activites for the computing fraternity of IIT(ISM) Dhanbad, where enthusiasts meet, interact and learn from each other.
 The chapter organizes various events which includes hackathons, technical workshops, talks by renowned speakers and coding competitions catering to 1500+ enthusiasts.

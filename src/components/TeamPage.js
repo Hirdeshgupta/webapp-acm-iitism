@@ -49,10 +49,10 @@ const TeamPage = () => {
             <TeamCard column="6"  name="Aakash Kumar Singh" position="Web Developer" email="mailto:aksingh01ak@gmail.com"/>
             <TeamCard name="Yash Vardhan" position="Web Developer" email="mailto:yashvardhan513@gmail.com"/>
           </MDBRow>
-          <MDBRow className="justify-content-center  mt-5">
+          {/* <MDBRow className="justify-content-center  mt-5">
             <TeamCard  name="Aashisha Singh" position="App Developer" email="" />
             <TeamCard name="Akshat Tripathi" position="App Developer" email="mailto:akshatofficial2019@gmail.com"/>
-          </MDBRow>
+          </MDBRow> */}
         </MDBCardBody>
       </MDBCard>
       </div>
