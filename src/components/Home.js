@@ -17,14 +17,14 @@ componentDidMount()
 {
   document.querySelector("nav").style.opacity=0;
   document.querySelector("#footer").style.opacity=0;
-  document.querySelector("body").style.overflow="hidden";
+  document.querySelector("html").style.overflowY="hidden";
   setTimeout(()=>{
     this.setState({
       isLoading:false
     })
     document.querySelector("nav").style.opacity=1;
     document.querySelector("#footer").style.opacity=1;
-    document.querySelector("body").style.overflow="scroll";
+    document.querySelector("html").style.overflowY="scroll";
 
   },2000);
 

@@ -106,14 +106,11 @@ class EventsCarouselApp extends React.Component {
 };
 if(this.state.is_loading){
   return(
-    <MDBAnimation reveal type="fadeInUp">
       <div className="row">
     <div className="col-8 col-sm-9 col-md-10 col-lg-11 slick text-center mt-3">
      <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-       <MDBAnimation reveal type="fadeInUp" >
        <h2 className="h1-responsive" style={{fontWeight:700,color:"rgb(26, 18, 69)"}}> EVENTS   </h2><hr style={{height:5}}></hr>
-       </MDBAnimation>
 
 
        <Slider  {...settings} >
@@ -130,7 +127,7 @@ if(this.state.is_loading){
 
     </div>
 
-    </MDBAnimation>
+
 
 
 
@@ -138,14 +135,11 @@ if(this.state.is_loading){
 }
 else{
   return(
-    <MDBAnimation reveal type="fadeInUp">
       <div className="row">
     <div className="col-8 col-sm-9 col-md-10 col-lg-11 slick text-center mt-3">
      <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-       <MDBAnimation reveal type="fadeInUp" >
        <h2 className="h1-responsive" style={{fontWeight:700,color:"rgb(26, 18, 69)"}}> EVENTS   </h2><hr style={{height:5}}></hr>
-       </MDBAnimation>
 
 
        <Slider  {...settings} >
@@ -176,11 +170,6 @@ else{
     </div>
 
     </div>
-
-    </MDBAnimation>
-
-
-
   );
 }
 

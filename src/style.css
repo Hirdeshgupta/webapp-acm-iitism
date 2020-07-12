@@ -1,12 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Tamma+2:400,600,700&display=swap');
+html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    width: 100vw;
     font-family: "Baloo Tamma 2";
     color: white;
     padding: 0;
     outline: none;
     overflow-x: hidden;
+    overflow-y: hidden;
     /* background-image: url("https://image.freepik.com/free-vector/technology-background-with-abstract-hud_23-2148250643.jpg");
 	background-position: center; */
+}
+
+::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px
+}
+
+
+/* background of the scrollbar except button or resizer */
+
+::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #fff
+}
+
+
+/* scrollbar itself */
+
+::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 5px solid #fff
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a5;
+    border: 4px solid #f4f4f4
+}
+
+
+/* set button(top and bottom of the scrollbar) */
+
+::-webkit-scrollbar-button {
+    display: none
 }
 
 #root {
@@ -74,11 +119,11 @@ body {
     margin-left: 5%;
     border-radius: 10%;
 }
-@media only screen and (max-width: 600px){
 
-  .autoplay-slider {
-    margin-top: 20%;
-  }
+@media only screen and (max-width: 600px) {
+    .autoplay-slider {
+        margin-top: 20%;
+    }
 }
 
 .contact-icon-div {
@@ -397,7 +442,6 @@ td {
     margin-bottom: 5px;
 }
 
-
 @media only screen and (max-width: 360px) {
     #new-img {
         width: 100%;
@@ -423,7 +467,6 @@ td {
     .backToEvents.btn {
         padding: 4px;
     }
-  }
 }
 
 .backToEvents {
@@ -516,9 +559,6 @@ td {
     text-decoration: none;
     color: #377293;
 }
-
-
-
 
 
 /* contact card ends */
@@ -666,7 +706,7 @@ td {
     position: absolute;
     z-index: 10001;
     right: 20;
-    right: -35px;
+    right: -25px;
     top: -80px;
 }
 
@@ -740,9 +780,8 @@ td {
     cursor: pointer;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-@media only screen and (max-width: 600px) {
 
-}
+@media only screen and (max-width: 600px) {}
 
 
 /* ABOUT */
@@ -750,7 +789,6 @@ td {
 .about {
     border-radius: 1%;
     position: relative;
-    background: rgb(219, 216, 216);
     overflow: hidden;
 }
 
@@ -760,8 +798,8 @@ td {
     top: 0;
     width: 100%;
     height: auto;
-    z-index: 1;
-    opacity: 0.1;
+    z-index: -1;
+    opacity: 0.3;
 }
 
 @media only screen and (max-width: 361px) {

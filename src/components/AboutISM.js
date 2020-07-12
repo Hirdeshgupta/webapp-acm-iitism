@@ -17,7 +17,7 @@ Later in the year 2016, Indian School of Mines was awarded the tag of an IIT and
 With a clear intent of the institution to improve the amount of research and projects in the institution, it has invested most of it's resources dedicated towards the projects and research.
         </p>
           </MDBAnimation>
-          <img src="https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/69845538_2539278436167186_231316922698825728_o.jpg?_nc_cat=105&_nc_sid=cdbe9c&_nc_oc=AQmw0Y5ML5KF3Q6NuyDY7vSaHHkH-s3ZfMErM5WOgP_zaATqWl_9kqagi8h5MBgGqr4oeLitwR-OkUzBACgOo89C&_nc_ht=scontent.fpat2-1.fna&oh=b7e5480b5faa3d1f353c999a8bf432bf&oe=5F2B7003"></img>
+          <img src="https://www.iitism.ac.in/~academics/assets/assets/images/index/01.jpg"></img>
 
 </section>
 </div>
