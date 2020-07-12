@@ -4,6 +4,7 @@ import AboutUs from "./AboutUs";
 import EventsCarouselApp from "./EventsCarousel/EventsCarouselApp";
 import Preloader from "./Preloader";
 import {MDBAnimation } from "mdbreact"
+import AboutISM from "./AboutISM";
 class  Home extends React.Component {
   constructor(props)
   {
@@ -41,6 +42,7 @@ componentDidMount()
       <div className="home-div">
         <MDBAnimation type="fadeIn" >
           <HomeComponent />
+        <AboutISM />
         <AboutUs />
         <EventsCarouselApp style={{marginTop:80}}/>
         </MDBAnimation>
