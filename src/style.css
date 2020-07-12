@@ -71,8 +71,14 @@ body {
 .nav-logo {
     width: 50px;
     height: 50px;
-    margin-left: 40px;
+    margin-left: 5%;
     border-radius: 10%;
+}
+@media only screen and (max-width: 600px){
+  
+  .autoplay-slider {
+    margin-top: 20%;
+  }
 }
 
 .contact-icon-div {
@@ -390,7 +396,7 @@ td {
 .txt_body h1 {
     margin-bottom: 5px;
 }
-<<<<<<< HEAD
+
 
 @media only screen and (max-width: 360px) {
     #new-img {
@@ -414,6 +420,7 @@ td {
         margin-left: 5px;
         /* font-size: 1px; */
     }
+  }
 =======
 #new-img { margin-left: 25%;
     margin-top: 10px;
@@ -443,7 +450,7 @@ td {
 .backToEvents.btn {
    padding: 4px;
 }
->>>>>>> e07f649374ddc418da8f86a7d14a8f57aee322d8
+
 }
 
 .backToEvents {
@@ -538,20 +545,7 @@ td {
 }
 
 
-/* .writeToUs{
-    position:"absolute";
-    top:-20;
-    width:400;
-    z-index:3;
-    left:100;
-} */
 
-
-/* .navbar-fixed {
-    position: fixed;
-    top: 0;
-    z-index: 3;
-} */
 
 
 /* contact card ends */
@@ -772,6 +766,9 @@ td {
 .navbar.navbar-light .navbar-toggler-icon .hamburger {
     cursor: pointer;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+@media only screen and (max-width: 600px) {
+
 }
 
 @media only screen and (max-width:776px) {

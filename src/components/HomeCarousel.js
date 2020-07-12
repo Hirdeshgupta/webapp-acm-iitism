@@ -23,6 +23,7 @@ const HomeCarousel = () => {
       <MDBCarouselInner > */}
         {/* <MDBCarouselItem itemId="1"> */}
           <AutoplaySlider
+            className="autoplay-slider"
             animation="foldOutAnimation"
             play={true} // should stop playing on user interaction
             interval={6000}

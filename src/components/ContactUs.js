@@ -5,7 +5,11 @@ import { MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact
 class ContactPage extends React.Component {
   state = {
       modal: false,
-      showModal: false
+      showModal: false,
+      name: false,
+      email: false,
+      subject: false,
+      message: false
     }
 
 
@@ -17,9 +21,33 @@ class ContactPage extends React.Component {
      })
     )
 }
+
  setModal = () => {
+
    this.setState({
      showModal: !this.state.showModal,
+   })
+ }
+
+
+ handleName = () => {
+   this.setState({
+     name: true
+   })
+ }
+ handleEmail = () => {
+   this.setState({
+     email: true
+   })
+ }
+ handleSubject = () => {
+   this.setState({
+     subject: true
+   })
+ }
+ handleMessage = () => {
+   this.setState({
+     message: true
    })
  }
 
@@ -56,6 +84,7 @@ class ContactPage extends React.Component {
                   validate
                   error="wrong"
                   success="right"
+                  onChange={this.handleName}
                 />
               </div>
               <div className="md-form">
@@ -69,6 +98,7 @@ class ContactPage extends React.Component {
                   error="wrong"
                   success="right"
                   id="form-email"
+                  onChange={this.handleEmail}
                 />
               </div>
               <div className="md-form">
@@ -82,6 +112,7 @@ class ContactPage extends React.Component {
                   error="wrong"
                   success="right"
                   id="form-subject"
+                  onChange={this.handleSubject}
                 />
               </div>
               <div className="md-form">
@@ -91,9 +122,10 @@ class ContactPage extends React.Component {
                   iconClass="grey-text"
                   type="textarea"
                   id="form-text"
+                  onChange={this.handleMessage}
                 />
               </div>
-                <MDBBtn className="formbtn" color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon icon="paper-plane" /></MDBBtn>
+    {this.state.name && this.state.message && this.state.email && this.state.subject ? <MDBBtn className="formbtn" color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon icon="paper-plane" /></MDBBtn> : null}            
       </ form >
 
             </MDBCardBody>
@@ -158,7 +190,7 @@ class ContactPage extends React.Component {
           </MDBModalBody>
           <MDBModalFooter>
             <MDBBtn color="secondary" onClick={this.setModal}>Close</MDBBtn>
-            
+
           </MDBModalFooter>
         </MDBModal>
       </MDBContainer> : null
