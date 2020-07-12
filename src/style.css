@@ -748,11 +748,7 @@ td {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* .about{
-    background: url("https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/69845538_2539278436167186_231316922698825728_o.jpg?_nc_cat=105&_nc_sid=cdbe9c&_nc_oc=AQmw0Y5ML5KF3Q6NuyDY7vSaHHkH-s3ZfMErM5WOgP_zaATqWl_9kqagi8h5MBgGqr4oeLitwR-OkUzBACgOo89C&_nc_ht=scontent.fpat2-1.fna&oh=b7e5480b5faa3d1f353c999a8bf432bf&oe=5F2B7003") no-repeat center center fixed ;
-    background-color: rgb(184, 180, 180);
-    opacity: 1;
-} */
+/* ABOUT */
 .about {
     border-radius: 1%;
     position: relative;
@@ -774,3 +770,9 @@ td {
         height: 107%;
     }
 }
+/* ABOUT END */
+    @media only screen and (max-width: 900px) {
+        .homeCarosel{
+            margin-top: 80px;
+        }
+    }
