@@ -12,7 +12,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 const HomeCarousel = () => {
 
     return (
-     <div className="container-fluid px-0" style={{background:"rgb(106, 106, 106)"}} >
+     <div className="container-fluid px-0 homeCarosel" style={{background:"rgb(106, 106, 106)"}} >
       {/* <MDBCarousel
       activeItem={1}
       length={3}

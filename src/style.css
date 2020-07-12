@@ -75,7 +75,7 @@ body {
     border-radius: 10%;
 }
 @media only screen and (max-width: 600px){
-  
+
   .autoplay-slider {
     margin-top: 20%;
   }
@@ -418,39 +418,12 @@ td {
     .backToEvents {
         margin: 13px;
         margin-left: 5px;
-        /* font-size: 1px; */
+        font-size: 12px;
+    }
+    .backToEvents.btn {
+        padding: 4px;
     }
   }
-=======
-#new-img { margin-left: 25%;
-    margin-top: 10px;
-}
-@media only screen and (max-width: 360px) {
-    #new-img {
-          width: 100%;
-          height: 100%;
-          margin-left: 0;
-          margin-top: 0;
-}
-.txt_body h1{
-    font-size: 24px;
-}
-.txt_body h5{
-    font-size: 18px;
-    color: brown;
-}
-.txt_body .pre{
-    font-size: 16px;
-}
-.backToEvents {
-    margin: 13px;
-    margin-left: 5px;
-    font-size: 12px;
-}
-.backToEvents.btn {
-   padding: 4px;
-}
-
 }
 
 .backToEvents {
@@ -771,122 +744,37 @@ td {
 
 }
 
-@media only screen and (max-width:776px) {
-    .contact-social {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .mail-card {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .md-form .prefix~input,
-    .md-form .prefix~textarea {
-        width: 75%;
-    }
-    .formbtn {
-        margin-left: 35%;
+
+/* ABOUT */
+
+.about {
+    border-radius: 1%;
+    position: relative;
+    background: rgb(219, 216, 216);
+    overflow: hidden;
+}
+
+.about img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    opacity: 0.1;
+}
+
+@media only screen and (max-width: 361px) {
+    .about img {
+        height: 107%;
     }
 }
 
-@media only screen and (max-width:1000px) {
-    .mail-card {
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-}
 
-@media only screen and (max-width:676px) {
-    .md-form .prefix~input,
-    .md-form .prefix~textarea {
-        width: 50%;
-    }
-}
+/* ABOUT END */
 
-@media only screen and (max-width:576px) {
-    .contact-social {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .mail-card {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .md-form .prefix~input,
-    .md-form .prefix~textarea {
-        width: 60%;
-    }
-    .formbtn {
-        margin-left: 25%;
-    }
-}
-
-@media only screen and (max-width:520px) {
-    .formbtn {
-        margin-left: 22%;
-    }
-}
-
-@media only screen and (max-width:480px) {
-    .md-form .prefix~input,
-    .md-form .prefix~textarea {
-        width: 50%;
-    }
-    .formbtn {
-        margin-left: 20%;
-    }
-}
-
-@media only screen and (max-width:450px) {
-    .formbtn {
-        margin-left: 17%;
-    }
-}
-
-@media only screen and (max-width:410px) {
-    .contact-social {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .md-form .prefix~input,
-    .md-form .prefix~textarea {
-        width: 35%;
-    }
-    .mail-card {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .formbtn {
-        margin-left: 15%;
-    }
-    .head_spons {
-        margin-left: 2%;
-    }
-}
-
-@media only screen and (max-width:380px) {
-    .formbtn {
-        margin-left: 12%;
-    }
-}
-
-@media only screen and (max-width:360px) {
-    .contact-social {
-        padding-left: 5%;
-    }
-    .formbtn {
-        margin-left: 10%;
-    }
-}
-
-@media only screen and (min-width:1000px) {
-    .formbtn {
-        margin-left: 34%;
-    }
-}
-
-@media only screen and (min-width:2000px) {
-    .formbtn {
-        margin-left: 35%;
+@media only screen and (max-width: 900px) {
+    .homeCarosel {
+        margin-top: 80px;
     }
 }

@@ -19,7 +19,7 @@ function Footer(){
            </div>
                    <p>
                      Association for Computing Machinery <br/>
-                     IIT Dhanbad
+                     IIT (ISM) Dhanbad
                     </p>
         </div>
       </Col>
@@ -28,7 +28,7 @@ function Footer(){
         <div className="location1">
                <h3 className="footer-h3">Location</h3>
                <p className="location2">Department of Computer Science and Engineering,
-              Indian Institute of Technology (IIT)
+              IIT (ISM)
               Dhanbad, India - 826004</p>
          </div>
         </Col>
