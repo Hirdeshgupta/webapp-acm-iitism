@@ -8,10 +8,10 @@ import { setGlobalCssModule } from "reactstrap/lib/utils";
 class TopNav extends React.Component {
 
   state={
-    background:"rgba(255,255,255,0.9)",
-    color:"black",
+    background:"rgba(255,255,255,0)",
+    color:"white",
     height:"auto",
-    hamburger: "black"
+    hamburger: "white"
   }
 
 componentDidMount(){
@@ -19,16 +19,16 @@ componentDidMount(){
   document.addEventListener("scroll",()=>{
     let scrolled = document.scrollingElement.scrollTop;
     if (scrolled >= 20) {
-      if (this.state.background == "rgba(255,255,255,0.9)") {
+      if (this.state.background == "rgba(255,255,255,0)") {
         this.setState({ background: " #1a1245",color:"white",height:"70", hamburger: "white" });
         this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
       }
     } else {
       if (this.state.background !== "rgba(2,3,4,0)") {
-        this.setState({ background: "rgba(2,3,4,0)",color:"black",height:"auto",hamburger: "black"  });
+        this.setState({ background: "rgba(2,3,4,0)",color:"white",height:"auto",hamburger: "white"  });
         this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-      if (this.state.background !== "rgba(255,255,255,0.9)") {
-        this.setState({ background: "rgba(255,255,255,0.9)",color:"black",height:"auto", hamburger: "#1a1245"  });
+      if (this.state.background !== "rgba(255,255,255,0)") {
+        this.setState({ background: "rgba(255,255,255,0)",color:"white",height:"auto", hamburger: "white"  });
         this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
 
       }

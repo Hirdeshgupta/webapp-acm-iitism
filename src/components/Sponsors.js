@@ -2,7 +2,13 @@ import React from "react"
 import { Container, Row, Col } from 'reactstrap';
 import {MDBAnimation } from "mdbreact"
 
-function Sponsors(){
+class Sponsors extends React.Component{
+    componentDidMount(){
+        document.querySelectorAll(".anime-links").forEach(x=>{
+          x.style.color="black";
+        })
+      }
+  render(){
     return(
         <section id="sponsors" style={{marginTop:100}}>
            <div>
@@ -25,6 +31,8 @@ function Sponsors(){
         </div>
         </section>
     )
+  }    
+   
 }
 
 export default Sponsors

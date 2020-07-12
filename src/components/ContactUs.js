@@ -11,7 +11,13 @@ class ContactPage extends React.Component {
       subject: false,
       message: false
     }
-
+    componentDidMount(){
+    
+      document.querySelectorAll(".anime-links").forEach(x=>{
+        x.style.color="black";
+      })
+    }
+    
 
 
   toggle = () => {

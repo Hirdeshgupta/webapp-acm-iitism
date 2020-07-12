@@ -1,5 +1,6 @@
 import React from "react";
 import HomeComponent from "./HomeCarousel";
+import Particle from "./Particle"
 import AboutUs from "./AboutUs";
 import EventsCarouselApp from "./EventsCarousel/EventsCarouselApp";
 import Preloader from "./Preloader";
@@ -20,7 +21,7 @@ componentDidMount()
   document.querySelector("html").style.overflowY="hidden";
   setTimeout(()=>{
     this.setState({
-      isLoading:false
+      isLoading:false,
     })
     document.querySelector("nav").style.opacity=1;
     document.querySelector("#footer").style.opacity=1;
@@ -41,7 +42,7 @@ componentDidMount()
     return (
       <div className="home-div">
         <MDBAnimation type="fadeIn" >
-          <HomeComponent />
+          <Particle />
         <AboutISM />
         <AboutUs />
         <EventsCarouselApp style={{marginTop:80}}/>

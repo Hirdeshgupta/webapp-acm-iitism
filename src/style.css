@@ -17,26 +17,37 @@ body {
 	background-position: center; */
 }
 
+#tsparticles {
+    height: 100vh;
+    background: #232741;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 ::-webkit-scrollbar {
     background-color: #fff;
-    width: 16px
+    width: 16px;
+    height: 10px
 }
 
 
 /* background of the scrollbar except button or resizer */
 
 ::-webkit-scrollbar-track {
-    background-color: #fff
+    background-color: #2d2f30;
+    background-clip: content-box;
 }
 
 ::-webkit-scrollbar-track:hover {
-    background-color: #fff
+    background-color: #2d2f30
 }
 
 
 /* scrollbar itself */
 
 ::-webkit-scrollbar-thumb {
+    height: 0px;
     background-color: #babac0;
     border-radius: 16px;
     border: 5px solid #fff
@@ -124,7 +135,6 @@ body {
     .heritage-image {
         height: 270px !important;
     }
-
 }
 
 .contact-icon-div {
@@ -204,26 +214,25 @@ body {
     padding-left: 65px;
     text-align: center;
 }
+
 @media only screen and (max-width: 600px) {
-  .footer-acm  {
-      padding-top: 10px;
-      font-size: 20px;
-      color: white;
-      padding-right: 60px;
-      text-align: center;
-  }
-  .footer-acm p {
-    font-size: 1rem;
-  }
-  .location2 {
-    font-size: 1rem;
-  }
-  .footer-h3 {
-    font-size: 1.5rem;
-  }
-
+    .footer-acm {
+        padding-top: 10px;
+        font-size: 20px;
+        color: white;
+        padding-right: 60px;
+        text-align: center;
+    }
+    .footer-acm p {
+        font-size: 1rem;
+    }
+    .location2 {
+        font-size: 1rem;
+    }
+    .footer-h3 {
+        font-size: 1.5rem;
+    }
 }
-
 
 .footer-h3 {
     text-align: center;
@@ -280,7 +289,6 @@ body {
     .icons_uni {
         padding-top: 4px;
     }
-
     .picc {
         display: block;
         padding-left: 4px;
@@ -299,7 +307,6 @@ body {
         width: 60px;
         height: 60px;
     }
-
     .foot_icon img {
         width: 30px;
         height: 30px;
@@ -686,9 +693,6 @@ td {
 
 /* event carousel ends */
 
-
-
-
 @media only screen and (max-width: 600px) {
     .event-card {
         margin-left: 3%;
@@ -824,7 +828,7 @@ td {
     .about img {
         height: 107%;
     }
-    .con{
+    .con {
         font-size: 15px;
     }
 }
@@ -837,16 +841,19 @@ td {
         margin-top: 80px;
     }
 }
+
 .about-ism {
-  color: #1a1245;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+    color: #1a1245;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
+
 .about-acm {
-  color: #1a1245;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+    color: #1a1245;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
+
 .toggler {
-  font-size: 2rem;
+    font-size: 2rem;
 }

@@ -3,8 +3,16 @@ import {  MDBRow, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon } from "mdbre
 import TeamCard from "./TeamCard"
 import {MDBAnimation } from "mdbreact"
 
-const TeamPage = () => {
-  return (
+class TeamPage extends React.Component {
+  componentDidMount(){
+    
+    document.querySelectorAll(".anime-links").forEach(x=>{
+      x.style.color="black";
+    })
+  }
+  
+  render(){
+    return (
       <div className="container-fluid px-0 z-depth-0" style={{marginTop:100}}>
     <MDBCard className="my-5  pb-5 text-center z-depth-0 border-0">
         <MDBCardBody>
@@ -56,6 +64,8 @@ const TeamPage = () => {
 
       </div>
   );
+  }
+  
 }
 
 export default TeamPage;

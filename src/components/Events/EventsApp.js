@@ -21,6 +21,9 @@ class EventsApp extends React.Component{
 
     }
     componentDidMount(){
+        document.querySelectorAll(".anime-links").forEach(x=>{
+            x.style.color="black";
+          })
         const previousEvents = this.state.EVENTS;
 
         // DataSnapshot
