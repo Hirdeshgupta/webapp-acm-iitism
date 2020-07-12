@@ -390,6 +390,7 @@ td {
 .txt_body h1 {
     margin-bottom: 5px;
 }
+<<<<<<< HEAD
 
 @media only screen and (max-width: 360px) {
     #new-img {
@@ -413,11 +414,42 @@ td {
         margin-left: 5px;
         /* font-size: 1px; */
     }
+=======
+#new-img { margin-left: 25%;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 360px) {
+    #new-img {
+          width: 100%;
+          height: 100%;
+          margin-left: 0;
+          margin-top: 0;
+}
+.txt_body h1{
+    font-size: 24px;
+}
+.txt_body h5{
+    font-size: 18px;
+    color: brown;
+}
+.txt_body .pre{
+    font-size: 16px;
+}
+.backToEvents {
+    margin: 13px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.backToEvents.btn {
+   padding: 4px;
+}
+>>>>>>> e07f649374ddc418da8f86a7d14a8f57aee322d8
 }
 
 .backToEvents {
     margin: 15px;
     margin-left: 5px;
+    font-size: 20px;
 }
 
 .txt_body {
