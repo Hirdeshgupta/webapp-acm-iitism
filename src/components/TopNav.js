@@ -11,6 +11,7 @@ class TopNav extends React.Component {
     background:"rgba(255,255,255,0.9)",
     color:"black",
     height:"auto",
+    hamburger: "black"
   }
 
 componentDidMount(){
@@ -19,15 +20,15 @@ componentDidMount(){
     let scrolled = document.scrollingElement.scrollTop;
     if (scrolled >= 20) {
       if (this.state.background == "rgba(255,255,255,0.9)") {
-        this.setState({ background: " #1a1245",color:"white",height:"70" });
+        this.setState({ background: " #1a1245",color:"white",height:"70", hamburger: "white" });
         this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
       }
     } else {
       if (this.state.background !== "rgba(2,3,4,0)") {
-        this.setState({ background: "rgba(2,3,4,0)",color:"black",height:"auto"  });
+        this.setState({ background: "rgba(2,3,4,0)",color:"black",height:"auto",hamburger: "black"  });
         this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
       if (this.state.background !== "rgba(255,255,255,0.9)") {
-        this.setState({ background: "rgba(255,255,255,0.9)",color:"black",height:"auto"  });
+        this.setState({ background: "rgba(255,255,255,0.9)",color:"black",height:"auto", hamburger: "#1a1245"  });
         this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
 
       }
@@ -61,8 +62,8 @@ render(){
   return (
     <Navbar id="navbar"  className="z-depth-1 nav-background"  collapseOnSelect expand="lg"    fixed="top" style={{background:this.state.background,height:this.state.height}}  >
     <Navbar.Brand href="#home">  <a href="/"><img className="nav-logo" src={require("./img/logo.jpg")} alt="ACM"/></a> </Navbar.Brand>
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav">
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" className="hamburger"><i class="fas fa-bars toggler" style={{color: this.state.hamburger}}></i> </Navbar.Toggle>
+    <Navbar.Collapse id="responsive-navbar-nav" className="hamburger">
     <Nav className="mr-auto" >
   </Nav>
   <Nav>

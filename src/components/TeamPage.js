@@ -35,10 +35,6 @@ const TeamPage = () => {
             <TeamCard name="Saurabh Raj" position="Designing Team Head" email="mailto:saurabhraj.18je0747@pe.iitism.ac.in"/>
             <TeamCard name="AVINASH" position="Campus Ambassador Program Head" email="mailto:avinash21997@gmail.com"/>
           </MDBRow>
-        </MDBCardBody>
-      </MDBCard>
-      <MDBCard className=" pb-5 text-center z-depth-0 border-0">
-        <MDBCardBody>
           <MDBAnimation reveal type="lightSpeedIn" >
           <h2 className="h1-responsive team_head  font-weight-bold my-5">
             DEVELOPERS
@@ -49,12 +45,15 @@ const TeamPage = () => {
             <TeamCard column="6"  name="Aakash Kumar Singh" position="Web Developer" email="mailto:aksingh01ak@gmail.com"/>
             <TeamCard name="Yash Vardhan" position="Web Developer" email="mailto:yashvardhan513@gmail.com"/>
           </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
+
+
           {/* <MDBRow className="justify-content-center  mt-5">
             <TeamCard  name="Aashisha Singh" position="App Developer" email="" />
             <TeamCard name="Akshat Tripathi" position="App Developer" email="mailto:akshatofficial2019@gmail.com"/>
           </MDBRow> */}
-        </MDBCardBody>
-      </MDBCard>
+
       </div>
   );
 }

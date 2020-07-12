@@ -847,3 +847,6 @@ td {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
 }
+.toggler {
+  font-size: 2rem;
+}
