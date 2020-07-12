@@ -121,9 +121,10 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .autoplay-slider {
-        margin-top: 20%;
+    .heritage-image {
+        height: 270px !important;
     }
+
 }
 
 .contact-icon-div {
@@ -203,6 +204,26 @@ body {
     padding-left: 65px;
     text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  .footer-acm  {
+      padding-top: 10px;
+      font-size: 20px;
+      color: white;
+      padding-right: 60px;
+      text-align: center;
+  }
+  .footer-acm p {
+    font-size: 1rem;
+  }
+  .location2 {
+    font-size: 1rem;
+  }
+  .footer-h3 {
+    font-size: 1.5rem;
+  }
+
+}
+
 
 .footer-h3 {
     text-align: center;
@@ -259,9 +280,7 @@ body {
     .icons_uni {
         padding-top: 4px;
     }
-    .location2 {
-        padding-top: 3px;
-    }
+
     .picc {
         display: block;
         padding-left: 4px;
@@ -280,10 +299,7 @@ body {
         width: 60px;
         height: 60px;
     }
-    .location2 {
-        padding-top: 5px;
-        font-size: 16px;
-    }
+
     .foot_icon img {
         width: 30px;
         height: 30px;
@@ -527,8 +543,8 @@ td {
 @media only screen and (max-width: 600px) {
     .contact-social {
         text-align: left;
-        margin-left: 15%;
-        margin-right: 22%;
+        margin-left: 5%;
+        margin-right: 5%;
         padding-left: 10%;
         border-radius: 10px;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -540,6 +556,10 @@ td {
     }
     .form-input {
         width: 600px;
+    }
+    .contact-card {
+        text-align: center;
+        height: 80%;
     }
 }
 
@@ -667,9 +687,7 @@ td {
 /* event carousel ends */
 
 
-/* .event-card {
-    margin-left: 9.6%;
-} */
+
 
 @media only screen and (max-width: 600px) {
     .event-card {
@@ -819,4 +837,13 @@ td {
         margin-top: 80px;
     }
 }
-
+.about-ism {
+  color: #1a1245;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.about-acm {
+  color: #1a1245;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}

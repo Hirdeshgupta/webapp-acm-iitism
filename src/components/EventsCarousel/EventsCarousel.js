@@ -49,7 +49,7 @@ class EventsCarousel extends React.Component {
         setTimeout(()=>{
           this.setState({
             is_loading:false,
-          });    
+          });
         },1000,()=>{
           document.querySelectorAll(".card").forEach(x=>{
             x.style.height="auto";
@@ -87,12 +87,12 @@ class EventsCarousel extends React.Component {
               <span className="sr-only">Loading...</span>
             </div>
           </MDBCard>
-        </MDBCol> 
+        </MDBCol>
             );
       }
       else{
         return(
-          <MDBCol style={{ width:"110%" }}  className="event-card mx-5">
+          <MDBCol style={{ width:"100%" }}  className="event-card mx-5">
           <MDBCard className="z-depth-2">
             <MDBCardImage className="card-image" src={this.state.source} waves />
             <MDBCardBody>
@@ -112,7 +112,7 @@ class EventsCarousel extends React.Component {
               </Link>
             </MDBCardBody>
           </MDBCard>
-        </MDBCol> 
+        </MDBCol>
         )
       }
 
