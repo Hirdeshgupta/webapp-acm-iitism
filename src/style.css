@@ -413,13 +413,17 @@ td {
 .backToEvents {
     margin: 13px;
     margin-left: 5px;
-    /* font-size: 1px; */
+    font-size: 12px;
+}
+.backToEvents.btn {
+   padding: 4px;
 }
 }
 
 .backToEvents {
     margin: 15px;
     margin-left: 5px;
+    font-size: 20px;
 }
 
 .txt_body {

@@ -90,7 +90,7 @@ render() {
              
             {/* </MDBCardBody> */}
           </MDBCard>
-        <MDBBtn outline color="primary" className="backToEvents"><Link style={{ fontSize: "19px", padding: "7px" }} to={'/events'}>Back to Events List</Link></MDBBtn>
+        <MDBBtn outline color="primary" className="backToEvents"><Link  to={'/events'}>Back To Events List</Link></MDBBtn>
         </MDBCol>
 
     </div>
