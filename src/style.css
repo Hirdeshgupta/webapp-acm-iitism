@@ -390,6 +390,9 @@ td {
 .txt_body h1{
     margin-bottom: 5px;
 }
+#new-img { margin-left: 25%;
+    margin-top: 10px;
+}
 @media only screen and (max-width: 360px) {
     #new-img {
           width: 100%;
