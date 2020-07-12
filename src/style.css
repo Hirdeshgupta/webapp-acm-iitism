@@ -274,7 +274,6 @@ body {
 @media only screen and (max-width:360px) {
     .head_spons {
         font-size: 40px;
-        text-shadow: 3px 3px rgb(125, 125, 125);
         margin-left: 20px;
     }
     #sponsors {
@@ -381,37 +380,39 @@ td {
     margin-top: 10px;
     border-radius: 2%;
     /* border: 3px solid gray; */
-
 }
-.txt_body h5{
+
+.txt_body h5 {
     color: brown;
     margin-bottom: 5px;
 }
-.txt_body h1{
+
+.txt_body h1 {
     margin-bottom: 5px;
 }
+
 @media only screen and (max-width: 360px) {
     #new-img {
-          width: 100%;
-          height: 100%;
-          margin-left: 0;
-          margin-top: 0;
-}
-.txt_body h1{
-    font-size: 24px;
-}
-.txt_body h5{
-    font-size: 18px;
-    color: brown;
-}
-.txt_body .pre{
-    font-size: 16px;
-}
-.backToEvents {
-    margin: 13px;
-    margin-left: 5px;
-    /* font-size: 1px; */
-}
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .txt_body h1 {
+        font-size: 24px;
+    }
+    .txt_body h5 {
+        font-size: 18px;
+        color: brown;
+    }
+    .txt_body .pre {
+        font-size: 16px;
+    }
+    .backToEvents {
+        margin: 13px;
+        margin-left: 5px;
+        /* font-size: 1px; */
+    }
 }
 
 .backToEvents {
@@ -423,7 +424,6 @@ td {
     text-align: center;
     margin-top: 15px;
 }
-
 
 .pre {
     font-family: inherit;
@@ -740,4 +740,124 @@ td {
 .navbar.navbar-light .navbar-toggler-icon .hamburger {
     cursor: pointer;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media only screen and (max-width:776px) {
+    .contact-social {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .mail-card {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .md-form .prefix~input,
+    .md-form .prefix~textarea {
+        width: 75%;
+    }
+    .formbtn {
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .mail-card {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (max-width:676px) {
+    .md-form .prefix~input,
+    .md-form .prefix~textarea {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .contact-social {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .mail-card {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .md-form .prefix~input,
+    .md-form .prefix~textarea {
+        width: 60%;
+    }
+    .formbtn {
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .formbtn {
+        margin-left: 22%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .md-form .prefix~input,
+    .md-form .prefix~textarea {
+        width: 50%;
+    }
+    .formbtn {
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .formbtn {
+        margin-left: 17%;
+    }
+}
+
+@media only screen and (max-width:410px) {
+    .contact-social {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .md-form .prefix~input,
+    .md-form .prefix~textarea {
+        width: 35%;
+    }
+    .mail-card {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .formbtn {
+        margin-left: 15%;
+    }
+    .head_spons {
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .formbtn {
+        margin-left: 12%;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .contact-social {
+        padding-left: 5%;
+    }
+    .formbtn {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .formbtn {
+        margin-left: 34%;
+    }
+}
+
+@media only screen and (min-width:2000px) {
+    .formbtn {
+        margin-left: 35%;
+    }
 }

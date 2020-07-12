@@ -30,7 +30,7 @@ class ContactPage extends React.Component {
            <h1 className="head_spons pl-lg-5 pl-1">CONTACT US</h1>
       </MDBAnimation>
       <MDBRow  className="justify-content-center align-items-center mt-5">
-        <MDBCol lg="4" className="lg-0 mb-4">
+        <div  className="col-lg-4  lg-0 mb-4">
       <MDBAnimation reveal type="fadeInLeft" >
 
           <MDBCard className="mail-card">
@@ -38,7 +38,7 @@ class ContactPage extends React.Component {
             <div  style={{width:"100%"}}>
               <div className="form-header  accent-1 z-depth-1" style={{background:"#377293"}}>
               <div className="row justify-content-center">
-                <h3 className="mt-2 col-6 white-text">
+                <h3 className="mt-2 col-10 col-sm-6  white-text">
                   <MDBIcon icon="envelope" /> Write to us:
                 </h3>
                 </div>
@@ -93,17 +93,15 @@ class ContactPage extends React.Component {
                   id="form-text"
                 />
               </div>
-              <div className="text-center">
-                <MDBBtn color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon icon="paper-plane" /></MDBBtn>
-              </div>
+                <MDBBtn className="formbtn" color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon icon="paper-plane" /></MDBBtn>
       </ form >
 
             </MDBCardBody>
           </MDBCard>
         </MDBAnimation>
-        </MDBCol>
+        </div>
 
-        <MDBCol lg="5" className="lg-0 mb-4 contact-card">
+        <div  className="col-12 col-lg-5 lg-0 mb-4 contact-card">
         <MDBAnimation reveal type="fadeInRight" >
           <div className="contact-social">
             <div className="reach-us"><h3>Reach Us at</h3></div>
@@ -123,7 +121,7 @@ class ContactPage extends React.Component {
             </div>
           </div>
           </MDBAnimation>
-        </MDBCol>
+        </div>
 
         </MDBRow>
         <MDBRow className="map-row">
