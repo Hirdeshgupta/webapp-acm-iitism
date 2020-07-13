@@ -5,8 +5,53 @@ import {MDBAnimation } from "mdbreact"
 class Sponsors extends React.Component{
     componentDidMount(){
         document.querySelectorAll(".anime-links").forEach(x=>{
-          x.style.color="black";
-        })
+            x.style.color="black";
+          this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+
+          })
+          document.addEventListener("scroll",()=>{
+            let scrolled = document.scrollingElement.scrollTop;
+            if (scrolled >= 20) {
+              document.querySelectorAll(".anime-links").forEach(x=>{
+                x.style.color="white";
+                this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+              })
+              if ( document.querySelector(".anime-links").style.color=="rgba(255,255,255,0)") {
+                document.querySelectorAll(".anime-links").forEach(x=>{
+                  x.style.color="white";
+                  this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+                })
+              }
+            } else {
+              if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
+                document.querySelectorAll(".anime-links").forEach(x=>{
+                  x.style.color="black";
+                  this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+                })
+              if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
+                document.querySelectorAll(".anime-links").forEach(x=>{
+                  x.style.color="black";
+                  this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+                })
+        
+              }
+            }
+          }})
+      }
+      animeLinkChangeColor(color){
+        var addRule = (function (style) {
+          var sheet = document.head.appendChild(style).sheet;
+          return function (selector, css) {
+              var propText = typeof css === "string" ? css : Object.keys(css).map(function (p) {
+                  return p + ":" + (p === "content" ? "'" + css[p] + "'" : css[p]);
+              }).join(";");
+              sheet.insertRule(selector + "{" + propText + "}", sheet.cssRules.length);
+          };
+      })(document.createElement("style"));
+    
+      addRule(".anime-links::after", {
+          background:color ,
+      });
       }
   render(){
     return(

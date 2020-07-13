@@ -11,6 +11,7 @@ import ContactUs from "./components/ContactUs";
 import './animate.css';
 import Preloader from "./components/Preloader"
 import {MDBAnimation } from "mdbreact"
+import ScrollToTop from "./components/ScrollToTop";
 class Main extends React.Component{
 
     // constructor(props)
@@ -37,6 +38,7 @@ class Main extends React.Component{
 			<BrowserRouter>
 			<div>
 				<TopNav />
+				<ScrollToTop>
 				<Switch>
 				<Route path="/" component={Home} exact/>
 				<Route path="/events" exact component={EventsApp} />
@@ -45,7 +47,7 @@ class Main extends React.Component{
 				<Route path="/TeamPage" component={TeamPage}/>
 				<Route path="/ContactUS" component={ContactUs} />
 				</Switch>
-				
+				</ScrollToTop>
 				<Footer />
 
 			</div>

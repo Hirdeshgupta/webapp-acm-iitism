@@ -120,7 +120,7 @@ if(this.state.is_loading){
      </Slider>
      <div className="row justify-content-center">
        <div className="col-2">
-       <Button variant="secondary" style={{marginTop: "-120px"}}  href="/events">Explore All</Button>{' '}
+       <Button variant="secondary" style={{marginTop: "-120px"}}  href="#events">Explore All</Button>{' '}
        </div>
      </div>
     </div>
