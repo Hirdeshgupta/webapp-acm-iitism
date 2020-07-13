@@ -591,6 +591,9 @@ td {
         text-align: center;
         height: 80%;
     }
+    .about-us-image {
+      height: 10%;
+    }
 }
 
 .map-row {
