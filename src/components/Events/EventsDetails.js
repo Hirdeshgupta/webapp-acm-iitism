@@ -85,7 +85,7 @@ render() {
             <div className="txt_body"> 
             <h1 style={{fontStyle: "bold"}}>{this.props.location.state.title}</h1>
               <h5><i class="far fa-calendar-alt"></i> {this.props.location.state.date}</h5>
-              <pre className="pre">{this.props.location.state.description}</pre>
+              <pre className="pre" style={{overflow:"hidden"}} >{this.props.location.state.description}</pre>
             </div>
              
             {/* </MDBCardBody> */}
