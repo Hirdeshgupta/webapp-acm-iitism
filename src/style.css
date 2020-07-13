@@ -225,9 +225,11 @@ body {
     }
     .footer-acm p {
         font-size: 1rem;
+        /* text-align: center; */
+        /* margin-left: 10px; */
     }
     .address {
-        font-size: 14px !important;
+        font-size: 15px !important;
     }
     .footer-h3 {
         font-size: 1.5rem;
@@ -278,6 +280,7 @@ body {
     font-size: 16px;
 }
 
+
 @media only screen and (max-width:741px) {
     .para {
         font-size: 0.8rem;
@@ -319,13 +322,14 @@ body {
     }
     .footer-acm p {
         margin-bottom: 3px;
+        margin-left: 65px;
         padding-left: 4px;
         font-size: 16px;
     }
     .logoo {
         width: 60px;
         height: 60px;
-        margin-left: 90px;
+        margin-left: 70px;
     }
     .logoo1 {
         width: 60px;
@@ -714,7 +718,7 @@ td {
     text-align: center;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 415px) {
     .slick .slick-next:before,
     .slick .slick-prev:before {
         font-size: 3rem;
@@ -796,9 +800,9 @@ td {
     height: 500px;
 }
 
-@media only screen and (max-width: 361px) {
+@media only screen and (max-width: 415px) {
     .slick {
-        margin: 10px 0 0 51px;
+        margin: 10px 0 0 55px;
         /* width: 1200%; */
     }
     .slick .slick-prev:before {
@@ -971,3 +975,5 @@ td {
         margin-bottom: 15px;
     }
 }
+
+
