@@ -18,7 +18,7 @@ function Footer(){
                    <a href="https://www.iitism.ac.in/"><img className="logoo1" src={require('./img/clg-logo.jpg')} alt="IIT Dhanbad"/></a>
            </div>
                    <p>
-                     Association for Computing Machinery <br/>
+                   ACM Student Chapter <br/>
                      IIT (ISM) Dhanbad
                     </p>
         </div>
