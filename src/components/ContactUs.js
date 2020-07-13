@@ -12,11 +12,31 @@ class ContactPage extends React.Component {
       message: false
     }
     componentDidMount(){
-      document.querySelectorAll(".anime-links").forEach(x=>{
-        x.style.color="black";
-        this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+      document.querySelector(" .fa-bars").style.color="black";
 
-      })
+      let num=0;
+      if(window.innerWidth<992){
+        document.querySelector(".hamburger").addEventListener("click",()=>{
+          num++;
+          if(num%2==0){
+            if(document.scrollingElement.scrollTop<20){
+              document.querySelector(" .fa-bars").style.color="black";  
+            }
+          }
+          else{
+            document.querySelector(" .fa-bars").style.color="white"; 
+          }
+        })
+      }
+      
+        if(window.innerWidth>992){
+          document.querySelectorAll(".anime-links").forEach(x=>{
+            x.style.color="black";
+            this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+    
+          })
+        }
+
       document.addEventListener("scroll",()=>{
         let scrolled = document.scrollingElement.scrollTop;
         if (scrolled >= 20) {
@@ -24,23 +44,33 @@ class ContactPage extends React.Component {
             x.style.color="white";
             this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
           })
+      document.querySelector(" .fa-bars").style.color="white";
           if ( document.querySelector(".anime-links").style.color=="rgba(255,255,255,0)") {
             document.querySelectorAll(".anime-links").forEach(x=>{
               x.style.color="white";
               this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
             })
+      document.querySelector(" .fa-bars").style.color="white";
+
           }
         } else {
           if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
+            if(window.innerWidth>992){
             document.querySelectorAll(".anime-links").forEach(x=>{
               x.style.color="black";
               this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
             })
+          }
+      document.querySelector(" .fa-bars").style.color="black";
+
           if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
+            if(window.innerWidth>992){
             document.querySelectorAll(".anime-links").forEach(x=>{
               x.style.color="black";
               this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
             })
+          }
+          document.querySelector(" .fa-bars").style.color="black";
     
           }
         }
@@ -104,7 +134,7 @@ addRule(".anime-links::after", {
   return (
     <section style={{marginTop:120}}>
       <MDBAnimation reveal type="lightSpeedIn" >
-           <h1 className="head_spons pl-lg-5 pl-1">CONTACT US</h1>
+           <h1 className="head_spons head_contact pl-lg-5 pl-1">CONTACT US</h1>
       </MDBAnimation>
       <MDBRow  className="justify-content-center align-items-center mt-5">
         <div  className="col-lg-4  lg-0 mb-4">

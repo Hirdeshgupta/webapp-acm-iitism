@@ -92,8 +92,6 @@ class EventsCarousel extends React.Component {
       }
       else{
         return(
-          <MDBAnimation reveal type="fadeInUp">
-
       <MDBCol style={{ maxWidth: "25rem", marginLeft:"9px"}} className="event-card">
         <MDBCard>
           <MDBCardImage className="card-image" src={this.state.source} waves />
@@ -116,9 +114,6 @@ class EventsCarousel extends React.Component {
         </MDBCard>
       </MDBCol>
 
-
-
-      </MDBAnimation>
         )
       }
 

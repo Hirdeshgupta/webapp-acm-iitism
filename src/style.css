@@ -99,7 +99,6 @@ body {
     margin-right: 10px;
     font-size: 1.5rem;
     font-weight: 500;
-    color: white !important
 }
 
 @keyframes anime {
@@ -284,20 +283,22 @@ body {
         font-size: 0.8rem;
     }
 }
+
 @media only screen and (max-width:600px) {
-  .logoo {
-      width: 60px;
-      height: 60px;
-      margin-left: 68px;
-  }
-  .logoo1 {
-      width: 60px;
-      height: 60px;
-  }.foot_icon img {
-      width: 28px;
-      height: 28px;
-      border-radius: 10%;
-  }
+    .logoo {
+        width: 60px;
+        height: 60px;
+        margin-left: 68px;
+    }
+    .logoo1 {
+        width: 60px;
+        height: 60px;
+    }
+    .foot_icon img {
+        width: 28px;
+        height: 28px;
+        border-radius: 10%;
+    }
 }
 
 @media only screen and (max-width:360px) {
@@ -429,7 +430,7 @@ table.table a {
 }
 
 .events_a {
-     font-size: 18px;
+    font-size: 18px;
     color: #377293;
 }
 
@@ -633,7 +634,7 @@ td {
     color: rgb(206, 192, 192);
 }
 
-.slick .slick-next:before{
+.slick .slick-next:before {
     margin-right: 40px;
 }
 
@@ -698,7 +699,7 @@ td {
 *:focus {
     outline: 0;
     /* border: none; */
-  }
+}
 
 @media only screen and (max-width: 600px) {
     .slick-image {
@@ -724,7 +725,7 @@ td {
     .slick .slick-prev:before {
         margin-left: -2px;
     }
-    .col-8{
+    .col-8 {
         width: 120%;
     }
 }
@@ -848,12 +849,10 @@ td {
 }
 
 @media only screen and (max-width: 600px) {
-  .loading-events {
-      margin-left: 41%;
-  }
-
+    .loading-events {
+        margin-left: 41%;
+    }
 }
-
 
 
 /* ABOUT */
@@ -892,6 +891,50 @@ td {
     }
 }
 
+@media only screen and (max-width: 561px) {
+    .spons_img {
+        width: 100%;
+    }
+    .spons_img2 {
+        width: 100%;
+    }
+    .mail-card {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .md-form .prefix~input,
+    .md-form .prefix~textarea {
+        width: 40%;
+    }
+    md-form .prefix~input,
+    .md-form .prefix~textarea {
+        width: 40%;
+    }
+    .head_contact {
+        margin-left: 0;
+    }
+    .spons_card {
+        padding-right: 9%;
+    }
+}
+
+@media only screen and (max-width: 341px) {
+    .md-form .prefix~input,
+    .md-form .prefix~textarea {
+        width: 30%;
+    }
+    md-form .prefix~input,
+    .md-form .prefix~textarea {
+        width: 30%;
+    }
+    .contact-social {
+        padding-left: 3%;
+    }
+    .head_spons {
+        margin-left: 0;
+    }
+}
+
 .about-ism {
     color: #1a1245;
     font-weight: bold;
@@ -907,13 +950,16 @@ td {
 .toggler {
     font-size: 2rem;
 }
+
 .hamburger {
-  color: red;
+    color: red;
 }
+
 #responsive-navbar-nav {
-  color: white !important;
+    color: white !important;
 }
-.explore{
+
+.explore {
     margin-top: -110px;
     margin-left: 0;
 }

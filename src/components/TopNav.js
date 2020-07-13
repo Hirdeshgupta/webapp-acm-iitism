@@ -8,29 +8,49 @@ import { setGlobalCssModule } from "reactstrap/lib/utils";
 class TopNav extends React.Component {
 
   state={
-    background:"#1a1245",
+    background:"rgba(255,255,255,0)",
     color:"white",
     height:"auto",
     hamburger: "white"
   }
-
 componentDidMount(){
 
+  if(window.innerWidth<992){
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+      if(this.state.background=="rgba(255,255,255,0)"){
+        this.setState({background:"#1a1245",color:"white"});
+        document.querySelector(" .fa-bars").style.color="white";
+        
+      }
+      else if (this.state.background=="#1a1245"){
+        this.setState({background:"rgba(255,255,255,0)",color:"black"})
+        document.querySelector(" .fa-bars").style.color="white";
+
+      }
+    })
+  }
   document.addEventListener("scroll",()=>{
     let scrolled = document.scrollingElement.scrollTop;
     if (scrolled >= 20) {
       if (this.state.background == "rgba(255,255,255,0)") {
+        this.setState({ background: " #1a1245",color:"white",height:"70", hamburger: "white" });
         this.setState({ background: " #1a1245", color: "white",height:"70", hamburger: "white" });
         this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-      } else {
-        if(this.state.background == "white"){
-          this.setState({ background: " #1a1245", color: "white",height:"70", hamburger: "white" });
-          this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-        }
       }
     } else {
-    
-  }})
+      if (this.state.background !== "rgba(2,3,4,0)") {
+        this.setState({ background: "rgba(2,3,4,0)",color:"white",height:"auto",hamburger: "white"  });
+        this.setState({ background: "rgba(2,3,4,0)", color: "white",height:"auto",hamburger: "white"  });
+        this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+      if (this.state.background !== "rgba(255,255,255,0)") {
+        this.setState({ background: "rgba(255,255,255,0)",color:"white",height:"auto", hamburger: "white"  });
+        this.setState({ background: "rgba(255,255,255,0)", color: "white",height:"auto", hamburger: "white"  });
+        this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+
+      }
+    }
+  }
+})
 }
   animeLinkChangeColor(color){
     var addRule = (function (style) {
@@ -64,19 +84,19 @@ render(){
     <Nav className="mr-auto" >
   </Nav>
   <Nav>
-  <Nav.Link className="topNav-links anime-links" style={{color:"white"}} onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout}  eventKey={1} href="/">
+  <Nav.Link className="topNav-links anime-links" style={{color:this.state.color}} onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout}  eventKey={1} href="/">
     Home
   </Nav.Link>
-    <Nav.Link className="topNav-links anime-links" style={{color:"white"}}  onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout}  eventKey={3} href="/events">
+    <Nav.Link className="topNav-links anime-links" style={{color:this.state.color}}  onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout}  eventKey={3} href="/events">
       Events
     </Nav.Link>
-    <Nav.Link className="topNav-links anime-links" style={{color:"white"}}  onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout} eventKey={4} href="/sponsors">
+    <Nav.Link className="topNav-links anime-links" style={{color:this.state.color}}  onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout} eventKey={4} href="/sponsors">
       Past sponsers
     </Nav.Link>
-    <Nav.Link className="topNav-links anime-links" style={{color:"white"}}  onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout} eventKey={5} href="./TeamPage">
+    <Nav.Link className="topNav-links anime-links" style={{color:this.state.color}}  onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout} eventKey={5} href="./TeamPage">
       Team
     </Nav.Link>
-    <Nav.Link className="topNav-links anime-links" style={{color:"white"}}  onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout} eventKey={6} href="/ContactUs">
+    <Nav.Link className="topNav-links anime-links" style={{color:this.state.color}}  onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout} eventKey={6} href="/ContactUs">
       Contact us
     </Nav.Link>
   </Nav>
