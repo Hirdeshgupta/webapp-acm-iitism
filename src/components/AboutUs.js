@@ -15,6 +15,7 @@ function AboutUs() {
 The chapter aims at serving as a dynamic hub of activites for the computing fraternity of IIT(ISM) Dhanbad, where enthusiasts meet, interact and learn from each other.
 The chapter organizes various events which includes hackathons, technical workshops, talks by renowned speakers and coding competitions catering to 1500+ enthusiasts.
 With over 1400+ paid members, our chapter is one of the biggest student chapters in India.
+
         </p>
 
           </MDBAnimation>

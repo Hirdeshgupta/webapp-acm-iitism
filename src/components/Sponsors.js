@@ -33,7 +33,7 @@ class Sponsors extends React.Component{
                   x.style.color="black";
                   this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
                 })
-        
+
               }
             }
           }})
@@ -48,7 +48,7 @@ class Sponsors extends React.Component{
               sheet.insertRule(selector + "{" + propText + "}", sheet.cssRules.length);
           };
       })(document.createElement("style"));
-    
+
       addRule(".anime-links::after", {
           background:color ,
       });
@@ -61,7 +61,7 @@ class Sponsors extends React.Component{
            <h1 className="head_spons pl-lg-5 pl-1">PAST SPONSORS </h1>
           </MDBAnimation>
     <MDBAnimation reveal type="fadeInLeft" >
-        <Container style={{marginTop:50 , padding:0}}>
+        <Container className="sponsers-container" style={{marginTop:40 , padding:0}}>
            <Row className="justify-content-center">
                <Col lg="6" xs="12">
                <img className="spons_img" src={require("./img/sponsors/1.jpeg")} alt="Sponsors"></img>
@@ -76,8 +76,8 @@ class Sponsors extends React.Component{
         </div>
         </section>
     )
-  }    
-   
+  }
+
 }
 
 export default Sponsors
