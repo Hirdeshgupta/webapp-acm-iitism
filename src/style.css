@@ -429,7 +429,7 @@ table.table a {
 }
 
 .events_a {
-    font-size: 18px;
+     font-size: 18px;
     color: #377293;
 }
 
@@ -630,8 +630,13 @@ td {
     color: rgb(206, 192, 192);
 }
 
+.slick .slick-next:before{
+    margin-right: 40px;
+}
+
 .slick {
     margin: 30px auto;
+    margin-left: 80px;
     padding: 0px 20px 20px 20px;
     width: 500px;
     background: #fff;
@@ -687,6 +692,11 @@ td {
     margin-top: 15px;
 }
 
+*:focus {
+    outline: 0;
+    /* border: none; */
+  }
+
 @media only screen and (max-width: 600px) {
     .slick-image {
         width: 300px;
@@ -705,11 +715,14 @@ td {
     .slick .slick-prev:before {
         font-size: 3rem;
     }
-    .slick .slick-next:before {
-        margin-left: -35px;
+    .slick .slick-next::before {
+        margin-right: 25px;
     }
     .slick .slick-prev:before {
         margin-left: -2px;
+    }
+    .col-8{
+        width: 120%;
     }
 }
 
@@ -781,7 +794,7 @@ td {
 
 @media only screen and (max-width: 361px) {
     .slick {
-        margin: 10px 0 10px 30px;
+        margin: 10px 0 0 51px;
         /* width: 1200%; */
     }
     .slick .slick-prev:before {
@@ -804,6 +817,11 @@ td {
         width: 180px;
         height: 180px;
         object-fit: cover;
+    }
+    .card-title {
+        color: black;
+        font-size: 19px;
+        font-weight: 700;
     }
 }
 
@@ -891,4 +909,16 @@ td {
 }
 #responsive-navbar-nav {
   color: white !important;
+}
+.explore{
+    margin-top: -110px;
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 360px) {
+    .explore {
+        margin-top: -150px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    } 
 }

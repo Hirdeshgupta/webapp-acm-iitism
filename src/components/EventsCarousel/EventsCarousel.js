@@ -81,8 +81,8 @@ class EventsCarousel extends React.Component {
 
       if(this.state.is_loading){
         return (
-          <MDBCol style={{ width:"110%" }}  className="event-card mx-5">
-          <MDBCard className="z-depth-2">
+          <MDBCol style={{ maxWidth: "25rem", marginLeft:"8px"}} className="event-card">
+          <MDBCard >
             <div className="spinner-border text-primary" role="status">
               <span className="sr-only">Loading...</span>
             </div>
@@ -92,27 +92,33 @@ class EventsCarousel extends React.Component {
       }
       else{
         return(
-          <MDBCol style={{ width:"100%" }}  className="event-card mx-5">
-          <MDBCard className="z-depth-2">
-            <MDBCardImage className="card-image" src={this.state.source} waves />
-            <MDBCardBody>
-              <MDBCardTitle className="card-title h5-responsive">{this.title.length <= 27 ? this.title.substring(0, 27) : this.title.substring(0, 27) + "..."}</MDBCardTitle>
-              <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
-              <Link to={{
-                pathname: `events/${this.id}`,
-                state: {
-                  id: this.id,
-                  title: this.title,
-                  date: this.date,
-                  imageURL: this.imageURL,
-                  description: this.description
-                }
-              }}>
-              <h6 className="slick-show">Show More</h6>
-              </Link>
-            </MDBCardBody>
-          </MDBCard>
-        </MDBCol>
+          <MDBAnimation reveal type="fadeInUp">
+
+      <MDBCol style={{ maxWidth: "25rem", marginLeft:"9px"}} className="event-card">
+        <MDBCard>
+          <MDBCardImage className="card-image" src={this.state.source} waves />
+          <MDBCardBody>
+            <MDBCardTitle className="card-title">{this.title}</MDBCardTitle>
+            <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
+            <Link to={{
+              pathname: `events/${this.id}`,
+              state: {
+                id: this.id,
+                title: this.title,
+                date: this.date,
+                imageURL: this.imageURL,
+                description: this.description
+              }
+            }}>
+            <h6 className="slick-show" style={{color: "blue", paddingBottom:"20px"}}>Show More</h6>
+            </Link>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+
+
+
+      </MDBAnimation>
         )
       }
 
