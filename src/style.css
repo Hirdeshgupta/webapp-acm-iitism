@@ -219,7 +219,6 @@ body {
 
 @media only screen and (max-width: 600px) {
     .footer-acm {
-        padding-top: 10px;
         font-size: 20px;
         color: white;
         padding-right: 60px;
@@ -228,11 +227,18 @@ body {
     .footer-acm p {
         font-size: 1rem;
     }
-    .location2 {
-        font-size: 1rem;
+    .address {
+        font-size: 14px !important;
     }
     .footer-h3 {
         font-size: 1.5rem;
+    }
+    #footer {
+        background: #1a1245;
+        color: white;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        width: 100%;
     }
 }
 
@@ -277,6 +283,21 @@ body {
     .para {
         font-size: 0.8rem;
     }
+}
+@media only screen and (max-width:600px) {
+  .logoo {
+      width: 60px;
+      height: 60px;
+      margin-left: 68px;
+  }
+  .logoo1 {
+      width: 60px;
+      height: 60px;
+  }.foot_icon img {
+      width: 28px;
+      height: 28px;
+      border-radius: 10%;
+  }
 }
 
 @media only screen and (max-width:360px) {
@@ -520,7 +541,7 @@ td {
 .contact-social {
     text-align: left;
     margin-left: 25%;
-    margin-right: 20%;
+    margin-right: 18%;
     padding-left: 10%;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -809,7 +830,7 @@ td {
   .loading-events {
       margin-left: 41%;
   }
-  
+
 }
 
 

@@ -6,11 +6,11 @@ import { MDBIcon } from "mdbreact";
 
 function Footer(){
   return (
-    // Footer starts 
+    // Footer starts
 <section id="footer">
 
    <Container fluid>
-   <Row> 
+   <Row>
       <Col xs="12" lg="4">
       <div className="footer-acm">
            <div className="picc">
@@ -23,16 +23,16 @@ function Footer(){
                     </p>
         </div>
       </Col>
-        
+
         <Col xs="12" lg="4">
         <div className="location1">
                <h3 className="footer-h3">Location</h3>
-               <p className="location2">Department of Computer Science and Engineering,
+               <p className="location2 address">Department of Computer Science and Engineering,
               IIT (ISM)
               Dhanbad, India - 826004</p>
          </div>
         </Col>
-            
+
          <Col xs="12" lg="4">
          <h3 className="footer-h3">Get In Touch</h3>
              <div className="icons_uni">
@@ -47,16 +47,16 @@ function Footer(){
              &nbsp;&nbsp;&nbsp;
              <a className="foot_icon" href="https://www.youtube.com/channel/UCaXEPdTHm08sxKlTJjRVxJA">
               <img src={require("./img/footer/utube.png")} alt="You Tube"/></a>
-           </div> 
+           </div>
          </Col>
          </Row>
-           
+
     <div className="foot">
       <p>Made with &nbsp;<MDBIcon icon="heart" />&nbsp; by ACM-IIT Dhanbad</p>
-     </div> 
-   
+     </div>
+
    </Container>
-     
+
 
 </section>
 
