@@ -4,7 +4,8 @@ import {DB_CONFIG} from "../../Config/config";
 import firebase from "firebase/app";
 import "firebase/database";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel, Button } from 'react-bootstrap';
+import { Button } from 'reactstrap';
+// import {  Button } from 'react-bootstrap';
 import Slider from "react-slick";
 import {MDBAnimation } from "mdbreact"
 
@@ -119,8 +120,11 @@ if(this.state.is_loading){
          }
      </Slider>
      <div className="row justify-content-center">
-       <div className="col-2">
-       <Button variant="secondary" style={{marginTop: "-120px"}}  href="#events">Explore All</Button>{' '}
+       <div className="col-12">
+       {/* <Button variant="secondary" style={{marginTop: "-120px"}}  href="#events">Explore All</Button>{' '} */}
+       {/* <Button color="primary" size="lg" block>Block level button</Button> */}
+       <Button color="primary" className="explore" size="lg"  href="/events"><i class="fas fa-list"></i> &nbsp;&nbsp;Explore All</Button>
+       
        </div>
      </div>
     </div>
@@ -163,8 +167,10 @@ else{
          }
      </Slider>
      <div className="row justify-content-center">
-       <div className="col-2">
-       <Button variant="secondary" style={{marginTop: "-120px"}} href="/events">Explore All</Button>{' '}
+       <div className="col-12">
+       {/* <Button variant="secondary"  href="/events">Explore All</Button>{' '} */}
+       <Button color="primary" className="explore" size="lg"  href="/events"><i class="fas fa-list"></i> &nbsp;&nbsp;Explore All</Button>
+
        </div>
      </div>
     </div>
