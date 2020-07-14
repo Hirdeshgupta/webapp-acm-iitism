@@ -647,12 +647,14 @@ td {
 }
 @media only screen and (max-width: 600px) {
   .formbtn {
-    margin-left: 12%;
+    margin-left: 14%;
+    border-color: #377293;
   }
 }
 @media only screen and (min-width: 1000px) {
   .formbtn {
-    margin-left: 32%;
+    margin-left: 35%;
+    border-color: #377293;
   }
 }
 
@@ -1033,5 +1035,17 @@ td {
 font-size: 18px;
 color: #1a1245;
 font-weight: bold;
-    }    
+    }
+}
+.form-input {
+  width: 85%;
+  margin-left: 20px;
+  margin-top: 8%;
+}
+@media only screen and (max-width: 600px){
+  .form-input {
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 7%;
+  }
 }

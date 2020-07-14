@@ -151,64 +151,23 @@ addRule(".anime-links::after", {
                 </div>
               </div>
               </div>
-      <form action="mailto:acm.ism@gmail.com" method="POST" encType="text/plain" className=" mail-form">
+      <form action="mailto:acm.ism@gmail.com" method="post" encType="text/plain" className=" mail-form">
               <div className="md-form">
-                <MDBInput
-                  icon="user"
-                  label="Your name"
-                  iconClass="grey-text"
-                  type="text"
-                  group
-                  id="form-name"
-                  validate
-                  error="wrong"
-                  success="right"
-                  onChange={this.handleName}
-                  autocomplete="off"
-                />
+              <i class="far fa-user"></i><input className="form-input" type="text" placeholder="Your name" onChange={this.handleName} name="name" autocomplete="off" />
               </div>
+
               <div className="md-form">
-                <MDBInput
-                  icon="envelope"
-                  label="Your email"
-                  iconClass="grey-text"
-                  group
-                  type="email"
-                  validate
-                  error="wrong"
-                  success="right"
-                  id="form-email"
-                  onChange={this.handleEmail}
-                  autocomplete="off"
-                />
+              <i class="far fa-envelope"></i><input className="form-input" type="email" placeholder="Your email" onChange={this.handleEmail} name="Email" autocomplete="off"/>
               </div>
+
               <div className="md-form">
-                <MDBInput
-                  icon="tag"
-                  label="Subject"
-                  iconClass="grey-text"
-                  group
-                  type="text"
-                  validate
-                  error="wrong"
-                  success="right"
-                  id="form-subject"
-                  onChange={this.handleSubject}
-                  autocomplete="off"
-                />
+              <i class="far fa-sticky-note"></i><input className="form-input" type="text" placeholder="Subject" onChange={this.handleSubject} name="Subject" autocomplete="off" />
               </div>
+
               <div className="md-form">
-                <MDBInput
-                  icon="pencil-alt"
-                  label="Your Message"
-                  iconClass="grey-text"
-                  type="textarea"
-                  id="form-text"
-                  onChange={this.handleMessage}
-                  autocomplete="off"
-                />
+              <i class="far fa-comment-dots"></i><input className="form-input" type="text" placeholder="Message" onChange={this.handleMessage} name="Message" autocomplete="off"/>
               </div>
-   <MDBBtn type="submit" className="formbtn" color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon icon="paper-plane" /></MDBBtn>
+       <button type="submit" value="Submit" className="formbtn" color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon far icon="paper-plane" /></button>
       </ form >
 
             </MDBCardBody>

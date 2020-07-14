@@ -20,7 +20,7 @@ componentDidMount(){
       if(this.state.background=="rgba(255,255,255,0)"){
         this.setState({background:"#1a1245",color:"white"});
         document.querySelector(" .fa-bars").style.color="white";
-        
+
       }
       else if (this.state.background=="#1a1245"){
         this.setState({background:"rgba(255,255,255,0)",color:"black"})
@@ -74,13 +74,14 @@ componentDidMount(){
     event.target.classList.remove("anime-linksanime")
   }
 
+
 render(){
 
   return (
     <Navbar id="navbar"  className="z-depth-1 nav-background"  collapseOnSelect expand="lg"    fixed="top" style={{background:this.state.background,height:this.state.height,color:this.state.color}}  >
     <Navbar.Brand href="#home">  <a href="/"><img className="nav-logo" src={require("./img/logo.jpg")} alt="ACM"/></a> </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" className="hamburger"><i class="fas fa-bars toggler" style={{color: this.state.hamburger}}></i> </Navbar.Toggle>
-    <Navbar.Collapse id="responsive-navbar-nav" className="hamburger">
+    <Navbar.Collapse id="responsive-navbar-nav" >
     <Nav className="mr-auto" >
   </Nav>
   <Nav>
@@ -100,6 +101,7 @@ render(){
       Contact us
     </Nav.Link>
   </Nav>
+
 </Navbar.Collapse>
 </Navbar>
   );
