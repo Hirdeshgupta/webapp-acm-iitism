@@ -20,20 +20,20 @@ class ContactPage extends React.Component {
           num++;
           if(num%2==0){
             if(document.scrollingElement.scrollTop<20){
-              document.querySelector(" .fa-bars").style.color="black";  
+              document.querySelector(" .fa-bars").style.color="black";
             }
           }
           else{
-            document.querySelector(" .fa-bars").style.color="white"; 
+            document.querySelector(" .fa-bars").style.color="white";
           }
         })
       }
-      
+
         if(window.innerWidth>992){
           document.querySelectorAll(".anime-links").forEach(x=>{
             x.style.color="black";
             this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-    
+
           })
         }
 
@@ -71,12 +71,12 @@ class ContactPage extends React.Component {
             })
           }
           document.querySelector(" .fa-bars").style.color="black";
-    
+
           }
         }
       }})
     }
-    
+
 
 
   toggle = () => {
@@ -151,7 +151,7 @@ addRule(".anime-links::after", {
                 </div>
               </div>
               </div>
-      <form action="mailto:acm.ism@gmail.com" method="post" className=" mail-form">
+      <form action="mailto:acm.ism@gmail.com" method="POST" encType="text/plain" className=" mail-form">
               <div className="md-form">
                 <MDBInput
                   icon="user"
@@ -164,6 +164,7 @@ addRule(".anime-links::after", {
                   error="wrong"
                   success="right"
                   onChange={this.handleName}
+                  autocomplete="off"
                 />
               </div>
               <div className="md-form">
@@ -178,6 +179,7 @@ addRule(".anime-links::after", {
                   success="right"
                   id="form-email"
                   onChange={this.handleEmail}
+                  autocomplete="off"
                 />
               </div>
               <div className="md-form">
@@ -186,12 +188,13 @@ addRule(".anime-links::after", {
                   label="Subject"
                   iconClass="grey-text"
                   group
-                  type="email"
+                  type="text"
                   validate
                   error="wrong"
                   success="right"
                   id="form-subject"
                   onChange={this.handleSubject}
+                  autocomplete="off"
                 />
               </div>
               <div className="md-form">
@@ -202,9 +205,10 @@ addRule(".anime-links::after", {
                   type="textarea"
                   id="form-text"
                   onChange={this.handleMessage}
+                  autocomplete="off"
                 />
               </div>
-    {this.state.name && this.state.message && this.state.email && this.state.subject ? <MDBBtn className="formbtn" color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon icon="paper-plane" /></MDBBtn> : null}            
+   <MDBBtn type="submit" className="formbtn" color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon icon="paper-plane" /></MDBBtn>
       </ form >
 
             </MDBCardBody>
@@ -215,19 +219,23 @@ addRule(".anime-links::after", {
         <div  className="col-12 col-lg-5 lg-0 mb-4 contact-card">
         <MDBAnimation reveal type="fadeInRight" >
           <div className="contact-social">
-            <div className="reach-us"><h3>Reach Us at</h3></div>
+           <div className="reach-us">
+            <div>
+              <h3>Reach us at</h3>
+            </div>
+           </div>
             <div className="contact-links">
               <h5 className="social-handles"><a href="https://www.facebook.com/acm.iitismdhn" className="link-anchor"><button tag="a" floating className="socialbtn"  >
-                <MDBIcon fab icon="facebook-f" size="lg" />
+                <MDBIcon fab icon="facebook-f" size="lg" className="mdb-icons" />
               </button><span className="contact-icon-text">@acm.iitismdhn</span></a></h5>
               <h5 className="social-handles"><a href="https://instagram.com/acm_iitism?igshid=1h4g8ng88jmbl" className="link-anchor"><button tag="a" floating className="socialbtn" href="" >
-              <MDBIcon fab icon="instagram" size="lg" />
+              <MDBIcon fab icon="instagram" size="lg" className="mdb-icons" />
               </button><span className="contact-icon-text">@acm_iitism</span></a></h5>
               <h5 className="social-handles"><a href="https://www.linkedin.com/company/acm-student-chapter-iit-ism-dhanbad/" className="link-anchor"><button tag="a" floating className="socialbtn"  >
-                <MDBIcon fab icon="linkedin-in" size="lg" />
+                <MDBIcon fab icon="linkedin-in" size="lg" className="mdb-icons" />
               </button><span className="contact-icon-text">@acm.iitism</span></a></h5>
               <h5 className="social-handles"><a href="https://www.youtube.com/channel/UCaXEPdTHm08sxKlTJjRVxJA" className="link-anchor"><button tag="a" floating className="socialbtn"  >
-                <MDBIcon fab icon="youtube" size="lg" />
+                <MDBIcon fab icon="youtube" size="lg" className="mdb-icons" />
               </button><span className="contact-icon-text">@acmiitdhn</span></a></h5>
             </div>
           </div>
@@ -260,19 +268,28 @@ addRule(".anime-links::after", {
       </MDBRow>
 
       {
-        this.state.showModal ?  <MDBContainer>
 
-        <MDBModal isOpen={this.state.showModal} toggle={this.setModal}>
-          <MDBModalHeader toggle={this.setModal}>Thanks for contacting us!</MDBModalHeader>
-          <MDBModalBody>
-            We'll get back to you soon :)
-          </MDBModalBody>
-          <MDBModalFooter>
-            <MDBBtn color="secondary" onClick={this.setModal}>Close</MDBBtn>
 
-          </MDBModalFooter>
-        </MDBModal>
-      </MDBContainer> : null
+
+          this.state.showModal ?
+          <MDBContainer>
+
+          <MDBModal isOpen={this.state.showModal} toggle={this.setModal}>
+            <MDBModalHeader className="modal-header" toggle={this.setModal}>{this.state.name && this.state.email && this.state.subject && this.state.message ? "Thank you for contacting us" : "All fields are necessary"}</MDBModalHeader>
+            <MDBModalBody className="modal-body">
+              {this.state.name && this.state.email && this.state.subject && this.state.message ? "We'll get back to you soon :)" : "Try Checking email and fill all fields!!" }
+            </MDBModalBody>
+            <MDBModalFooter>
+              <MDBBtn color="secondary" onClick={this.setModal}>Close</MDBBtn>
+
+            </MDBModalFooter>
+          </MDBModal>
+        </MDBContainer>
+        : null
+
+
+
+
       }
 
 

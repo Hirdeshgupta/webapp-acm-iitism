@@ -215,12 +215,17 @@ body {
     padding-left: 65px;
     text-align: center;
 }
-
+.modal-header {
+  color: #1a1245;
+}
+.modal-body {
+  color: #1a1245;
+}
 @media only screen and (max-width: 600px) {
     .footer-acm {
         font-size: 20px;
         color: white;
-        padding-right: 60px;
+        padding-right: 63px;
         text-align: center;
     }
     .footer-acm p {
@@ -301,6 +306,14 @@ body {
         width: 28px;
         height: 28px;
         border-radius: 10%;
+    }
+    .events_a {
+        font-size: 18px;
+        color: #377293;
+        padding-top: 25%;
+    }
+    .events_date {
+      margin-bottom: 3%;
     }
 }
 
@@ -553,11 +566,43 @@ td {
     font-family: 'Roboto', sans-serif;
     color: #377293;
 }
+@media only screen and (min-width: 1000px) {
+  .socialbtn {
+      outline: none;
+      border: 0;
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+      color: white;
+      background: #377293;
+  }
+  .contact-icon-text {
+      padding-left: 5%;
+      margin-bottom: 5%;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      padding-right: 5%;
+  }
+  .contact-social {
+      text-align: left;
+      margin-left: 23%;
+      margin-right: 5%;
+      padding-left: 10%;
+      border-radius: 5px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      font-family: 'Roboto', sans-serif;
+      color: #377293;
+  }
+  .social-handles {
+      padding-bottom: 9%;
+  }
+
+}
 
 .reach-us {
-    padding-left: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-left: 19%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .social-handles {
@@ -566,7 +611,7 @@ td {
 
 .contact-card {
     text-align: center;
-    height: 80%;
+    height: 7%;
 }
 
 .contact-icon-text {
@@ -599,6 +644,16 @@ td {
     .about-us-image {
       height: 10%;
     }
+}
+@media only screen and (max-width: 600px) {
+  .formbtn {
+    margin-left: 12%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .formbtn {
+    margin-left: 32%;
+  }
 }
 
 .map-row {
@@ -975,5 +1030,3 @@ td {
         margin-bottom: 15px;
     }
 }
-
-
