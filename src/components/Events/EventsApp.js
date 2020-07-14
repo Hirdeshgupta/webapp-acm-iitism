@@ -102,7 +102,7 @@ class EventsApp extends React.Component{
             EVENTS: previousEvents,
             is_loading:false,
           })
-          console.log("hello there ")
+          // console.log("hello there ")
         })
 
     }

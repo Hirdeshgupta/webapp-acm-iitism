@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo+Tamma+2:400,600,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Baloo+Tamma+2:400,600,700&display=swap'); */
 html {
     overflow-x: hidden;
     margin: 0;
@@ -8,7 +8,7 @@ html {
 
 body {
     width: 100vw;
-    font-family: "Baloo Tamma 2";
+    /* font-family: "Baloo Tamma 2"; */
     color: white;
     padding: 0;
     outline: none;
@@ -225,7 +225,7 @@ body {
     .footer-acm {
         font-size: 20px;
         color: white;
-        padding-right: 63px;
+        padding-right: 75px;
         text-align: center;
     }
     .footer-acm p {
@@ -932,12 +932,9 @@ td {
     opacity: 0.3;
 }
 
-@media only screen and (max-width: 361px) {
+@media only screen and (max-width: 1500px) {
     .about img {
-        height: 107%;
-    }
-    .con {
-        font-size: 15px;
+        height: 100%;
     }
 }
 
@@ -997,13 +994,13 @@ td {
 .about-ism {
     color: #1a1245;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 .about-acm {
     color: #1a1245;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 .toggler {
@@ -1026,7 +1023,15 @@ td {
 @media only screen and (max-width: 360px) {
     .explore {
         margin-top: -150px;
-        margin-left: 20px;
+        margin-left: 30px;
         margin-bottom: 15px;
     }
+}
+
+@media only screen and (max-width: 415px){
+    .abouts{
+font-size: 18px;
+color: #1a1245;
+font-weight: bold;
+    }    
 }

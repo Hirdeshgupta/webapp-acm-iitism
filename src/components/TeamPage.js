@@ -96,7 +96,7 @@ class TeamPage extends React.Component {
           </MDBAnimation>
           <MDBRow className="justify-content-center  mt-5">
           <TeamCard   name="Madhulika Mohanty" position="Faculty Coordinator"  email=""/>
-            <TeamCard column="6"  name="Swapnil narayan" position="Chairperson"   email="mailto:swapism7@gmail.com"/>
+            <TeamCard column="6"  name="Swapnil Narayan" position="Chairperson"   email="mailto:swapism7@gmail.com"/>
             <TeamCard column="6"  name="Abhishek Raj" position="Vice Chairperson" email="mailto:abhishekraj29011998@gmail.com"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
@@ -109,10 +109,10 @@ class TeamPage extends React.Component {
             <TeamCard name="Dhyey Mistry" position="Technical Head" email="mailto:dhyeybm@gmail.com"/>
             <TeamCard name="Ishan Thapa" position="Promotion Team Head" email="mailto:ishanthapa2607@gmail.com"/>
             <TeamCard name="Madhav Agarwal" position="Content Writing Team Head" email="mailto:Madhav.21.2k@gmail.com"/>
-            <TeamCard name="Rashmikiran pandit" position="Sponsor Team Head" email="mailto:panditrk2000@gmail.com"/>
+            <TeamCard name="Rashmikiran Pandit" position="Sponsor Team Head" email="mailto:panditrk2000@gmail.com"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard  name="Shubhagyata Swaraj Jaiswal" position="Content Writing and Promotional Head" email="mailto:Shubhagytaswaraj@gmail.com"/>
+            <TeamCard  name="Shubhagyata Swaraj Jayswal" position="Content Writing and Promotional Head" email="mailto:Shubhagytaswaraj@gmail.com"/>
             <TeamCard name="Saurabh Raj" position="Designing Team Head" email="mailto:saurabhraj.18je0747@pe.iitism.ac.in"/>
             <TeamCard name="AVINASH" position="Campus Ambassador Program Head" email="mailto:avinash21997@gmail.com"/>
           </MDBRow>
