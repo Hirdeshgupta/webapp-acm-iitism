@@ -11,11 +11,11 @@ class TeamPage extends React.Component {
           num++;
           if(num%2==0){
             if(document.scrollingElement.scrollTop<20){
-              document.querySelector(" .fa-bars").style.color="black";  
+              document.querySelector(" .fa-bars").style.color="black";
             }
           }
           else{
-            document.querySelector(" .fa-bars").style.color="white"; 
+            document.querySelector(" .fa-bars").style.color="white";
           }
         })
       }
@@ -41,7 +41,7 @@ class TeamPage extends React.Component {
             this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
           })
        document.querySelector(" .fa-bars").style.color="white";
-          
+
         }
       } else {
         if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
@@ -138,7 +138,7 @@ class TeamPage extends React.Component {
       </div>
   );
   }
-  
+
 }
 
 export default TeamPage;
