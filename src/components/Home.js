@@ -1,6 +1,6 @@
 import React from "react";
 import HomeComponent from "./HomeCarousel";
-import Particle from "./Particle"
+import Video from "./video";
 import AboutUs from "./AboutUs";
 import EventsCarouselApp from "./EventsCarousel/EventsCarouselApp";
 import Preloader from "./Preloader";
@@ -42,7 +42,7 @@ componentDidMount()
     return (
       <div className="home-div">
         <MDBAnimation type="fadeIn" >
-          <Particle />
+          <Video />
         <AboutISM />
         <AboutUs />
         <EventsCarouselApp style={{marginTop:80}}/>

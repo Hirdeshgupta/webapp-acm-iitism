@@ -6,14 +6,22 @@ import { setGlobalCssModule } from "reactstrap/lib/utils";
 
 
 class TopNav extends React.Component {
-
-  state={
+constructor(props){
+  super(props);
+  this.state={
     background:"rgba(255,255,255,0)",
     color:"white",
     height:"auto",
-    hamburger: "white"
+    hamburger: "white",
+    // isOpen: false
   }
+  // this.handleDocumentClick=this.handleDocumentClick.bind(this);
+  // this.toggle=this.toggle.bind(this);
+}
+ 
 componentDidMount(){
+
+  document.addEventListener('click', this.handleDocumentClick, true);
 
   if(window.innerWidth<992){
     document.querySelector(".hamburger").addEventListener("click",()=>{
@@ -76,12 +84,24 @@ componentDidMount(){
 
 
 render(){
+  // toggle = () => {
+  //   this.setState({
+  //     isOpen: !this.state.isOpen
+  //   })
+  // }
 
+  // handleDocumentClick(e) {
+  //   const container = this._element;
+  //   if (e.target !== container && !container.contains(e.target)) {
+  //     this.toggle();
+  //   }
+  // }
   return (
-    <Navbar id="navbar"  className="z-depth-1 nav-background"  collapseOnSelect expand="lg"    fixed="top" style={{background:this.state.background,height:this.state.height,color:this.state.color}}  >
+<div ref={(c)=> (this._element = c)}>
+<Navbar id="navbar"  className="z-depth-1 nav-background" collapseOnSelect expand="lg" fixed="top" style={{background:this.state.background,height:this.state.height,color:this.state.color}}  >
     <Navbar.Brand href="#home">  <a href="/"><img className="nav-logo" src={require("./img/logo.jpg")} alt="ACM"/></a> </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" className="hamburger"><i class="fas fa-bars toggler" style={{color: this.state.hamburger}}></i> </Navbar.Toggle>
-    <Navbar.Collapse id="responsive-navbar-nav" >
+    <Navbar.Collapse  id="responsive-navbar-nav"  className="hamburger">
     <Nav className="mr-auto" >
   </Nav>
   <Nav>
@@ -104,6 +124,7 @@ render(){
 
 </Navbar.Collapse>
 </Navbar>
+</div> 
   );
 }
 }
