@@ -52,7 +52,7 @@ function Footer(){
          </Row>
 
     <div className="foot">
-      <p>Made with &nbsp;<MDBIcon icon="heart" />&nbsp; by ACM-IIT Dhanbad</p>
+      <p>Made with &nbsp;<MDBIcon icon="heart" />&nbsp; by ACM-IIT(ISM) Dhanbad</p>
      </div>
 
    </Container>
