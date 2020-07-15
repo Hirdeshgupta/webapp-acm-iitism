@@ -99,7 +99,7 @@ class EventsCarouselApp extends React.Component {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide:1,
+        initialSlide:0,
       }
     }
 

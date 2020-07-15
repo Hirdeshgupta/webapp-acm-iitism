@@ -254,12 +254,13 @@ body {
 
 @media only screen and (max-width: 320px) {
     .footer-acm {
-        padding-right: 66px;
+        padding-right: 70px;
     }
 }
 
 .footer-h3 {
     text-align: center;
+
 }
 
 .location2 {
@@ -326,14 +327,19 @@ body {
     }
 }
 
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:460px) {
     #footer {
         padding-top: 30px;
         padding-bottom: 10px;
         width: 100%;
     }
+    .foot{
+        font-size: 15px !important;
+    }
     .footer-h3 {
         padding-top: 8px;
+    margin-right: 25px;
+
     }
     .icons_uni {
         padding-top: 4px;
@@ -346,12 +352,12 @@ body {
         margin-bottom: 3px;
         margin-left: 65px;
         padding-left: 4px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .logoo {
         width: 60px;
         height: 60px;
-        margin-left: 70px;
+        margin-left: 65px;
     }
     .logoo1 {
         width: 60px;
@@ -1080,7 +1086,7 @@ video {
 @media only screen and (max-width:450px) {
     video {
         /* margin-top: 80px; */
-        height: 60vh;
+        height: 50vh;
         width: 100%;
         object-fit: fill;
     }
