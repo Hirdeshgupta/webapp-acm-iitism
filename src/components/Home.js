@@ -6,11 +6,9 @@ import EventsCarouselApp from "./EventsCarousel/EventsCarouselApp";
 import Preloader from "./Preloader";
 import {MDBAnimation } from "mdbreact"
 import AboutISM from "./AboutISM";
-let fullpage= require("fullpage.js");
-new fullpage('#fullpage', {
-  //options here
-  autoScrolling:true,
-  scrollHorizontally: true
+import fullpage from 'fullpage.js';
+var fullPageInstance = new fullpage('#fullpage', {
+  navigation: true,
 });
 
 class  Home extends React.Component {
