@@ -8,6 +8,7 @@ import EventsDetails from "./components/Events/EventsDetails";
 import Sponsors from "./components/Sponsors"
 import TeamPage from "./components/TeamPage"
 import ContactUs from "./components/ContactUs";
+import Dummy from "./components/Dummy";
 import './animate.css';
 import Preloader from "./components/Preloader"
 import {MDBAnimation } from "mdbreact"
@@ -46,6 +47,7 @@ class Main extends React.Component{
 				<Route path="/sponsors" component={Sponsors}/>
 				<Route path="/TeamPage" component={TeamPage}/>
 				<Route path="/ContactUS" component={ContactUs} />
+				<Route path="/dummy" component={Dummy} />
 				</Switch>
 				</ScrollToTop>
 				<Footer />

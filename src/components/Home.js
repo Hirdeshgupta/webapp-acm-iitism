@@ -6,10 +6,14 @@ import EventsCarouselApp from "./EventsCarousel/EventsCarouselApp";
 import Preloader from "./Preloader";
 import {MDBAnimation } from "mdbreact"
 import AboutISM from "./AboutISM";
-import fullpage from 'fullpage.js';
-var fullPageInstance = new fullpage('#fullpage', {
-  navigation: true,
-});
+// import './fullPage/dist/fullpage.css';
+// import  './fullPage/dist/fullpage.js';
+// import  './fullPage/vendors/scrolloverflow.min.js';
+
+// var fullPageInstance = new fullpage('#fullpage', {
+//   navigation: true,
+// });
+
 
 class  Home extends React.Component {
 
@@ -47,11 +51,25 @@ componentDidMount()
     }
 		else{
       return(
+        <div>
+          <script src="https://cdnjs.com/libraries/fullPage.js"> </script>
           <div id="fullpage">
-           <Video  className="section" />
-           <AboutISM  className="section" />
+            <div className="section">
+              <Video/>
+            </div>
+            <div className="section">
+              <AboutISM/>
+            </div>
+            <div className="section">
+              <AboutUs/>
+            </div>
+            <div className="section">
+              <EventsCarouselApp style={{marginTop:80}}/>
+            </div>
+           {/* <AboutISM  className="section" />
            <AboutUs  className="section" />
-           <EventsCarouselApp className="section" style={{marginTop:80}} />
+           <EventsCarouselApp className="section" style={{marginTop:80}} /> */}
+          </div>
           </div>
       )
     }
