@@ -1086,7 +1086,7 @@ video {
 @media only screen and (max-width:450px) {
     video {
         /* margin-top: 80px; */
-        height: 50vh;
+        height: 60vh;
         width: 100%;
         object-fit: fill;
     }
