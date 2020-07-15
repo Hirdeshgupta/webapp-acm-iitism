@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Baloo+Tamma+2:400,600,700&display=swap'); */
 
 html {
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -260,7 +260,6 @@ body {
 
 .footer-h3 {
     text-align: center;
-
 }
 
 .location2 {
@@ -333,13 +332,12 @@ body {
         padding-bottom: 10px;
         width: 100%;
     }
-    .foot{
+    .foot {
         font-size: 15px !important;
     }
     .footer-h3 {
         padding-top: 8px;
-    margin-right: 25px;
-
+        margin-right: 25px;
     }
     .icons_uni {
         padding-top: 4px;

@@ -6,10 +6,15 @@ import EventsCarouselApp from "./EventsCarousel/EventsCarouselApp";
 import Preloader from "./Preloader";
 import {MDBAnimation } from "mdbreact"
 import AboutISM from "./AboutISM";
-import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
-import ReactFullpage from "@fullpage/react-fullpage";
-const anchors = ["firstPage", "secondPage", "thirdPage"];
+let fullpage= require("fullpage.js");
+new fullpage('#fullpage', {
+  //options here
+  autoScrolling:true,
+  scrollHorizontally: true
+});
+
 class  Home extends React.Component {
+
   constructor(props)
   {
     super(props);
@@ -19,6 +24,7 @@ class  Home extends React.Component {
 }
 componentDidMount()
 {
+
   document.querySelector("nav").style.opacity=0;
   document.querySelector("#footer").style.opacity=0;
   document.querySelector("html").style.overflowY="hidden";
@@ -43,26 +49,12 @@ componentDidMount()
     }
 		else{
       return(
-      <ReactFullpage
-      anchors={anchors}
-      navigation
-      navigationTooltips={anchors}
-      onLeave={(origin, destination, direction) => {
-        console.log("onLeave event", { origin, destination, direction });
-      }}
-      render={({ state, fullpageApi }) => {
-        console.log("render prop change", state, fullpageApi); // eslint-disable-line no-console
-  
-        return (
-          <div>
+          <div id="fullpage">
            <Video  className="section" />
            <AboutISM  className="section" />
            <AboutUs  className="section" />
            <EventsCarouselApp className="section" style={{marginTop:80}} />
           </div>
-        );
-      }}
-    />
       )
     }
   }
