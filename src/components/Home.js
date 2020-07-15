@@ -6,6 +6,9 @@ import EventsCarouselApp from "./EventsCarousel/EventsCarouselApp";
 import Preloader from "./Preloader";
 import {MDBAnimation } from "mdbreact"
 import AboutISM from "./AboutISM";
+import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
+import ReactFullpage from "@fullpage/react-fullpage";
+const anchors = ["firstPage", "secondPage", "thirdPage"];
 class  Home extends React.Component {
   constructor(props)
   {
@@ -39,19 +42,76 @@ componentDidMount()
       )
     }
 		else{
-    return (
-      <div className="home-div">
-        <MDBAnimation type="fadeIn" >
-          <Video />
-        <AboutISM />
-        <AboutUs />
-        <EventsCarouselApp style={{marginTop:80}}/>
-        </MDBAnimation>
-
-      </div>
-    )
+      return(
+      <ReactFullpage
+      anchors={anchors}
+      navigation
+      navigationTooltips={anchors}
+      onLeave={(origin, destination, direction) => {
+        console.log("onLeave event", { origin, destination, direction });
+      }}
+      render={({ state, fullpageApi }) => {
+        console.log("render prop change", state, fullpageApi); // eslint-disable-line no-console
+  
+        return (
+          <div>
+           <Video  className="section" />
+           <AboutISM  className="section" />
+           <AboutUs  className="section" />
+           <EventsCarouselApp className="section" style={{marginTop:80}} />
+          </div>
+        );
+      }}
+    />
+      )
     }
   }
 }
 
 export default Home;
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/no-extraneous-dependencies */
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
+// import ReactFullpage from "@fullpage/react-fullpage";
+
+// import "./index.css";
+
+// class MySection extends React.Component {
+//   render() {
+//     return (
+//       <div className="section">
+//         <h3>{this.props.content}</h3>
+//       </div>
+//     );
+//   }
+// }
+
+// const anchors = ["firstPage", "secondPage", "thirdPage"];
+
+// const Home = () => (
+//   <ReactFullpage
+//     anchors={anchors}
+//     navigation
+//     navigationTooltips={anchors}
+//     sectionsColor={["#282c34", "#ff5f45", "#0798ec"]}
+//     onLeave={(origin, destination, direction) => {
+//       console.log("onLeave event", { origin, destination, direction });
+//     }}
+//     render={({ state, fullpageApi }) => {
+//       console.log("render prop change", state, fullpageApi); // eslint-disable-line no-console
+
+//       return (
+//         <div>
+//          <Video  className="section" />
+//          <AboutISM  className="section" />
+//          <AboutUs  className="section" />
+//          <EventsCarouselApp className="section" style={{marginTop:80}} />
+//         </div>
+//       );
+//     }}
+//   />
+// );
+
+// ReactDOM.render(<FullpageWrapper />, document.getElementById("root"));

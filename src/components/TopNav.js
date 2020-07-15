@@ -37,28 +37,28 @@ componentDidMount(){
       }
     })
   }
-  document.addEventListener("scroll",()=>{
-    let scrolled = document.scrollingElement.scrollTop;
-    if (scrolled >= 20) {
-      if (this.state.background == "rgba(255,255,255,0)") {
-        this.setState({ background: " #1a1245",color:"white",height:"70", hamburger: "white" });
-        this.setState({ background: " #1a1245", color: "white",height:"70", hamburger: "white" });
-        this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-      }
-    } else {
-      if (this.state.background !== "rgba(2,3,4,0)") {
-        this.setState({ background: "rgba(2,3,4,0)",color:"white",height:"auto",hamburger: "white"  });
-        this.setState({ background: "rgba(2,3,4,0)", color: "white",height:"auto",hamburger: "white"  });
-        this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-      if (this.state.background !== "rgba(255,255,255,0)") {
-        this.setState({ background: "rgba(255,255,255,0)",color:"white",height:"auto", hamburger: "white"  });
-        this.setState({ background: "rgba(255,255,255,0)", color: "white",height:"auto", hamburger: "white"  });
-        this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+//   document.addEventListener("scroll",()=>{
+//     let scrolled = document.scrollingElement.scrollTop;
+//     if (scrolled >= 20) {
+//       if (this.state.background == "rgba(255,255,255,0)") {
+//         this.setState({ background: " #1a1245",color:"white",height:"70", hamburger: "white" });
+//         this.setState({ background: " #1a1245", color: "white",height:"70", hamburger: "white" });
+//         this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+//       }
+//     } else {
+//       if (this.state.background !== "rgba(2,3,4,0)") {
+//         this.setState({ background: "rgba(2,3,4,0)",color:"white",height:"auto",hamburger: "white"  });
+//         this.setState({ background: "rgba(2,3,4,0)", color: "white",height:"auto",hamburger: "white"  });
+//         this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+//       if (this.state.background !== "rgba(255,255,255,0)") {
+//         this.setState({ background: "rgba(255,255,255,0)",color:"white",height:"auto", hamburger: "white"  });
+//         this.setState({ background: "rgba(255,255,255,0)", color: "white",height:"auto", hamburger: "white"  });
+//         this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
 
-      }
-    }
-  }
-})
+//       }
+//     }
+//   }
+// })
 }
   animeLinkChangeColor(color){
     var addRule = (function (style) {
