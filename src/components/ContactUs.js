@@ -151,23 +151,73 @@ addRule(".anime-links::after", {
                 </div>
               </div>
               </div>
-      <form action="mailto:acm.ism@gmail.com" method="post" encType="text/plain" className=" mail-form">
+      <form id="gform" method="POST" class="pure-form pure-form-stacked mail-form" data-email="from_email@example.com" action="https://script.google.com/macros/s/AKfycbxLeHP4O8q42LkRAThxNm6T5wm5HXy24k4AY4rHq5EnrkFwYdaJ/exec">
               <div className="md-form">
-              <i class="far fa-user"></i><input className="form-input" type="text" placeholder="Your name" onChange={this.handleName} name="name" autocomplete="off" />
+                <MDBInput
+                  icon="user"
+                  label="Your name"
+                  iconClass="grey-text"
+                  type="text"
+                  group
+                  id="name"
+                  validate
+                  error="wrong"
+                  success="right"
+                  onChange={this.handleName}
+                  autocomplete="off"
+                  name="name"
+                />
               </div>
 
               <div className="md-form">
-              <i class="far fa-envelope"></i><input className="form-input" type="email" placeholder="Your email" onChange={this.handleEmail} name="Email" autocomplete="off"/>
+                <MDBInput
+                  icon="envelope"
+                  label="Your email"
+                  iconClass="grey-text"
+                  group
+                  type="email"
+                  name="email"
+                  validate
+                  error="wrong"
+                  success="right"
+                  onChange={this.handleEmail}
+                  autocomplete="off"
+                  name="email" 
+                  id="email"
+                />
               </div>
 
               <div className="md-form">
-              <i class="far fa-sticky-note"></i><input className="form-input" type="text" placeholder="Subject" onChange={this.handleSubject} name="Subject" autocomplete="off" />
+                <MDBInput
+                  icon="tag"
+                  label="Subject"
+                  iconClass="grey-text"
+                  group
+                  type="text"
+                  validate
+                  error="wrong"
+                  success="right"
+                  id="subject"
+                  name="subject"
+                  onChange={this.handleSubject}
+                  autocomplete="off"
+                />
               </div>
 
               <div className="md-form">
-              <i class="far fa-comment-dots"></i><input className="form-input" type="text" placeholder="Message" onChange={this.handleMessage} name="Message" autocomplete="off"/>
+                <MDBInput
+                  icon="pencil-alt"
+                  label="Your Message"
+                  iconClass="grey-text"
+                  type="textarea"
+                  onChange={this.handleMessage}
+                  autocomplete="off"
+                  id="message"
+                   name="message"
+                />
               </div>
-       <button type="submit" value="Submit" className="formbtn" color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon far icon="paper-plane" /></button>
+              <MDBBtn type="submit" value="Submit"  className="formbtn" color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon icon="paper-plane" /></MDBBtn>
+       {/* <button type="submit" value="Submit" className="formbtn" color="white-text py-2 px-4" onClick={this.setModal} style={{fontSize:"1.25rem",color:"white" ,background:"#377293"}}>Submit <MDBIcon far icon="paper-plane" /></button> */}
       </ form >
 
             </MDBCardBody>

@@ -16,7 +16,7 @@ class Events extends React.Component{
         return(
           <div>
             <div className="events_a">
-                <p >{this.title}</p>
+                <p style={{margin:0}}>{this.title}</p>
 
             </div>
             <div className="events_date">

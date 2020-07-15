@@ -1,4 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css?family=Baloo+Tamma+2:400,600,700&display=swap'); */
+
 html {
     overflow-x: hidden;
     margin: 0;
@@ -215,12 +216,15 @@ body {
     padding-left: 65px;
     text-align: center;
 }
+
 .modal-header {
-  color: #1a1245;
+    color: #1a1245;
 }
+
 .modal-body {
-  color: #1a1245;
+    color: #1a1245;
 }
+
 @media only screen and (max-width: 600px) {
     .footer-acm {
         font-size: 20px;
@@ -245,6 +249,12 @@ body {
         padding-top: 40px;
         padding-bottom: 30px;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .footer-acm {
+        padding-right: 66px;
     }
 }
 
@@ -285,7 +295,6 @@ body {
     font-size: 16px;
 }
 
-
 @media only screen and (max-width:741px) {
     .para {
         font-size: 0.8rem;
@@ -313,7 +322,7 @@ body {
         padding-top: 25%;
     }
     .events_date {
-      margin-bottom: 3%;
+        margin-bottom: 3%;
     }
 }
 
@@ -566,37 +575,37 @@ td {
     font-family: 'Roboto', sans-serif;
     color: #377293;
 }
-@media only screen and (min-width: 1000px) {
-  .socialbtn {
-      outline: none;
-      border: 0;
-      height: 55px;
-      width: 55px;
-      border-radius: 50%;
-      color: white;
-      background: #377293;
-  }
-  .contact-icon-text {
-      padding-left: 5%;
-      margin-bottom: 5%;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.5rem;
-      padding-right: 5%;
-  }
-  .contact-social {
-      text-align: left;
-      margin-left: 23%;
-      margin-right: 5%;
-      padding-left: 10%;
-      border-radius: 5px;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-      font-family: 'Roboto', sans-serif;
-      color: #377293;
-  }
-  .social-handles {
-      padding-bottom: 9%;
-  }
 
+@media only screen and (min-width: 1000px) {
+    .socialbtn {
+        outline: none;
+        border: 0;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        color: white;
+        background: #377293;
+    }
+    .contact-icon-text {
+        padding-left: 5%;
+        margin-bottom: 5%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        padding-right: 5%;
+    }
+    .contact-social {
+        text-align: left;
+        margin-left: 23%;
+        margin-right: 5%;
+        padding-left: 10%;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        font-family: 'Roboto', sans-serif;
+        color: #377293;
+    }
+    .social-handles {
+        padding-bottom: 9%;
+    }
 }
 
 .reach-us {
@@ -642,20 +651,20 @@ td {
         height: 80%;
     }
     .about-us-image {
-      height: 10%;
+        height: 10%;
     }
 }
+
 @media only screen and (max-width: 600px) {
-  .formbtn {
-    margin-left: 14%;
-    border-color: #377293;
-  }
+    .formbtn {
+        margin-left: 12%;
+    }
 }
+
 @media only screen and (min-width: 1000px) {
-  .formbtn {
-    margin-left: 35%;
-    border-color: #377293;
-  }
+    .formbtn {
+        margin-left: 32%;
+    }
 }
 
 .map-row {
@@ -666,7 +675,7 @@ td {
     position: "absolute";
     top: -20;
     width: 400;
-    zIndex: 3;
+    z-index: 3;
     left: 100;
 }
 
@@ -1030,24 +1039,26 @@ td {
     }
 }
 
-@media only screen and (max-width: 415px){
-    .abouts{
-font-size: 18px;
-color: #1a1245;
-font-weight: bold;
+@media only screen and (max-width: 415px) {
+    .abouts {
+        font-size: 18px;
+        color: #1a1245;
+        font-weight: bold;
     }
 }
+
 .form-input {
-  width: 85%;
-  margin-left: 20px;
-  margin-top: 8%;
-}
-@media only screen and (max-width: 600px){
-  .form-input {
-    width: 40%;
+    width: 85%;
     margin-left: 20px;
-    margin-top: 7%;
-  }
+    margin-top: 8%;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-input {
+        width: 40%;
+        margin-left: 20px;
+        margin-top: 7%;
+    }
 }
 
 video {
@@ -1055,21 +1066,29 @@ video {
     width: 100%;
     object-fit: fill;
     /* position: absolute; */
-  }
+}
 
-  @media only screen and (max-width:700px){
+@media only screen and (max-width:700px) {
     video {
         height: 75vh;
         width: 100%;
         object-fit: fill;
-      }
-  }
+    }
+}
 
-  @media only screen and (max-width:450px){
+@media only screen and (max-width:450px) {
     video {
         /* margin-top: 80px; */
         height: 60vh;
         width: 100%;
         object-fit: fill;
-      }
-  }
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .abouts {
+        font-size: 18px;
+        color: #1a1245;
+        font-weight: bold;
+    }
+}
