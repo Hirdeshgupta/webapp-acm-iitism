@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Baloo+Tamma+2:400,600,700&display=swap'); */
 
 html {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -710,6 +710,10 @@ td {
 
 .slick .slick-next:before {
     margin-right: 40px;
+}
+
+.fp-tableCell {
+    vertical-align: bottom;
 }
 
 .slick {
