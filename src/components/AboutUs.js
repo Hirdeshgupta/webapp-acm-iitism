@@ -5,7 +5,7 @@ function AboutUs() {
       <div className="container-fluid px-0" style={{marginTop:80,marginBottom:50}}>
 
 <section className="text-center my-0 my-md-5 z-depth-2 mx-0 mx-md-5 py-2 px-2 about">
-<img className="about-us-image" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></img>
+<img className="about-us-image" src={require("./img/cse-dept.jpeg")}></img>
         <MDBAnimation reveal type="fadeInUp">
             <h2 className="h1-responsive font-weight-bold my-5" style={{color:"#1a1245"}}>
               ABOUT ACM
