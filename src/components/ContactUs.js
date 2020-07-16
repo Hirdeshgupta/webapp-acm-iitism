@@ -1,7 +1,7 @@
 import React from "react";
 import {MDBAnimation, MDBContainer,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
 import { MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
-
+import { Route, Redirect } from 'react-router'
 class ContactPage extends React.Component {
   state = {
       modal: false,
@@ -9,7 +9,8 @@ class ContactPage extends React.Component {
       name: false,
       email: false,
       subject: false,
-      message: false
+      message: false,
+      is_submitted:false,
     }
     componentDidMount(){
       document.querySelector(" .fa-bars").style.color="black";
@@ -87,11 +88,17 @@ class ContactPage extends React.Component {
     )
 }
 
- setModal = () => {
+ setModal = (eve) => {
 
    this.setState({
      showModal: !this.state.showModal,
    })
+   if(this.state.message&&this.state.name&&this.state.email&&this.state.subject){
+     document.querySelector("form").submit();
+   }
+   else{
+     eve.preventDefault();
+   }
  }
  animeLinkChangeColor(color){
   var addRule = (function (style) {
@@ -109,27 +116,37 @@ addRule(".anime-links::after", {
 });
 }
 
- handleName = () => {
-   this.setState({
-     name: true
-   })
- }
- handleEmail = () => {
+ handleName = (eve) => {
+   if(eve.target.value!=""){
+    this.setState({
+      name: true
+    })
+  }
+   }
+
+ handleEmail = (eve) => {
+  const re=/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if(re.test(eve.target.value)){
    this.setState({
      email: true
    })
  }
- handleSubject = () => {
+}
+ handleSubject = (eve) => {
+  if(eve.target.value!=""){
    this.setState({
      subject: true
    })
  }
- handleMessage = () => {
+}
+ handleMessage = (eve) => {
+  if(eve.target.value!=""){
    this.setState({
      message: true
    })
  }
-
+}
   render() {
   return (
     <section style={{marginTop:120}}>
@@ -151,7 +168,7 @@ addRule(".anime-links::after", {
                 </div>
               </div>
               </div>
-      <form id="gform" method="POST" class="pure-form pure-form-stacked mail-form" data-email="from_email@example.com" action="https://script.google.com/macros/s/AKfycbxLeHP4O8q42LkRAThxNm6T5wm5HXy24k4AY4rHq5EnrkFwYdaJ/exec">
+      <form id="gform" onSubmit={this.handleForm} method="POST" class="pure-form pure-form-stacked mail-form" data-email="from_email@example.com" action="https://script.google.com/macros/s/AKfycbxLeHP4O8q42LkRAThxNm6T5wm5HXy24k4AY4rHq5EnrkFwYdaJ/exec">
               <div className="md-form">
                 <MDBInput
                   icon="user"
@@ -284,9 +301,9 @@ addRule(".anime-links::after", {
           <MDBContainer>
 
           <MDBModal isOpen={this.state.showModal} toggle={this.setModal}>
-            <MDBModalHeader className="modal-header" toggle={this.setModal}>{this.state.name && this.state.email && this.state.subject && this.state.message ? "Thank you for contacting us" : "All fields are necessary"}</MDBModalHeader>
+            <MDBModalHeader className="modal-header" toggle={this.setModal}>{this.state.name && this.state.email && this.state.subject && this.state.message ? <span className='green-text'> <MDBIcon far icon="check-circle" style={{color:"green"}}/> Thank you for contacting us</span> : <span className='red-text'><MDBIcon far icon="times-circle" style={{color:"red"}} /> All fields are necessary</span>}</MDBModalHeader>
             <MDBModalBody className="modal-body">
-              {this.state.name && this.state.email && this.state.subject && this.state.message ? "We'll get back to you soon :)" : "Try Checking email and fill all fields!!" }
+              {this.state.name && this.state.email && this.state.subject && this.state.message ? <span className='green-text'>We'll get back to you soon :)</span> : <span className="red-text"> Try Checking email and fill all fields!!</span> }
             </MDBModalBody>
             <MDBModalFooter>
               <MDBBtn color="secondary" onClick={this.setModal}>Close</MDBBtn>
