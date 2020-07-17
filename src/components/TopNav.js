@@ -105,7 +105,7 @@ if (scrolled >= 20) {
   if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
     if(window.innerWidth>992){
     document.querySelectorAll(".anime-links").forEach(x=>{
-      x.style.color="black";
+      x.style.color="white";
       this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
     })
   }
@@ -113,7 +113,7 @@ if (scrolled >= 20) {
   if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
     if(window.innerWidth>992){
     document.querySelectorAll(".anime-links").forEach(x=>{
-      x.style.color="black";
+      x.style.color="white";
       this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
     })
   }
@@ -150,6 +150,12 @@ if(num%2==0){
   document.querySelector("nav").style.background="rgba(255,255,255,0)";
 }
 }})
+if(window.innerWidth>992){
+  document.querySelectorAll(".anime-links").forEach(x=>{
+    x.style.color="white";
+    this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+  })
+}
 document.querySelector(" .fa-bars").style.color="white";
 }
   animeLinkChangeColor(color){
