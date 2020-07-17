@@ -27,28 +27,28 @@ body {
     background-size: cover;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     background-color: #fff;
     width: 16px;
     height: 10px
-}
+} */
 
 
 /* background of the scrollbar except button or resizer */
 
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
     background-color: #2d2f30;
     background-clip: content-box;
 }
 
 ::-webkit-scrollbar-track:hover {
     background-color: #2d2f30
-}
+} */
 
 
 /* scrollbar itself */
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
     height: 0px;
     background-color: #babac0;
     border-radius: 16px;
@@ -58,14 +58,14 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #a0a0a5;
     border: 4px solid #f4f4f4
-}
+} */
 
 
 /* set button(top and bottom of the scrollbar) */
 
-::-webkit-scrollbar-button {
+/* ::-webkit-scrollbar-button {
     display: none
-}
+} */
 
 #root {
     overflow-x: hidden;
@@ -936,6 +936,7 @@ td {
 .about {
     border-radius: 1%;
     position: relative;
+    /* background: rgb(224, 221, 221); */
     overflow: hidden;
 }
 
@@ -946,7 +947,7 @@ td {
     width: 100%;
     height: auto;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 @media only screen and (max-width: 1500px) {

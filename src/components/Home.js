@@ -40,15 +40,15 @@ componentDidMount()
     }
 		else{
     return (
+      <MDBAnimation type="fadeIn" >
       <div className="home-div">
-        <MDBAnimation type="fadeIn" >
         <Video />
         <AboutISM />
         <AboutUs />
         <EventsCarouselApp style={{marginTop:80}}/>
-        </MDBAnimation>
 
       </div>
+      </MDBAnimation>
     )
     }
   }
