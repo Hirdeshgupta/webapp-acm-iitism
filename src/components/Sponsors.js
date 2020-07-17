@@ -10,62 +10,89 @@ class Sponsors extends React.Component{
           num++;
           if(num%2==0){
             if(document.scrollingElement.scrollTop<20){
-              document.querySelector(" .fa-bars").style.color="black";  
-            } 
+              document.querySelector("nav").style.color="rgba(255,255,255,0)";
+              document.querySelector(" .fa-bars").style.color="black";
+            }
           }
           else{
-            document.querySelector(" .fa-bars").style.color="white"; 
+            document.querySelector(" .fa-bars").style.color="white";
           }
         })
       }
-      document.querySelector(" .fa-bars").style.color="black";
-      if(window.innerWidth>992){
+    document.querySelector(" .fa-bars").style.color="black";
+    if(window.innerWidth>992){
+    document.querySelectorAll(".anime-links").forEach(x=>{
+      x.style.color="black";
+      this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+    })
+  }
+    document.addEventListener("scroll",()=>{
+      let scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 20) {
         document.querySelectorAll(".anime-links").forEach(x=>{
-          x.style.color="black";
+          x.style.color="white";
           this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
         })
-      }
-      document.addEventListener("scroll",()=>{
-        let scrolled = document.scrollingElement.scrollTop;
-        if (scrolled >= 20) {
+       document.querySelector(" .fa-bars").style.color="white";
+
+        if ( document.querySelector(".anime-links").style.color=="rgba(255,255,255,0)") {
           document.querySelectorAll(".anime-links").forEach(x=>{
             x.style.color="white";
             this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
           })
-          document.querySelector(" .fa-bars").style.color="white";
+       document.querySelector(" .fa-bars").style.color="white";
 
+        }
+      } else {
+        
+        if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
+          if(window.innerWidth>992){
+          document.querySelectorAll(".anime-links").forEach(x=>{
+            x.style.color="black";
+            this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+          })
+        }
 
-          if ( document.querySelector(".anime-links").style.color=="rgba(255,255,255,0)") {
+        if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
+          if(window.innerWidth>992){
+          document.querySelectorAll(".anime-links").forEach(x=>{
+            x.style.color="black";
+            this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
+          })
+        }
+          document.querySelector(" .fa-bars").style.color="black";
+
+        }
+      }
+      if(num%2!=0){
+        if(window.innerWidth<992){
+          document.querySelector(".fa-bars").style.color="white";
+          document.querySelector("nav").style.background="#1a1245";
+              let num=0;
+        document.querySelector(".hamburger").addEventListener("click",()=>{
+          num++;
+          if(num%2!=0){
+            console.log("hello")
+            if(document.scrollingElement.scrollTop<20){
+              document.querySelector("nav").style.background="rgba(255,255,255,0)";
+              document.querySelector(" .fa-bars").style.color="black";
+            }
+          }
+          else{
+            document.querySelector("nav").style.background="#1a1245";
+            document.querySelector(" .fa-bars").style.color="white";
             document.querySelectorAll(".anime-links").forEach(x=>{
               x.style.color="white";
               this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
             })
-      document.querySelector(" .fa-bars").style.color="white";
-
           }
-        } else {
-          if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
-            if(window.innerWidth>992){
-            document.querySelectorAll(".anime-links").forEach(x=>{
-              x.style.color="black";
-              this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-            })
-            
-          }
-      document.querySelector(" .fa-bars").style.color="black";
-
-          if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
-            if(window.innerWidth>992){
-            document.querySelectorAll(".anime-links").forEach(x=>{
-              x.style.color="black";
-              this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
-            })
-          }
-      document.querySelector(" .fa-bars").style.color="black";
-
-          }
+        })
         }
-      }})
+      }
+      if(num%2==0){
+        document.querySelector("nav").style.background="rgba(255,255,255,0)";
+      }
+    }})
       }
       animeLinkChangeColor(color){
         var addRule = (function (style) {
