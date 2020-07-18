@@ -394,16 +394,16 @@ body {
 .head_spons {
     text-align: center;
     color: #1a1245;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     /* margin-bottom: 36px; */
     /* margin-top: 20px; */
-    margin-left: -12%;
+    margin-right: 2%;
 }
 
 @media only screen and (max-width:360px) {
     .head_spons {
-        font-size: 40px;
+        font-size: 20px;
         margin-left: 20px;
     }
     #sponsors {
@@ -818,6 +818,11 @@ td {
     .home-nav {
         width: 600px;
     }
+    .card-image {
+        width: 200px;
+        height: 200px;
+
+    }
 }
 
 .card-image {
@@ -913,6 +918,7 @@ td {
     position: absolute;
     top: 45%;
     left: 45%;
+    width: 200px;
 }
 
 .slick-slide img {
@@ -1067,6 +1073,10 @@ td {
         margin-left: 20px;
         margin-top: 7%;
     }
+    .recent-card {
+      width: 180px;
+      height: 250px;
+    }
 }
 
 video {
@@ -1100,3 +1110,11 @@ video {
         font-weight: bold;
     }
 }
+/* recent events starts */
+.recent-events {
+  margin-top: 100px;
+}
+.recent-card {
+  text-align: center;
+}
+/* recent events ends */

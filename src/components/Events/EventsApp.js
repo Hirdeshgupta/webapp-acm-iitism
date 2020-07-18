@@ -1,11 +1,16 @@
 import React from 'react'
 import Events from './Events';
+import RecentEvents from "./RecentEvents";
 import {DB_CONFIG} from '../../Config/config';
 import firebase from 'firebase/app';
 import 'firebase/database';
 import { Link } from 'react-router-dom';
-import {MDBAnimation } from "mdbreact"
+import {MDBAnimation,  MDBRow, MDBCol, } from "mdbreact"
 import Skeleton from 'react-loading-skeleton';
+import FadeIn from "react-fade-in";
+import Lottie from "react-lottie";
+import ReactLoading from "react-loading";
+import "bootstrap/dist/css/bootstrap.css";
 
 class EventsApp extends React.Component{
     constructor(props){
@@ -16,6 +21,7 @@ class EventsApp extends React.Component{
         this.state={
             EVENTS:[],
             is_loading:true,
+            done: undefined
             // reverseArray: [],
          }
 
@@ -29,11 +35,11 @@ class EventsApp extends React.Component{
           num++;
           if(num%2==0){
             if(document.scrollingElement.scrollTop<20){
-              document.querySelector(" .fa-bars").style.color="black";  
+              document.querySelector(" .fa-bars").style.color="black";
             }
           }
           else{
-            document.querySelector(" .fa-bars").style.color="white"; 
+            document.querySelector(" .fa-bars").style.color="white";
           }
         })
       }
@@ -102,6 +108,13 @@ class EventsApp extends React.Component{
             EVENTS: previousEvents,
             is_loading:false,
           })
+
+          setTimeout(() => {
+           fetch("https://jsonplaceholder.typicode.com/posts")
+             .then(response => response.json())
+             .then(json => this.setState({ done: true }));
+         }, 2000);
+
           // console.log("hello there ")
         })
 
@@ -116,7 +129,7 @@ class EventsApp extends React.Component{
               sheet.insertRule(selector + "{" + propText + "}", sheet.cssRules.length);
           };
       })(document.createElement("style"));
-    
+
       addRule(".anime-links::after", {
           background:color ,
       });
@@ -136,9 +149,40 @@ class EventsApp extends React.Component{
             )
         }
         return(
+          <div>
+          <div className="recent-events">
+            <MDBAnimation reveal type="lightSpeedIn" >
+             <h6 className="head_spons pl-lg-5 pl-1">RECENT EVENTS</h6>
+            </MDBAnimation>
+            <MDBRow className="justify-content-center  mt-5">
+             {
+               !this.state.done ? (
+                <ReactLoading type={"bars"} color={"black"}  className="loading-recent-events"/>
+               ) : (
+
+               this.state.EVENTS.slice(0).reverse().slice(0, 4).map((e) => {
+                //  console.log(e.title);
+                 return(
+                   <div>
+                  <RecentEvents
+                      key={e.id}
+                      id={e.id}
+                      title={e.title}
+                      imageURL={e.imageURL}
+                      description={e.description}
+                      date={e.date}
+                   />
+                   </div>
+
+                  )
+                })
+              )
+             }
+            </MDBRow>
+          </div>
             <div id="events" style={{marginTop:100}}>
             <MDBAnimation reveal type="lightSpeedIn" >
-               <h1 className="head_spons pl-lg-5 pl-1">EVENTS </h1>
+               <h3 className="head_spons pl-lg-5 pl-1">ALL EVENTS </h3>
               </MDBAnimation>
 
          {/* { this.state.reverseArray = this.state.EVENTS.reverse() } */}
@@ -149,9 +193,9 @@ class EventsApp extends React.Component{
                                      <th className="th_e">Date</th>
                                 </tr>
                             {
-                                this.state.is_loading ? 
+                                this.state.is_loading ?
                                 preloaderArr
-                                : 
+                                :
                                 (
                                     this.state.EVENTS.slice(0).reverse().map((eve) => {
                                     return(
@@ -178,11 +222,12 @@ class EventsApp extends React.Component{
                                             </td>
                                         </tr>
                                     )
-                                })   
+                                })
                                 )
                            }
                 </table>
                 </MDBAnimation>
+            </div>
             </div>
         )
 }
