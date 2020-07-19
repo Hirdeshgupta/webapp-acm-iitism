@@ -27,6 +27,7 @@ body {
     background-size: cover;
 }
 
+
 /* ::-webkit-scrollbar {
     background-color: #fff;
     width: 16px;
@@ -35,6 +36,7 @@ body {
 
 
 /* background of the scrollbar except button or resizer */
+
 
 /* ::-webkit-scrollbar-track {
     background-color: #2d2f30;
@@ -47,6 +49,7 @@ body {
 
 
 /* scrollbar itself */
+
 
 /* ::-webkit-scrollbar-thumb {
     height: 0px;
@@ -62,6 +65,7 @@ body {
 
 
 /* set button(top and bottom of the scrollbar) */
+
 
 /* ::-webkit-scrollbar-button {
     display: none
@@ -260,7 +264,6 @@ body {
 
 .footer-h3 {
     text-align: center;
-
 }
 
 .location2 {
@@ -333,13 +336,12 @@ body {
         padding-bottom: 10px;
         width: 100%;
     }
-    .foot{
+    .foot {
         font-size: 15px !important;
     }
     .footer-h3 {
         padding-top: 8px;
-    margin-right: 25px;
-
+        margin-right: 25px;
     }
     .icons_uni {
         padding-top: 4px;
@@ -382,7 +384,6 @@ body {
 
 #sponsors {
     margin-bottom: 50px;
-    margin-left: 6%;
 }
 
 .team_head {

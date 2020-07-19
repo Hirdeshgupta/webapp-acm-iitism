@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from 'reactstrap';
-import {MDBAnimation } from "mdbreact"
+import {MDBAnimation,MDBView,MDBMask } from "mdbreact"
 
 class Sponsors extends React.Component{
     componentDidMount(){
@@ -111,13 +111,94 @@ class Sponsors extends React.Component{
       }
   render(){
     return(
-        <section id="sponsors" style={{marginTop:100}}>
-           <div>
+        <section id="sponsors" style={{marginTop:150}}>
         <MDBAnimation reveal type="lightSpeedIn" >
-           <h1 className="head_spons head_contact pl-lg-5 pl-1">PAST SPONSORS </h1>
+          <div className="row justify-content-center ">
+            <div className="col-9 col-md-4">
+            <h1 className="head_spons text-center head_contact pl-lg-5 pl-1">PAST SPONSORS </h1>
+            </div>
+          </div>
           </MDBAnimation>
-    <MDBAnimation reveal type="fadeInLeft" >
-        <Container className="sponsers-container" style={{marginTop:40 , padding:0}}>
+          <div className="container z-depth-0 mt-0 pt-2 mb-4 px-0 pr-4" style={{background:"white"}}>
+          <div className="row justify-content-around  px-md-5 my-md-5">
+          <MDBView hover>
+            <div className="col-md-6  my-2 my-md-1">
+              <img src={require("./img/ff/codechef.png")} className="my-3" alt=""/>
+            </div>
+            <MDBMask  overlay="white-light " />
+            </MDBView>
+            <MDBView hover>
+            <div className="col-md-6 my-2 my-md-1">
+              <img src={require("./img/ff/codingblocks.png")} className="my-3" alt=""/>
+            </div>
+            <MDBMask overlay="white-light " />
+            </MDBView>
+            </div>
+            <div className="row justify-content-around  px-md-5 ">
+            <MDBView hover>
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/codingninjas.png")} className="my-3" alt=""/>
+            </div>
+            <MDBMask  overlay="white-light " />
+            </MDBView>
+            <MDBView hover>
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/devfolio.png")} className="my-3" alt=""/>
+            </div>
+            <MDBMask  overlay="white-light " />
+            </MDBView>
+
+            </div>
+            <div className="row justify-content-around  px-md-5 my-md-5">
+            <MDBView hover>
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/foxmula.png")} className="my-3" alt=""/>
+            </div>
+            <MDBMask  overlay="white-light " />
+            </MDBView>
+            <MDBView hover>
+
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/geeksforgeeks.png")} className="my-3" alt=""/>
+            <MDBMask  overlay="white-light " />
+
+            </div>
+            </MDBView>
+
+            </div>
+            
+            <div className="row justify-content-around px-md-5 my-md-5">
+            <MDBView hover>
+
+            <div className="col-lg-6 my-2 mr-4  my-md-1">
+              <img src={require("./img/ff/github.png")}  className="my-3" alt=""/>
+            </div>
+            <MDBMask  overlay="white-light " />
+
+            </MDBView>
+            <MDBView hover>
+            <div className="col-lg-6 my-2 ml-4 my-md-1">
+              <img src={require("./img/ff/skillenzatransparent.png")} className="my-3" alt=""/>
+            </div>
+            <MDBMask  overlay="white-light " />
+            </MDBView>
+
+            </div>
+            <div className="row justify-content-center ">
+            <MDBView hover>
+
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/techgig.png")} className="my-3" alt=""/>
+            </div>
+            <MDBMask className="flex-center" overlay="white-light" />
+
+            </MDBView>
+
+            </div>
+          </div>
+            
+    {/* <MDBAnimation reveal type="fadeInLeft" > */}
+        {/* <Container className="sponsers-container" style={{marginTop:40 , padding:0}}>
            <Row className="justify-content-center">
                <Col lg="6" className="spons_card" xs="12">
                <img className="spons_img" src={require("./img/sponsors/1.jpeg")} alt="Sponsors"></img>
@@ -126,10 +207,9 @@ class Sponsors extends React.Component{
                <img className="spons_img2"  src={require("./img/sponsors/2.jpeg")} alt="Sponsors"></img>
                </Col>
            </Row>
-       </Container>
-          </MDBAnimation>
+       </Container> */}
+          {/* </MDBAnimation> */}
 
-        </div>
         </section>
     )
   }

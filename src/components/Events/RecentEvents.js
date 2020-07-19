@@ -79,9 +79,10 @@ class RecentEvents extends React.Component {
   }
 
   render() {
+
     if(this.state.is_loading){
       return (
-        <MDBCol style={{ maxWidth: "25rem", marginLeft:"8px"}} className="event-card">
+        <MDBCol className="event-card">
         <MDBCard >
           <div className="spinner-border text-primary" role="status">
             <span className="sr-only">Loading...</span>
