@@ -1,6 +1,7 @@
 import React from 'react'
 import Events from './Events';
-import RecentEvents from "./RecentEvents";
+import RecentEventsApp from "./RecentEventsApp";
+import EventsCarouselApp from "../EventsCarousel/EventsCarouselApp";
 import {DB_CONFIG} from '../../Config/config';
 import firebase from 'firebase/app';
 import 'firebase/database';
@@ -154,33 +155,12 @@ class EventsApp extends React.Component{
             <MDBAnimation reveal type="lightSpeedIn" >
              <h6 className="head_spons pl-lg-5 pl-1">RECENT EVENTS</h6>
             </MDBAnimation>
-            <MDBRow className="justify-content-center  mt-5">
-             {
-               !this.state.done ? (
-                <ReactLoading type={"bars"} color={"black"}  className="loading-recent-events"/>
-               ) : (
 
-               this.state.EVENTS.slice(0).reverse().slice(0, 4).map((e) => {
-                //  console.log(e.title);
-                 return(
-                   <div>
-                  <RecentEvents
-                      key={e.id}
-                      id={e.id}
-                      title={e.title}
-                      imageURL={e.imageURL}
-                      description={e.description}
-                      date={e.date}
-                   />
-                   </div>
+            <RecentEventsApp />
 
-                  )
-                })
-              )
-             }
-            </MDBRow>
+
           </div>
-            <div id="events" style={{marginTop:100}}>
+            <div id="events" style={{marginTop:-130}}>
             <MDBAnimation reveal type="lightSpeedIn" >
                <h3 className="head_spons pl-lg-5 pl-1">ALL EVENTS </h3>
               </MDBAnimation>

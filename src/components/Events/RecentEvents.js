@@ -8,11 +8,10 @@ import { MDBAnimation,MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, 
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
 var storageRef = firebase.storage().ref();
 
 class RecentEvents extends React.Component {
-  constructor(props) {
+  constructor(props){
     super(props);
     this.date = props.date;
     this.title = props.title;
@@ -29,94 +28,96 @@ class RecentEvents extends React.Component {
      }
   }
 
-  componentDidMount() {
+  componentDidMount(){
     document.querySelectorAll(".card").forEach(x=>{
       x.style.height="350px";
     })
+      const previousEvents = this.state.EVENTS;
 
-    const previousEvents = this.state.EVENTS;
-
-    // DataSnapshot
-      this.database.on('child_added', snap => {
-      previousEvents.push({
-        id: snap.key,
-        title: snap.val().title,
-        date: snap.val().date,
-        description: snap.val().description,
-        imageURL: snap.val().imageURL,
-      });
-      this.setState({
-        EVENTS: previousEvents,
-      });
-
-
-
-      setTimeout(()=>{
+      // DataSnapshot
+        this.database.on('child_added', snap => {
+        previousEvents.push({
+          id: snap.key,
+          title: snap.val().title,
+          date: snap.val().date,
+          description: snap.val().description,
+          imageURL: snap.val().imageURL,
+        });
         this.setState({
-          is_loading:false,
+          EVENTS: previousEvents,
         });
-      },500,()=>{
-        document.querySelectorAll(".card").forEach(x=>{
-          x.style.height="auto";
-
+        setTimeout(()=>{
+          this.setState({
+            is_loading:false,
+          });
+        },1000,()=>{
+          document.querySelectorAll(".card").forEach(x=>{
+            x.style.height="auto";
+          });
         });
-      });
 
-    });
-
-      this.state.EVENTS.map((e, index) => {
-        if(e.id === this.id){
-          let spaceRef = storageRef.child("IMAGES/" + this.state.EVENTS[index].imageURL)
-          storageRef.child("IMAGES/" + this.state.EVENTS[index].imageURL).getDownloadURL().then((url) => {
-                // console.log(url);
-                this.setState({
-                  source: url
-                })
-          })
-        }
       })
+
+        // this.state.EVENTS.reverse();
+        // console.log(this.state.EVENTS);
+
+        this.state.EVENTS.map((e, index) => {
+          if(e.id === this.id){
+            let spaceRef = storageRef.child("IMAGES/" + this.state.EVENTS[index].imageURL)
+            storageRef.child("IMAGES/" + this.state.EVENTS[index].imageURL).getDownloadURL().then((url) => {
+                  // console.log(url);
+                  this.setState({
+                    source: url
+                  })
+            })
+          }
+        })
+
 
   }
 
   render() {
 
-    if(this.state.is_loading){
-      return (
-        <MDBCol className="event-card">
-        <MDBCard >
-          <div className="spinner-border text-primary" role="status">
-            <span className="sr-only">Loading...</span>
-          </div>
+
+      if(this.state.is_loading){
+        return (
+          <MDBCol style={{ maxWidth: "25rem", marginLeft:"8px"}} className="event-card">
+          <MDBCard >
+            <div className="spinner-border text-primary" role="status">
+              <span className="sr-only">Loading...</span>
+            </div>
+          </MDBCard>
+        </MDBCol>
+            );
+      }
+      else{
+        return(
+      <MDBCol style={{ maxWidth: "25rem", marginLeft:"9px"}} className="event-card">
+        <MDBCard>
+          <MDBCardImage className="card-image" src={this.state.source} waves />
+          <MDBCardBody>
+            <MDBCardTitle className="card-title">{this.title}</MDBCardTitle>
+            <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
+            <Link to={{
+              pathname: `events/${this.id}`,
+              state: {
+                id: this.id,
+                title: this.title,
+                date: this.date,
+                imageURL: this.imageURL,
+                description: this.description
+              }
+            }}>
+            <h6 className="slick-show" style={{color: "blue", paddingBottom:"20px"}}>Details</h6>
+            </Link>
+          </MDBCardBody>
         </MDBCard>
       </MDBCol>
-          );
-    }
-    else{
-      return(
-    <MDBCol style={{ maxWidth: "20rem", marginLeft:"9px"}} className="event-card">
-      <MDBCard className="recent-card">
-        <MDBCardImage className="card-image" src={this.state.source} waves />
-        <MDBCardBody>
-          <MDBCardTitle className="card-title">{this.title}</MDBCardTitle>
-          <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
-          <Link to={{
-            pathname: `events/${this.id}`,
-            state: {
-              id: this.id,
-              title: this.title,
-              date: this.date,
-              imageURL: this.imageURL,
-              description: this.description
-            }
-          }}>
-          <h6 className="slick-show" style={{color: "blue", paddingBottom:"20px"}}>Details</h6>
-          </Link>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
 
-      )
-    }
+        )
+      }
+
+
   }
 }
 
