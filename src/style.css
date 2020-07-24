@@ -1123,3 +1123,23 @@ video {
   
 }
 /* recent events ends */
+
+.icpcc{
+    margin: 100px 0;
+}
+.gs{
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 485px) {
+    .achieve{
+        font-size: 35px;
+    }
+    .icpcc{
+        margin: 0;
+    }
+    .gs{
+        margin-top: 0;
+    }
+}
+

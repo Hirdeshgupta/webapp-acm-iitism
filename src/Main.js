@@ -8,6 +8,7 @@ import EventsDetails from "./components/Events/EventsDetails";
 import Sponsors from "./components/Sponsors"
 import TeamPage from "./components/TeamPage"
 import ContactUs from "./components/ContactUs";
+import Achievements from "./components/Achievements";
 import './animate.css';
 import Preloader from "./components/Preloader"
 import {MDBAnimation } from "mdbreact"
@@ -43,6 +44,7 @@ class Main extends React.Component{
 				<Route path="/" component={Home} exact/>
 				<Route path="/events" exact component={EventsApp} />
 				<Route path="/events/:id" component={EventsDetails} />
+				<Route path="/achievements" component={Achievements} />
 				<Route path="/sponsors" component={Sponsors}/>
 				<Route path="/TeamPage" component={TeamPage}/>
 				<Route path="/ContactUS" component={ContactUs} />

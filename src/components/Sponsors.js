@@ -115,7 +115,7 @@ class Sponsors extends React.Component{
         <MDBAnimation reveal type="lightSpeedIn" >
           <div className="row justify-content-center ">
             <div className="col-9 col-md-4">
-            <h1 className="head_spons text-center head_contact pl-lg-5 pl-1">PAST SPONSORS </h1>
+            <h1 className="team_head text-center head_contact pl-lg-5 pl-1">PAST SPONSORS </h1>
             </div>
           </div>
           </MDBAnimation>
