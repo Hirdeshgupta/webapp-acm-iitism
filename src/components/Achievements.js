@@ -102,7 +102,7 @@ class Achievements extends React.Component{
                            <Col lg="6" xs="12">
                            <MDBCardBody>
                                 <MDBCardTitle>ICPC Asia-West Continent Final</MDBCardTitle>
-                                <MDBCardText className="pre gs">
+                                <MDBCardText className="pre gs" style={{color:"black"}}>
                                     <Row >
                                     <Col lg="6" xs="12">
                                     1) Astralix:<br/>
@@ -124,26 +124,29 @@ class Achievements extends React.Component{
                    </Container>
                    <Container style={{marginTop:"45px"}}>
                        <Row>
+                       <Col lg="4" xs="12">
+                               <MDBCardImage className="img-fluid icpcc" src={require("./img/achieve/icpc.png")} waves />
+                           </Col>
                            <Col lg="8" xs="12">
                            <MDBCardBody>
                                 <MDBCardTitle>ICPC Regionals</MDBCardTitle>
                                 <MDBCardText className="pre">
                                     <Row>
-                                      <Col lg="4" xs="12" style={{margin:"8px 0"}}>
+                                      <Col lg="4" xs="12" style={{margin:"8px 0",color:"black"}}>
                                       1)  Astralix:<br/>
                                     (Kanpur, Gwalior)<br/>
                                     Harman Kahlon<br/>
                                     Ankur Dua<br/>
                                     Anurag Singh<br/>
                                       </Col>
-                                      <Col lg="4" xs="12" style={{margin:"8px 0"}}>
+                                      <Col lg="4" xs="12" style={{margin:"8px 0",color:"black"}}>
                                       2)  Andhera_Kayam_Rahe:<br/>
                                     (Kharagpur, Amritapuri) <br/>
                                     Prashant Mittal<br/>
                                     Ayush Bansal<br/>
                                     Madhur Chauhan<br/> 
                                       </Col>
-                                      <Col lg="4" xs="12" style={{margin:"8px 0"}}>
+                                      <Col lg="4" xs="12" style={{margin:"8px 0",color:"black"}}>
                                       3)  Skullcandy:<br/>
                                     (Kanpur, Amritapuri)<br/>
                                     Vibhor Shukla<br/>
@@ -152,21 +155,21 @@ class Achievements extends React.Component{
                                       </Col>
                                     </Row>
                                     <Row>
-                                      <Col lg="4" xs="12" style={{margin:"8px 0"}}>
+                                      <Col lg="4" xs="12" style={{margin:"8px 0",color:"black"}}>
                                       4)  kangra308:<br/>
                                     (Gwalior, Amritapuri)<br/>
                                     Saurav Kumar<br/>
                                     Amit Singh<br/>
                                     Shubhanshu Chauhan<br/>
                                       </Col>
-                                      <Col lg="4" xs="12" style={{margin:"8px 0"}}>
+                                      <Col lg="4" xs="12" style={{margin:"8px 0",color:"black"}}>
                                       5)  Mushroom Boys:<br/>
                                     (Amritapuri)<br/>
                                     Pawan Dogra<br/>
                                     Apurv Mayank<br/>
                                     Vishal Som<br/>
                                       </Col>
-                                      <Col lg="4" xs="12" style={{margin:"8px 0"}}>
+                                      <Col lg="4" xs="12" style={{margin:"8px 0",color:"black"}}>
                                       6) One_Last_Time:<br/>
                                     (Amritapuri)<br/>
                                     Srijan Jaiswal<br/>
@@ -177,9 +180,7 @@ class Achievements extends React.Component{
                                 </MDBCardText>
                                 </MDBCardBody>
                            </Col>
-                           <Col lg="4" xs="12">
-                               <MDBCardImage className="img-fluid icpcc" src={require("./img/achieve/icpc.png")} waves />
-                           </Col>
+                           
                        </Row>
                    </Container>
                    <Container style={{marginTop:"45px"}}>
@@ -190,7 +191,7 @@ class Achievements extends React.Component{
                            <Col lg="6" xs="12">
                            <MDBCardBody>
                                 <MDBCardTitle>Flipkart Grid</MDBCardTitle>
-                                <MDBCardText className="pre">
+                                <MDBCardText className="pre" style={{color:"black"}}>
                                   No-Mo Team:<br></br>
                                   Aman Deep Singh(ECE)<br></br>
                                   Abhay Gaur(CSE)<br></br>
@@ -202,10 +203,13 @@ class Achievements extends React.Component{
                    </Container>
                    <Container style={{marginTop:"45px"}}>
                        <Row>
+                       <Col lg="6" xs="12">
+                               <MDBCardImage className="img-fluid"  src={require("./img/achieve/gsoc.png")} waves />
+                           </Col>
                            <Col lg="6" xs="12">
                            <MDBCardBody>
                                 <MDBCardTitle>Google Summer of Code (GSoC) -2020</MDBCardTitle>
-                                <MDBCardText className="pre gs">
+                                <MDBCardText className="pre gs" style={{color:"black"}}>
                                 1. Abhinav Bajpai (DD CSE)  <br></br>
                                 2. Naveen Jain (CSE)<br></br>
                                 3. Rishabh Agarwal ( M&C)<br></br>
@@ -214,9 +218,7 @@ class Achievements extends React.Component{
                                 </MDBCardText>
                                 </MDBCardBody>
                            </Col>
-                           <Col lg="6" xs="12">
-                               <MDBCardImage className="img-fluid"  src={require("./img/achieve/gsoc.png")} waves />
-                           </Col>
+                           
                        </Row>
                    </Container>
               </div>
