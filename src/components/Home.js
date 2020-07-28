@@ -6,6 +6,16 @@ import EventsCarouselApp from "./EventsCarousel/EventsCarouselApp";
 import Preloader from "./Preloader";
 import {MDBAnimation } from "mdbreact"
 import AboutISM from "./AboutISM";
+import Benefits from "./benefits";
+// import './fullPage/dist/fullpage.css';
+// import  './fullPage/dist/fullpage.js';
+// import  './fullPage/vendors/scrolloverflow.min.js';
+
+// var fullPageInstance = new fullpage('#fullpage', {
+//   navigation: true,
+// });
+
+
 class  Home extends React.Component {
   constructor(props)
   {
@@ -40,17 +50,42 @@ componentDidMount()
       )
     }
 		else{
-    return (
-      <MDBAnimation type="fadeIn" >
-      <div className="home-div">
-        <Video />
-        <AboutISM />
-        <AboutUs />
-        <EventsCarouselApp style={{marginTop:80}}/>
+    // return (
+    //   <MDBAnimation type="fadeIn" >
+    //   <div className="home-div">
+    //     <Video />
+    //     <AboutISM />
+    //     <AboutUs />
+    //     <EventsCarouselApp style={{marginTop:80}}/>
 
-      </div>
-      </MDBAnimation>
-    )
+    //   </div>
+    //   </MDBAnimation>
+    // )
+      return(
+        <div>
+          <script src="https://cdnjs.com/libraries/fullPage.js"> </script>
+          <div id="fullpage">
+            <div className="section">
+              <Video/>
+            </div>
+            <div className="section">
+              <AboutISM/>
+            </div>
+            <div className="section">
+              <AboutUs/>
+            </div>
+            <div className="section">
+              <Benefits/>
+            </div>
+            <div className="section">
+              <EventsCarouselApp style={{marginTop:80}}/>
+            </div>
+           {/* <AboutISM  className="section" />
+           <AboutUs  className="section" />
+           <EventsCarouselApp className="section" style={{marginTop:80}} /> */}
+          </div>
+          </div>
+      )
     }
   }
 }

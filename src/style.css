@@ -1143,3 +1143,18 @@ video {
     }
 }
 
+
+.bene{
+    width: 100%;
+    height: auto;
+}
+
+.join{
+    margin: 15px 0;
+    margin-left: 46%;
+}
+@media only screen and (max-width: 415px){
+    .join{
+   margin-left: 28%;
+    }
+}
