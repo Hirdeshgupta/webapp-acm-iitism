@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import {MDBAnimation } from "mdbreact"
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
 
+
 class Achievements extends React.Component{
     componentDidMount(){
       let num=0;
@@ -11,11 +12,11 @@ class Achievements extends React.Component{
           num++;
           if(num%2==0){
             if(document.scrollingElement.scrollTop<20){
-              document.querySelector(" .fa-bars").style.color="black";  
-            } 
+              document.querySelector(" .fa-bars").style.color="black";
+            }
           }
           else{
-            document.querySelector(" .fa-bars").style.color="white"; 
+            document.querySelector(" .fa-bars").style.color="white";
           }
         })
       }
@@ -51,7 +52,7 @@ class Achievements extends React.Component{
               x.style.color="black";
               this.animeLinkChangeColor(document.querySelector(".anime-links").style.color);
             })
-            
+
           }
       document.querySelector(" .fa-bars").style.color="black";
 
@@ -95,6 +96,7 @@ class Achievements extends React.Component{
           </MDBAnimation>
                <div>
                    <Container style={{marginTop:"45px"}}>
+                   <MDBAnimation reveal type="zoomIn">
                        <Row>
                            <Col lg="6" xs="12">
                                <MDBCardImage className="img-fluid"  src={require("./img/achieve/icpc.png")} waves />
@@ -121,8 +123,10 @@ class Achievements extends React.Component{
                                 </MDBCardBody>
                            </Col>
                        </Row>
+                       </MDBAnimation>
                    </Container>
                    <Container style={{marginTop:"45px"}}>
+                   <MDBAnimation reveal type="zoomIn">
                        <Row>
                        <Col lg="4" xs="12">
                                <MDBCardImage className="img-fluid icpcc" src={require("./img/achieve/icpc.png")} waves />
@@ -144,14 +148,14 @@ class Achievements extends React.Component{
                                     (Kharagpur, Amritapuri) <br/>
                                     Prashant Mittal<br/>
                                     Ayush Bansal<br/>
-                                    Madhur Chauhan<br/> 
+                                    Madhur Chauhan<br/>
                                       </Col>
                                       <Col lg="4" xs="12" style={{margin:"8px 0",color:"black"}}>
                                       3)  Skullcandy:<br/>
                                     (Kanpur, Amritapuri)<br/>
                                     Vibhor Shukla<br/>
                                     Saksham Gupta<br/>
-                                    Faizan Amjad<br/> 
+                                    Faizan Amjad<br/>
                                       </Col>
                                     </Row>
                                     <Row>
@@ -176,14 +180,16 @@ class Achievements extends React.Component{
                                     Kaleem Ahmad<br/>
                                     Sahil Anand<br/>
                                       </Col>
-                                    </Row> 
+                                    </Row>
                                 </MDBCardText>
                                 </MDBCardBody>
                            </Col>
-                           
+
                        </Row>
+                       </MDBAnimation>
                    </Container>
                    <Container style={{marginTop:"45px"}}>
+                   <MDBAnimation reveal type="zoomIn">
                        <Row>
                            <Col lg="6" xs="12">
                                <MDBCardImage className="img-fluid"  src={require("./img/achieve/flip.webp")} waves />
@@ -200,8 +206,10 @@ class Achievements extends React.Component{
                                 </MDBCardBody>
                            </Col>
                        </Row>
+                       </MDBAnimation>
                    </Container>
                    <Container style={{marginTop:"45px"}}>
+                   <MDBAnimation reveal type="zoomIn">
                        <Row>
                        <Col lg="6" xs="12">
                                <MDBCardImage className="img-fluid"  src={require("./img/achieve/gsoc.png")} waves />
@@ -218,14 +226,15 @@ class Achievements extends React.Component{
                                 </MDBCardText>
                                 </MDBCardBody>
                            </Col>
-                           
+
                        </Row>
+                       </MDBAnimation>
                    </Container>
               </div>
             </section>
         )
       }
-    
+
     }
 
 export default Achievements
