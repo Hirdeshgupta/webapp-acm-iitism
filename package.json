@@ -38,6 +38,7 @@
         "reactstrap": "^8.4.1",
         "serve": "^11.3.2",
         "simple-react-validator": "^1.5.0",
+        "typewriter-effect": "^2.13.1",
         "video-react": "^0.14.1"
     },
     "scripts": {

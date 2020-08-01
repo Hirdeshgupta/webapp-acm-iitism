@@ -6,6 +6,7 @@ import EventsCarouselApp from "./EventsCarousel/EventsCarouselApp";
 import Preloader from "./Preloader";
 import {MDBAnimation } from "mdbreact"
 import AboutISM from "./AboutISM";
+import Typewriter from "./typewriter";
 import Benefits from "./benefits";
 // import './fullPage/dist/fullpage.css';
 // import  './fullPage/dist/fullpage.js';
@@ -63,27 +64,12 @@ componentDidMount()
     // )
       return(
         <div>
-          <script src="https://cdnjs.com/libraries/fullPage.js"> </script>
-          <div id="fullpage">
-            <div className="section">
-              <Video/>
-            </div>
-            <div className="section">
+              {
+                window.innerWidth<500 ? <Typewriter /> :<Video/>
+              }
               <AboutISM/>
-            </div>
-            <div className="section">
-              <AboutUs/>
-            </div>
-            <div className="section">
               <Benefits/>
-            </div>
-            <div className="section">
               <EventsCarouselApp style={{marginTop:80}}/>
-            </div>
-           {/* <AboutISM  className="section" />
-           <AboutUs  className="section" />
-           <EventsCarouselApp className="section" style={{marginTop:80}} /> */}
-          </div>
           </div>
       )
     }

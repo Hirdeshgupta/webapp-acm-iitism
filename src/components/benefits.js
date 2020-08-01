@@ -4,7 +4,7 @@ import {MDBAnimation} from "mdbreact"
 function benefits(){
     return(
         
-        <div style={{margin:"20px 0"}}>
+        <div style={{margin:"20px 0"}} id="benefit">
         <MDBAnimation reveal type="fadeIn">
         <img className="bene" src={require("./benefits-02.jpg")}></img>
         </MDBAnimation>

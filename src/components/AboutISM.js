@@ -2,7 +2,7 @@ import React from "react";
 import {  MDBRow, MDBCol, MDBIcon,MDBAnimation } from "mdbreact";
 function AboutISM() {
   return (
-      <div className="container-fluid px-0" style={{marginTop:80}}>
+      <div className="container-fluid px-0" >
 <section className="text-center my-0 my-md-5 z-depth-2 mx-0 mx-md-5 py-2 px-2 about">
         <MDBAnimation reveal type="fadeInUp">
             <h2 className="h1-responsive font-weight-bold my-5" style={{color:"#1a1245"}}>

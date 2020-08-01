@@ -27,6 +27,11 @@ body {
     background-size: cover;
 }
 
+.Typewriter_wrapper,
+.Typewriter_cursor {
+    font-size: 1.75rem;
+}
+
 
 /* ::-webkit-scrollbar {
     background-color: #fff;
@@ -822,7 +827,6 @@ td {
     .card-image {
         width: 200px;
         height: 200px;
-
     }
 }
 
@@ -1075,8 +1079,8 @@ td {
         margin-top: 7%;
     }
     .recent-card {
-      width: 180px;
-      height: 250px;
+        width: 180px;
+        height: 250px;
     }
 }
 
@@ -1111,50 +1115,57 @@ video {
         font-weight: bold;
     }
 }
+
+
 /* recent events starts */
+
 .recent-events {
-  margin-top: 100px;
+    margin-top: 100px;
 }
+
 .recent-card {
-  text-align: center;
+    text-align: center;
 }
+
 .recent-hr {
-  width: 50%;
-  
+    width: 50%;
 }
+
+
 /* recent events ends */
 
-.icpcc{
+.icpcc {
     margin: 100px 0;
 }
-.gs{
+
+.gs {
     margin-top: 40px;
 }
 
 @media only screen and (max-width: 485px) {
-    .achieve{
+    .achieve {
         font-size: 35px;
     }
-    .icpcc{
+    .icpcc {
         margin: 0;
     }
-    .gs{
+    .gs {
         margin-top: 0;
     }
 }
 
-
-.bene{
+.bene {
     width: 100%;
     height: auto;
 }
 
-.join{
+.join {
     margin: 15px 0;
     margin-left: 46%;
 }
-@media only screen and (max-width: 415px){
-    .join{
-   margin-left: 28%;
+
+@media only screen and (max-width: 415px) {
+    .join {
+        margin-left: 28%;
     }
 }
