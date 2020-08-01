@@ -1155,17 +1155,32 @@ video {
 }
 
 .bene {
-    width: 100%;
+    width: 70%;
     height: auto;
+    margin-left: 0;
 }
+
 
 .join {
     margin: 15px 0;
     margin-left: 46%;
+}
+@media only screen and (min-width: 1200px) {
+  .bene {
+      width: 70%;
+      height: auto;
+      margin-left: 13%;
+  }
 }
 
 @media only screen and (max-width: 415px) {
     .join {
         margin-left: 28%;
     }
+}
+@media only screen and (max-width: 600px) {
+  .bene {
+      width: 100%;
+      height: auto;
+  }
 }
