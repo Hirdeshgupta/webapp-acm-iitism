@@ -1184,6 +1184,45 @@ video {
 .join-acm {
   margin-left: 45%;
 }
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .bene {
+    background: url("./components/benefits-02.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bene-div {
+    width: 1200px;
+    height: 800px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  .bene {
+    background: url("./components/benefits-02.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bene-div {
+    width: 1000px;
+    height: 700px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .bene {
+    background: url("./components/benefits-02.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bene-div {
+    width: 800px;
+    height: 550px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .bene {
     background: url("./components/benefits-01.png");
