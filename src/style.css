@@ -1170,14 +1170,16 @@ video {
 @media only screen and (min-width: 1200px) {
   .bene {
     background: url("./components/benefits-02.jpg");
-    height: 100%;
+    width: 900px;
+    height: 600px;
+    background-size: 1000px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 17%;
   }
   .bene-div {
-    width: 1400px;
-    height: 1000px;
+
   }
 }
 
@@ -1187,23 +1189,26 @@ video {
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
   .bene {
     background: url("./components/benefits-02.jpg");
-    height: 100%;
+    width: 800px;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 15%;
   }
   .bene-div {
-    width: 1200px;
-    height: 800px;
+
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
   .bene {
     background: url("./components/benefits-02.jpg");
-    height: 100%;
+    width: 700px;
+    height: 450px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 10%;
   }
   .bene-div {
     width: 1000px;
@@ -1252,7 +1257,7 @@ video {
     height: 600px;
   }
   .join-acm {
-    margin-left: 40%;
+    margin-left: 30%;
   }
 }
 @media only screen and (max-width: 360px) {
