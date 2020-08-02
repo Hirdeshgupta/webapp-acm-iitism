@@ -7,11 +7,13 @@ function benefits(){
         <div style={{margin:"20px 0"}} id="benefit">
         <MDBAnimation reveal type="fadeIn">
         <MDBAnimation reveal type="zoomIn">
-        <img className="bene" src={require("./benefits-02.jpg")}></img>
+        <div className="bene">
+          <div className="bene-div"></div>
+        </div>
         </MDBAnimation>
         </MDBAnimation>
         <Fragment>
-        <MDBBtn gradient="peach" className="join" size="lg" href="https://forms.gle/D2VcWQbNTDRpNwsr6">Join Now</MDBBtn>
+        <MDBBtn gradient="peach" className="join-acm" size="lg" href="https://forms.gle/D2VcWQbNTDRpNwsr6">Join Now</MDBBtn>
       </Fragment>
         </div>
     )
