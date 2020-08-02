@@ -68,6 +68,7 @@ componentDidMount()
                 window.innerWidth<500 ? <Typewriter /> :<Video/>
               }
               <AboutISM/>
+              <AboutUs />
               <Benefits/>
               <EventsCarouselApp style={{marginTop:80}}/>
           </div>

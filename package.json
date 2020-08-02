@@ -39,6 +39,7 @@
         "serve": "^11.3.2",
         "simple-react-validator": "^1.5.0",
         "typewriter-effect": "^2.13.1",
+        "typewriter.js": "0.0.7",
         "video-react": "^0.14.1"
     },
     "scripts": {

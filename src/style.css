@@ -1060,12 +1060,17 @@ td {
 
 @media only screen and (max-width: 415px) {
     .abouts {
-        font-size: 18px;
+        font-size: 16px !important;
         color: #1a1245;
         font-weight: bold;
     }
 }
 
+@media only screen and (max-width: 500px){
+    .join{
+        display: none !important;
+    }
+}
 .form-input {
     width: 85%;
     margin-left: 20px;
