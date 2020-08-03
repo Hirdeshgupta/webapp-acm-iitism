@@ -7,17 +7,17 @@ const  typewriter = () => {
         <MDBRow>
           <MDBCol className="z-depth-0">
             <MDBJumbotron style={{ padding: 0 }}>
-              <MDBCol className="text-white text-center px-0 " style={{ backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)` }}>
+              <MDBCol className="text-white text-center px-0 " style={{height:"60vh", backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)` }}>
                 <MDBCol className="py-5 px-0">
-                  <MDBCardTitle className="h1-responsive pt-3 my-5 font-bold text-white" style={{fontSize:"1.6rem"}}><Typewriter
+                  <MDBCardTitle className="h1-responsive pt-5 my-5 font-bold text-white" style={{fontFamily:"FF Tisa" ,fontSize:"2.5rem",padding:"0 35px 0px 35px"}}><Typewriter
                     options={{
-                        strings: ['ACM STUDENT CHAPTER', 'IIT ISM DHANBAD'],
+                        strings: ['ACM STUDENT CHAPTER '],
                         autoStart: true,
                         loop: true,
                       }}
         
                     onInit={(typewriter) => {
-            typewriter.typeString('ACM STUDENT CHAPTER')
+            typewriter.typeString('IIT ISM DHANBAD')
             .callFunction(() => {
                 console.log('String typed out!');
             })
@@ -29,7 +29,7 @@ const  typewriter = () => {
             .start()
         }}
         /></MDBCardTitle>
-                  <a href="#benefit"><MDBBtn  outline color="white" className="mb-5">Join Now </MDBBtn></a>
+                  <a href="#benefit"><MDBBtn  outline color="white" className="mt-5">Join Now </MDBBtn></a>
                 </MDBCol>
               </MDBCol>
             </MDBJumbotron>
