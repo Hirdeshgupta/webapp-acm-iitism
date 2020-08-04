@@ -7,13 +7,13 @@ class typewriter extends React.Component {
     constructor(props){
       super(props);
       this.state={
-        height: "90vh",
+        height: "100vh",
       }
     }
     componentDidMount() {
       document.addEventListener("scroll",()=>{
         let scrolled = document.scrollingElement.scrollTop;
-        if(scrolled>=60){
+        if(scrolled>=40){
           this.setState({height: "60vh"})
         }
     })
