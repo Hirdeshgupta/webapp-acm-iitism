@@ -209,15 +209,111 @@ class Sponsors extends React.Component{
             </MDBView>
 
             </div>
-            <div className="row justify-content-center ">
+          
+          {/* ========= */}
+          <div className="row justify-content-around  px-md-5 my-md-5">
             <MDBView hover>
             <MDBAnimation reveal type="fadeIn">
 
             <div className="col-lg-6 my-2 my-md-1">
               <img src={require("./img/ff/techgig.png")} className="my-3" alt=""/>
             </div>
-            <MDBMask className="flex-center" overlay="white-light" />
+            <MDBMask  overlay="white-light " />
             </MDBAnimation>
+
+            </MDBView>
+            <MDBView hover>
+            <MDBAnimation reveal type="fadeIn">
+
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/1.png")} className="my-3"  alt=""/>
+            <MDBMask  overlay="white-light " />
+
+            </div>
+            </MDBAnimation>
+
+            </MDBView>
+
+            </div>
+
+
+
+            <div className="row justify-content-around  px-md-5 my-md-5">
+            <MDBView hover>
+            <MDBAnimation reveal type="fadeIn">
+
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/2.png")} className="my-3"  alt=""/>
+            </div>
+            <MDBMask  overlay="white-light " />
+            </MDBAnimation>
+
+            </MDBView>
+            <MDBView hover>
+            <MDBAnimation reveal type="fadeIn">
+
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/3.png")} className="my-3"  alt=""/>
+            <MDBMask  overlay="white-light " />
+
+            </div>
+            </MDBAnimation>
+
+            </MDBView>
+
+            </div>
+
+
+
+            
+            <div className="row justify-content-around  px-md-5 my-md-5">
+            <MDBView hover>
+            <MDBAnimation reveal type="fadeIn">
+
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/4.png")} className="my-3"  alt=""/>
+            </div>
+            <MDBMask  overlay="white-light " />
+            </MDBAnimation>
+
+            </MDBView>
+            <MDBView hover>
+            <MDBAnimation reveal type="fadeIn">
+
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/5.png")} className="my-3"  alt=""/>
+            <MDBMask  overlay="white-light " />
+
+            </div>
+            </MDBAnimation>
+
+            </MDBView>
+
+            </div>
+
+
+            
+            <div className="row justify-content-around  px-md-5 my-md-5">
+            <MDBView hover>
+            <MDBAnimation reveal type="fadeIn">
+
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/6.png")} className="my-3"  alt=""/>
+            </div>
+            <MDBMask  overlay="white-light " />
+            </MDBAnimation>
+
+            </MDBView>
+            <MDBView hover>
+            <MDBAnimation reveal type="fadeIn">
+
+            <div className="col-lg-6 my-2 my-md-1">
+              <img src={require("./img/ff/7.png")} className="my-3"  alt=""/>
+            <MDBMask  overlay="white-light " />
+
+            </div>
+            </MDBAnimation>
+
             </MDBView>
 
             </div>

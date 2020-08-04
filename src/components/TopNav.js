@@ -214,7 +214,7 @@ render(){
       Achievements
     </Nav.Link>
     <Nav.Link className="topNav-links anime-links" style={{color:this.state.color}}  onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout} eventKey={4} href="/sponsors">
-      Past sponsers
+      Past Sponsors
     </Nav.Link>
     <Nav.Link className="topNav-links anime-links" style={{color:this.state.color}}  onMouseOver={this.handlemouseover} onMouseOut={this.handlemouseout} eventKey={5} href="./TeamPage">
       Team
