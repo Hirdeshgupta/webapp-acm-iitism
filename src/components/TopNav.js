@@ -15,10 +15,11 @@ constructor(props){
     hamburger: "white",
     // isOpen: false
   }
+  
   // this.handleDocumentClick=this.handleDocumentClick.bind(this);
   // this.toggle=this.toggle.bind(this);
 }
- 
+
 componentDidMount(){
 
 
@@ -101,7 +102,7 @@ if (scrolled >= 20) {
 
   }
 } else {
-  
+
   if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
     if(window.innerWidth>992){
     document.querySelectorAll(".anime-links").forEach(x=>{
@@ -225,7 +226,7 @@ render(){
 
 </Navbar.Collapse>
 </Navbar>
-</div> 
+</div>
   );
 }
 }

@@ -27,7 +27,7 @@ class  Home extends React.Component {
 }
 componentDidMount()
 {
-  
+
   document.querySelector("nav").style.opacity=0;
   document.querySelector("#footer").style.opacity=0;
   document.querySelector("html").style.overflowY="hidden";
@@ -63,7 +63,7 @@ componentDidMount()
     //   </MDBAnimation>
     // )
       return(
-        <div>
+        <div className="main-home">
               {
                 window.innerWidth<500 ? <Typewriter /> :<Video/>
               }
