@@ -24,7 +24,7 @@ class typewriter extends React.Component {
         <MDBRow>
           <MDBCol className="z-depth-0">
             <MDBJumbotron style={{ padding: 0 }}>
-              <MDBCol className="text-white typewriter-col text-center px-0 " style={{ height: this.state.height,  }}>
+              <MDBCol className="text-white typewriter-col text-center px-0 " style={{ height: "90vh",  }}>
                 <MDBCol className="py-5 px-0">
                   <MDBCardTitle className="h1-responsive pt-5 my-5 font-bold text-white" style={{fontFamily:"FF Tisa" ,fontSize:"2.5rem",padding:"0 35px 0px 35px"}}><Typewriter
                     options={{
@@ -46,7 +46,7 @@ class typewriter extends React.Component {
             .start()
         }}
         /></MDBCardTitle>
-                  <a href="#benefit"><MDBBtn  outline color="white" className="mt-5">Join Now </MDBBtn></a>
+                  <a className="join-anchor" href="#benefit"><MDBBtn  outline color="white" className="mt-5">Join Now </MDBBtn></a>
                 </MDBCol>
               </MDBCol>
             </MDBJumbotron>
