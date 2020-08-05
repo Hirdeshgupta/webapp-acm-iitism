@@ -24,9 +24,8 @@ class typewriter extends React.Component {
         <MDBRow>
           <MDBCol className="z-depth-0">
             <MDBJumbotron style={{ padding: 0 }}>
-              <MDBCol className="text-white typewriter-col text-center px-0 " style={{ height: "95vh",  }}>
-                <MDBCol className="py-5 px-0">
-                  <MDBCardTitle className="h1-responsive pt-5 my-5 font-bold text-white" style={{fontFamily:"FF Tisa" ,fontSize:"2.5rem",padding:"0 35px 0px 35px"}}><Typewriter
+              <MDBCol className="text-white typewriter-col text-center" style={{ height: "95vh",  }}>
+                  <MDBCardTitle className=" h1-responsive  font-bold text-white" style={{fontFamily:"FF Tisa" ,fontSize:"2.5rem",position:"absolute",top:"35%",left:40,right:40}}><Typewriter
                     options={{
                         strings: ['ACM STUDENT CHAPTER '],
                         autoStart: true,
@@ -34,7 +33,7 @@ class typewriter extends React.Component {
                       }}
 
                     onInit={(typewriter) => {
-            typewriter.typeString('IIT ISM DHANBAD')
+            typewriter.typeString('IIT (ISM) DHANBAD')
             .callFunction(() => {
                 console.log('String typed out!');
             })
@@ -46,8 +45,7 @@ class typewriter extends React.Component {
             .start()
         }}
         /></MDBCardTitle>
-                  <a className="join-anchor" href="#benefit"><MDBBtn  outline color="white" className="mt-5">Join Now </MDBBtn></a>
-                </MDBCol>
+                  <a className="join-anchor" href="#benefit"><MDBBtn  outline color="white" >Join Now </MDBBtn></a>
               </MDBCol>
             </MDBJumbotron>
           </MDBCol>
