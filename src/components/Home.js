@@ -63,6 +63,7 @@ componentDidMount()
     //   </MDBAnimation>
     // )
       return(
+              <MDBAnimation type="fadeIn" >
         <div className="main-home">
               {
                 window.innerWidth<500 ? <Typewriter /> :<Video/>
@@ -72,6 +73,7 @@ componentDidMount()
               <Benefits/>
               <EventsCarouselApp style={{marginTop:80}}/>
           </div>
+                </MDBAnimation>
       )
     }
   }
