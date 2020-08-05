@@ -7,7 +7,7 @@ import "firebase/database";
 import { MDBAnimation,MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from "mdbreact"
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import Spinner from 'react-bootstrap/Spinner'
 var storageRef = firebase.storage().ref();
 
 class EventsCarousel extends React.Component {
@@ -83,9 +83,7 @@ class EventsCarousel extends React.Component {
         return (
           <MDBCol style={{ maxWidth: "25rem", marginLeft:"8px"}} className="event-card">
           <MDBCard >
-            <div className="spinner-border text-primary" role="status">
-              <span className="sr-only">Loading...</span>
-            </div>
+          <Spinner animation="border" variant="primary" />
           </MDBCard>
         </MDBCol>
             );
