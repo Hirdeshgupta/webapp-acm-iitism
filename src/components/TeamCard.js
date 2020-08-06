@@ -18,6 +18,9 @@ const TeamCard = (props) => {
       <a href={props.email} className="p-2 fa-lg">
       <MDBIcon far icon="envelope" style={{color:'#377293'}} />
       </a>
+      <a href={props.linkdln} className="p-2 fa-lg">
+      <MDBIcon fab icon="linkedin" style={{color:'#377293'}} />
+      </a>
     </ul>
           </MDBAnimation>
 

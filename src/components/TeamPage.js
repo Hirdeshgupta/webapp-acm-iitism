@@ -124,26 +124,28 @@ class TeamPage extends React.Component {
           </h2>
           </MDBAnimation>
           <MDBRow className="justify-content-center  mt-5">
-          <TeamCard   name="Madhulika Mohanty" position="Faculty Coordinator"  email=""/>
-            <TeamCard column="6"  name="Swapnil Narayan" position="Chairperson"   email="mailto:swapism7@gmail.com"/>
-            <TeamCard column="6"  name="Abhishek Raj" position="Vice Chairperson" email="mailto:abhishekraj29011998@gmail.com"/>
+          <TeamCard   name="Rajendra  Pamula" position="Faculty Coordinator"  email="" linkdln="https://www.linkedin.com/in/rajendra-pamula-98125a79/"/>
+          <TeamCard   name="Madhulika Mohanty" position="Faculty Coordinator"  email="" linkdln="https://www.linkedin.com/in/madhulikamohanty/"/>
+            <TeamCard column="6"  name="Swapnil Narayan" position="Chairperson"   email="mailto:swapism7@gmail.com" linkdln="https://www.linkedin.com/in/swapzism/"/>
+            <TeamCard column="6"  name="Abhishek Raj" position="Vice Chairperson" email="mailto:abhishekraj29011998@gmail.com" linkdln="https://www.linkedin.com/in/abhishek-raj-permani-495483156/"/>
+          </MDBRow>
+          
+          <MDBRow className="justify-content-center  mt-5">
+            <TeamCard name="Sahil Siyag" position="Secretary and Management Team Head" email="mailto:sahilsiyag88@gmail.com" linkdln="https://www.linkedin.com/in/sahil-siyag-4aa893191/"/>
+            <TeamCard  name="Sameer Jain" position="Treasurer"  email="mailto:sameer2000jain12@gmail.com" linkdln="https://www.linkedin.com/in/sameer-jain-882589158/"/>
+            <TeamCard name="Satyavart" position="Membership Chairperson" email="mailto:genrousurfer@gmail.com" linkdln="https://www.linkedin.com/in/satyavart-b8630b173/"/>
+            <TeamCard name="Prince Kumar" position="PR Team Head" email="mailto:princegup678@gmail.com" linkdln="https://www.linkedin.com/in/princegup678/"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard name="Sahil Siyag" position="Secretary and Management Team Head" email="mailto:sahilsiyag88@gmail.com"/>
-            <TeamCard  name="Sameer Jain" position="Treasurer"  email="mailto:sameer2000jain12@gmail.com"/>
-            <TeamCard name="Satyavart" position="Membership Chairperson" email="mailto:genrousurfer@gmail.com"/>
-            <TeamCard name="Prince Kumar" position="PR Team Head" email="mailto:princegup678@gmail.com"/>
+            <TeamCard name="Dhyey Mistry" position="Technical Head" email="mailto:dhyeybm@gmail.com" linkdln="https://www.linkedin.com/in/dhyey-mistry-859177177/'"/>
+            <TeamCard name="Ishan Thapa" position="Promotion Team Head" email="mailto:ishanthapa2607@gmail.com" linkdln="https://www.linkedin.com/in/ishan-thapa-426722194/"/>
+            <TeamCard name="Madhav Agarwal" position="Content Writing Team Head" email="mailto:Madhav.21.2k@gmail.com" linkdln="https://www.linkedin.com/in/madhav-agarwal-021a55180/"/>
+            <TeamCard name="Rashmikiran Pandit" position="Sponsor Team Head" email="mailto:panditrk2000@gmail.com" linkdln="https://www.linkedin.com/in/rashmikiran-pandit-358196189/"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard name="Dhyey Mistry" position="Technical Head" email="mailto:dhyeybm@gmail.com"/>
-            <TeamCard name="Ishan Thapa" position="Promotion Team Head" email="mailto:ishanthapa2607@gmail.com"/>
-            <TeamCard name="Madhav Agarwal" position="Content Writing Team Head" email="mailto:Madhav.21.2k@gmail.com"/>
-            <TeamCard name="Rashmikiran Pandit" position="Sponsor Team Head" email="mailto:panditrk2000@gmail.com"/>
-          </MDBRow>
-          <MDBRow className="justify-content-center  mt-5">
-            <TeamCard  name="Shubhagyata Swaraj Jayswal" position="Content Writing and Promotional Head" email="mailto:Shubhagytaswaraj@gmail.com"/>
-            <TeamCard name="Saurabh Raj" position="Designing Team Head" email="mailto:saurabhraj.18je0747@pe.iitism.ac.in"/>
-            <TeamCard name="AVINASH" position="Campus Ambassador Program Head" email="mailto:avinash21997@gmail.com"/>
+            <TeamCard  name="Shubhagyata Swaraj Jayswal" position="Content Writing and Promotional Head" email="mailto:Shubhagytaswaraj@gmail.com" linkdln="https://www.linkedin.com/in/shubhagyta-395ab4185/"/>
+            <TeamCard name="Saurabh Raj" position="Designing Team Head" email="mailto:saurabhraj.18je0747@pe.iitism.ac.in" linkdln="https://www.linkedin.com/in/saurabh-raj-aab418184/"/>
+            <TeamCard name="AVINASH" position="Campus Ambassador Program Head" email="mailto:avinash21997@gmail.com" linkdln="https://www.linkedin.com/in/avinash-b904a8194/"/>
           </MDBRow>
           <MDBAnimation reveal type="lightSpeedIn" >
           <h2 className="h1-responsive team_head  font-weight-bold my-5">
@@ -151,9 +153,9 @@ class TeamPage extends React.Component {
           </h2>
           </MDBAnimation>
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard column="6"  name="Hirdesh Gupta" position="Web Developer"  email="mailto:hirdeshgupta16@gmail.com"/>
-            <TeamCard column="6"  name="Aakash Kumar Singh" position="Web Developer" email="mailto:aksingh01ak@gmail.com"/>
-            <TeamCard name="Yash Vardhan" position="Web Developer" email="mailto:yashvardhan513@gmail.com"/>
+            <TeamCard column="6"  name="Hirdesh Gupta" position="Web Developer"  email="mailto:hirdeshgupta16@gmail.com" linkdln="https://www.linkedin.com/in/hirdesh-gupta-68117819a/"/>
+            <TeamCard column="6"  name="Aakash Kumar Singh" position="Web Developer" email="mailto:aksingh01ak@gmail.com" linkdln="https://www.linkedin.com/in/aakash-kumar-singh-b60a4219b"/>
+            <TeamCard name="Yash Vardhan" position="Web Developer" email="mailto:yashvardhan513@gmail.com" linkdln="https://www.linkedin.com/in/shubhagyta-395ab4185/"/>
           </MDBRow>
         </MDBCardBody>
       </MDBCard>
