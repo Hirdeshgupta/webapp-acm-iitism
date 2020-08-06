@@ -13,7 +13,7 @@ function benefits(){
         </MDBAnimation>
         </MDBAnimation>
         <Fragment>
-        <MDBBtn gradient="peach" size="lg" href="https://forms.gle/D2VcWQbNTDRpNwsr6">Join Now</MDBBtn>
+        <MDBBtn gradient="peach" className="join-acm" size="lg" href="https://forms.gle/D2VcWQbNTDRpNwsr6">Join Now</MDBBtn>
       </Fragment>
         </div>
     )

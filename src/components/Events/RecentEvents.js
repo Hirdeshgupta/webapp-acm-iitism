@@ -92,11 +92,7 @@ class RecentEvents extends React.Component {
         return(
       <MDBCol style={{ maxWidth: "25rem", marginLeft:"9px"}} className="event-card">
         <MDBCard>
-          <MDBCardImage className="card-image" src={this.state.source} waves />
-          <MDBCardBody>
-            <MDBCardTitle className="card-title">{this.title}</MDBCardTitle>
-            <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
-            <Link to={{
+        <Link to={{
               pathname: `events/${this.id}`,
               state: {
                 id: this.id,
@@ -106,9 +102,13 @@ class RecentEvents extends React.Component {
                 description: this.description
               }
             }}>
+          <MDBCardImage className="card-image" src={this.state.source} waves />
+          <MDBCardBody>
+            <MDBCardTitle className="card-title">{this.title}</MDBCardTitle>
+            <MDBCardText><i class="far fa-calendar-alt"></i> {this.date} </MDBCardText>
             <h6 className="slick-show" style={{color: "blue", paddingBottom:"20px"}}>Details</h6>
-            </Link>
           </MDBCardBody>
+          </Link>
         </MDBCard>
       </MDBCol>
 
