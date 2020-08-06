@@ -124,8 +124,8 @@ class TeamPage extends React.Component {
           </h2>
           </MDBAnimation>
           <MDBRow className="justify-content-center  mt-5">
-          <TeamCard   name="Rajendra  Pamula" position="Faculty Coordinator"  email="" linkdln="https://www.linkedin.com/in/rajendra-pamula-98125a79/"/>
-          <TeamCard   name="Madhulika Mohanty" position="Faculty Coordinator"  email="" linkdln="https://www.linkedin.com/in/madhulikamohanty/"/>
+          <TeamCard   name="Rajendra  Pamula" position="Faculty Sponsor"  email="	rajendra@iitism.ac.in" linkdln="https://www.linkedin.com/in/rajendra-pamula-98125a79/"/>
+          <TeamCard   name="Madhulika Mohanty" position="Faculty Co-Sponsor"  email="madhulika@iitism.ac.in" linkdln="https://www.linkedin.com/in/madhulikamohanty/"/>
             <TeamCard column="6"  name="Swapnil Narayan" position="Chairperson"   email="mailto:swapism7@gmail.com" linkdln="https://www.linkedin.com/in/swapzism/"/>
             <TeamCard column="6"  name="Abhishek Raj" position="Vice Chairperson" email="mailto:abhishekraj29011998@gmail.com" linkdln="https://www.linkedin.com/in/abhishek-raj-permani-495483156/"/>
           </MDBRow>
@@ -155,7 +155,7 @@ class TeamPage extends React.Component {
           <MDBRow className="justify-content-center  mt-5">
             <TeamCard column="6"  name="Hirdesh Gupta" position="Web Developer"  email="mailto:hirdeshgupta16@gmail.com" linkdln="https://www.linkedin.com/in/hirdesh-gupta-68117819a/"/>
             <TeamCard column="6"  name="Aakash Kumar Singh" position="Web Developer" email="mailto:aksingh01ak@gmail.com" linkdln="https://www.linkedin.com/in/aakash-kumar-singh-b60a4219b"/>
-            <TeamCard name="Yash Vardhan" position="Web Developer" email="mailto:yashvardhan513@gmail.com" linkdln="https://www.linkedin.com/in/shubhagyta-395ab4185/"/>
+            <TeamCard name="Yash Vardhan" position="Web Developer" email="mailto:yashvardhan513@gmail.com" linkdln="https://www.linkedin.com/in/yash-vardhan-688952188"/>
           </MDBRow>
         </MDBCardBody>
       </MDBCard>
