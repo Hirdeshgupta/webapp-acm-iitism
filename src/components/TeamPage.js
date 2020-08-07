@@ -156,6 +156,7 @@ class TeamPage extends React.Component {
             <TeamCard column="6"  name="Hirdesh Gupta" position="Web Developer"  email="mailto:hirdeshgupta16@gmail.com" linkdln="https://www.linkedin.com/in/hirdesh-gupta-68117819a/"/>
             <TeamCard column="6"  name="Aakash Kumar Singh" position="Web Developer" email="mailto:aksingh01ak@gmail.com" linkdln="https://www.linkedin.com/in/aakash-kumar-singh-b60a4219b"/>
             <TeamCard name="Yash Vardhan" position="Web Developer" email="mailto:yashvardhan513@gmail.com" linkdln="https://www.linkedin.com/in/yash-vardhan-688952188"/>
+            <TeamCard  name="Sameer Jain" position="Treasurer"  email="mailto:sameer2000jain12@gmail.com" linkdln="https://www.linkedin.com/in/sameer-jain-882589158/"/>
           </MDBRow>
         </MDBCardBody>
       </MDBCard>
