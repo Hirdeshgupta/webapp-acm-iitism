@@ -45,7 +45,7 @@ class TeamPage extends React.Component {
 
         }
       } else {
-        
+
         if ( document.querySelector(".anime-links").style.color!=="rgba(255,255,255,0)") {
           if(window.innerWidth>992){
           document.querySelectorAll(".anime-links").forEach(x=>{
@@ -131,14 +131,14 @@ class TeamPage extends React.Component {
       </Accordion.Toggle>
     </Card.Header>
     <Accordion.Collapse eventKey="0">
-      <Card.Body>        
+      <Card.Body>
          <MDBRow className="justify-content-center  mt-5">
           <TeamCard   name="Rajendra  Pamula" position="Faculty Sponsor"  email="	rajendra@iitism.ac.in" linkdln="https://www.linkedin.com/in/rajendra-pamula-98125a79/"/>
           <TeamCard   name="Madhulika Mohanty" position="Faculty Co-Sponsor"  email="madhulika@iitism.ac.in" linkdln="https://www.linkedin.com/in/madhulikamohanty/"/>
             <TeamCard column="6"  name="Swapnil Narayan" position="Chairperson"   email="mailto:swapism7@gmail.com" linkdln="https://www.linkedin.com/in/swapzism/"/>
             <TeamCard column="6"  name="Abhishek Raj" position="Vice Chairperson" email="mailto:abhishekraj29011998@gmail.com" linkdln="https://www.linkedin.com/in/abhishek-raj-permani-495483156/"/>
           </MDBRow>
-          
+
           <MDBRow className="justify-content-center  mt-5">
             <TeamCard name="Sahil Siyag" position="Secretary and Management Team Head" email="mailto:sahilsiyag88@gmail.com" linkdln="https://www.linkedin.com/in/sahil-siyag-4aa893191/"/>
             <TeamCard  name="Sameer Jain" position="Treasurer"  email="mailto:sameer2000jain12@gmail.com" linkdln="https://www.linkedin.com/in/sameer-jain-882589158/"/>
@@ -173,7 +173,7 @@ class TeamPage extends React.Component {
             <TeamCard column="6"  name="Swapnil Narayan" position="Chairperson"   email="mailto:swapism7@gmail.com" linkdln="https://www.linkedin.com/in/swapzism/"/>
             <TeamCard column="6"  name="Abhishek Raj" position="Vice Chairperson" email="mailto:abhishekraj29011998@gmail.com" linkdln="https://www.linkedin.com/in/abhishek-raj-permani-495483156/"/>
           </MDBRow>
-          
+
           <MDBRow className="justify-content-center  mt-5">
             <TeamCard name="Sahil Siyag" position="Secretary and Management Team Head" email="mailto:sahilsiyag88@gmail.com" linkdln="https://www.linkedin.com/in/sahil-siyag-4aa893191/"/>
             <TeamCard  name="Sameer Jain" position="Treasurer"  email="mailto:sameer2000jain12@gmail.com" linkdln="https://www.linkedin.com/in/sameer-jain-882589158/"/>
@@ -206,6 +206,81 @@ class TeamPage extends React.Component {
             <TeamCard name="Yash Vardhan" position="Web Developer" email="mailto:yashvardhan513@gmail.com" linkdln="https://www.linkedin.com/in/yash-vardhan-688952188"/>
             <TeamCard  name="Sameer Jain" position="Web Developer"  email="mailto:sameer2000jain12@gmail.com" linkdln="https://www.linkedin.com/in/sameer-jain-882589158/"/>
           </MDBRow>
+
+          <MDBAnimation reveal type="lightSpeedIn" >
+                    <h2 className="h1-responsive team_head  font-weight-bold my-5">
+                      HEAD TEAM
+                    </h2>
+                    </MDBAnimation>
+                    <MDBRow className="justify-content-center  mt-5">
+                    
+                      <TeamCard column="6"  name="Jatin Vishwakarma" position="SECRETERY" email="" linkdln=""/>
+                      <TeamCard name="Abhinav Kumar" position="TREASURER" email="" linkdln=""/>
+
+                    </MDBRow>
+
+          <MDBAnimation reveal type="lightSpeedIn" >
+                    <h2 className="h1-responsive team_head  font-weight-bold my-5">
+                      PUBLIC RELATIONS TEAM
+                    </h2>
+                    </MDBAnimation>
+                    <MDBRow className="justify-content-center  mt-5">
+                      <TeamCard column="6"  name="Arpit Gupta" position="PR"  email="" linkdln=""/>
+                      <TeamCard column="6"  name="Neelabh Krishna" position="PR" email="" linkdln=""/>
+                      <TeamCard name="Rajat Budania" position="PR" email="" linkdln=""/>
+                      <TeamCard  name="Charan Singh Verma" position="PR"  email="" linkdln=""/>
+                    </MDBRow>
+
+                    <MDBAnimation reveal type="lightSpeedIn" >
+                              <h2 className="h1-responsive team_head  font-weight-bold my-5">
+                                CONTENT WRITING
+                              </h2>
+                              </MDBAnimation>
+                              <MDBRow className="justify-content-center  mt-5">
+                                <TeamCard column="6"  name="Jatin Vishwakarma" position="CONTENT"  email="" linkdln=""/>
+                                <TeamCard column="6"  name="Ahmed Faiz" position="CONTENT" email="" linkdln=""/>
+                                <TeamCard name="Apoorv Mishra" position="CONTENT" email="" linkdln=""/>
+                                <TeamCard  name="Yashasvi Gour" position="CONTENT"  email="" linkdln=""/>
+                              </MDBRow>
+
+                              <MDBAnimation reveal type="lightSpeedIn" >
+                                        <h2 className="h1-responsive team_head  font-weight-bold my-5">
+                                          SPONSERSHIP
+                                        </h2>
+                                        </MDBAnimation>
+                                        <MDBRow className="justify-content-center  mt-5">
+                                          <TeamCard column="6"  name="Abhinav Kumar" position="Sponser"  email="" linkdln=""/>
+                                          <TeamCard column="6"  name="Aditya Sunil Meshram" position="Sponser" email="" linkdln=""/>
+
+
+                                        </MDBRow>
+
+                                        <MDBAnimation reveal type="lightSpeedIn" >
+                                                  <h2 className="h1-responsive team_head  font-weight-bold my-5">
+                                                    WEB DESIGN/GRAPHICS
+                                                  </h2>
+                                                  </MDBAnimation>
+                                                  <MDBRow className="justify-content-center  mt-5">
+                                                    <TeamCard column="6"  name="Abhishek Raj" position="WEB"  email="" linkdln=""/>
+                                                    <TeamCard column="6"  name="Buddhabhushan Butkare" position="WEB" email="" linkdln=""/>
+                                                    <TeamCard name="Swapnil Narayan" position="WEB" email="" linkdln=""/>
+                                                    <TeamCard  name="Donthula Bharadwaj" position="WEB"  email="" linkdln=""/>
+                                                  </MDBRow>
+
+                                                  <MDBAnimation reveal type="lightSpeedIn" >
+                                                            <h2 className="h1-responsive team_head  font-weight-bold my-5">
+                                                              MANAGEMENT AND PROMOTIONS
+                                                            </h2>
+                                                            </MDBAnimation>
+                                                            <MDBRow className="justify-content-center  mt-5">
+
+                                                              <TeamCard column="6"  name="Preetam Jaiswal" position="MANAGEMENT" email="" linkdln=""/>
+                                                              <TeamCard name="Atul Garg" position="MANAGEMENT" email="" linkdln=""/>
+                                                              <TeamCard  name="Ajit Kumar" position="MANAGEMENT"  email="" linkdln=""/>
+                                                            </MDBRow>
+
+
+
         </MDBCardBody>
       </MDBCard>
 
