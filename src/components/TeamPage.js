@@ -261,7 +261,7 @@ class TeamPage extends React.Component {
       <Card.Body>
       <MDBRow className="justify-content-center  mt-5">
                       <TeamCard column="6"  name="Ayush Bhatia" position="CHAIR" />
-                      <TeamCard column="6"  name=" Tanishk Kithannae" position="VICE-CHAIR" email="" linkdln=""/>
+                      <TeamCard column="6"  name="Tanishk Kithannae" position="VICE-CHAIR" email="" linkdln=""/>
                       <TeamCard name="Aditya Kaushik" position="SECRETARY" email="" linkdln=""/>
       </MDBRow>
 
