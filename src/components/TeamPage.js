@@ -207,11 +207,11 @@ class TeamPage extends React.Component {
   </Card>
   <Card>
     <Card.Header>
-      <Accordion.Toggle style={{border:0,outline:0,color:"#1A1245",width:"100%"}} variant="link" eventKey="1">
+      <Accordion.Toggle style={{border:0,outline:0,color:"#1A1245",width:"100%"}} variant="link" eventKey="2">
         <h2>2018</h2>
       </Accordion.Toggle>
     </Card.Header>
-    <Accordion.Collapse eventKey="1">
+    <Accordion.Collapse eventKey="2">
       <Card.Body>
       <MDBRow className="justify-content-center  mt-5">
                       <TeamCard column="6"  name="Rakesh Kumar" position="CHAIR" />
@@ -253,11 +253,11 @@ class TeamPage extends React.Component {
   </Card>
   <Card>
     <Card.Header>
-      <Accordion.Toggle style={{border:0,outline:0,color:"#1A1245",width:"100%"}} variant="link" eventKey="1">
+      <Accordion.Toggle style={{border:0,outline:0,color:"#1A1245",width:"100%"}} variant="link" eventKey="3">
         <h2>2017</h2>
       </Accordion.Toggle>
     </Card.Header>
-    <Accordion.Collapse eventKey="1">
+    <Accordion.Collapse eventKey="3">
       <Card.Body>
       <MDBRow className="justify-content-center  mt-5">
                       <TeamCard column="6"  name="Ayush Bhatia" position="CHAIR" />
