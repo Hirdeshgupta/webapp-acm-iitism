@@ -214,36 +214,39 @@ class TeamPage extends React.Component {
     <Accordion.Collapse eventKey="2">
       <Card.Body>
       <MDBRow className="justify-content-center  mt-5">
+                      <TeamCard name="Aditya Kaushik" position="SENIOR ADVISOR" email="" linkdln=""/>
+                      <TeamCard name="Saurabh Saraswat" position="SENIOR ADVISOR" />
                       <TeamCard column="6"  name="Rakesh Kumar" position="CHAIR" />
-                      <TeamCard column="6"  name="Subham Kumar Soni" position="VICE-CHAIR" email="" linkdln=""/>
-                      <TeamCard name="Parth Patekar" position="MANAGEMENT & PROMOTION HEAD" email="" linkdln=""/>
+
       </MDBRow>
 
           <MDBRow className="justify-content-center  mt-5">
+          <TeamCard column="6"  name="Subham Kumar Soni" position="VICE-CHAIR" email="" linkdln=""/>
+          <TeamCard name="Parth Patekar" position="MANAGEMENT & PROMOTION HEAD" email="" linkdln=""/>
             <TeamCard name="Yash Reddy" position="SPONSORSHIP & EDITORIAL HEAD" />
             <TeamCard  name="Sandeep IPK" position="PHOTOGRAPHY HEAD" />
+          </MDBRow>
+          <MDBRow className="justify-content-center  mt-5">
             <TeamCard name="Saloni Singh" position="SECRETARY" />
             <TeamCard name="Ashlik Jain" position="TREASURER"/>
-          </MDBRow>
-          <MDBRow className="justify-content-center  mt-5">
             <TeamCard name="Swarnima Tripathi" position="MEMBERSHIP CHAIR" />
             <TeamCard name="Shubham Maurya" position="WEBMASTER" />
-            <TeamCard name="Ahsas Sood" position="MANAGEMENT COORDINATOR" />
-            <TeamCard name="Prakhar Pandey" position="MANAGEMENT COORDINATOR" />
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
+          <TeamCard name="Ahsas Sood" position="MANAGEMENT COORDINATOR" />
+            <TeamCard name="Prakhar Pandey" position="MANAGEMENT COORDINATOR" />
             <TeamCard  name="Nikita Paliwal" position="MARKETING COORDINATOR"/>
             <TeamCard name="Saurabh" position="PROMOTION COORDINATOR" />
-            <TeamCard name="Sarita" position="SPONSORSHIP COORDINATOR" />
-            <TeamCard name="Vivek Tiwari" position="SPONSORSHIP COORDINATOR" />
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
+            <TeamCard name="Sarita" position="SPONSORSHIP COORDINATOR" />
+            <TeamCard name="Vivek Tiwari" position="SPONSORSHIP COORDINATOR" />
             <TeamCard  name="Raj Rani" position="S & E COORDINATOR"/>
-            <TeamCard name="Anand Thakkar" position="PHOTOGRAPHY COORDINATOR" />
             <TeamCard name="Shubham Swaroop" position="EDITORIAL COORDINATOR" />
-            <TeamCard name="Charul Patidar" position="DESIGN COORDINATOR" />
           </MDBRow>
           <MDBRow className="justify-content-center  my-5">
+            <TeamCard name="Anand Thakkar" position="PHOTOGRAPHY COORDINATOR" />
+            <TeamCard name="Charul Patidar" position="DESIGN COORDINATOR" />
             <TeamCard  name="Prabhat Gupta" position="DESIGN COORDINATOR" />
             <TeamCard  name="Kalyan" position="SIG COORDINATOR" />
           </MDBRow>
@@ -261,24 +264,25 @@ class TeamPage extends React.Component {
       <Card.Body>
       <MDBRow className="justify-content-center  mt-5">
                       <TeamCard column="6"  name="Ayush Bhatia" position="CHAIR" />
-                      <TeamCard column="6"  name="Tanishk Kithannae" position="VICE-CHAIR" email="" linkdln=""/>
                       <TeamCard name="Aditya Kaushik" position="SECRETARY" email="" linkdln=""/>
+                      <TeamCard name="Saurabh Saraswat" position="WEBMASTER & DESIGN HEAD" />
       </MDBRow>
 
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard name="Saurabh Saraswat" position="WEBMASTER & DESIGN HEAD" />
+          <TeamCard column="6"  name="Tanishk Kithannae" position="VICE-CHAIR" email="" linkdln=""/>
             <TeamCard  name="Dola Sinha" position="TREASURER" />
+            <TeamCard name="Yash Reddy" position="OVERALL SPONSORSHIP COORDINATOR" />
             <TeamCard name="Monika Kumari" position="MEMBERSHIP CHAIR" />
-            <TeamCard name="Subham Kumar Soni" position="WEB COORDINATOR"/>
+
           </MDBRow>
           <MDBRow className="justify-content-center  mt-5">
-            <TeamCard name="Yash Reddy" position="OVERALL SPONSORSHIP COORDINATOR" />
             <TeamCard name="Parth Patekar" position="EVENT PROMOTION COORDINATOR" />
             <TeamCard name="Akshaya Athwale" position="MARKETING COORDINATOR" />
             <TeamCard name="Sandeep IPK" position="PHOTOGRAPHY COORDINATOR" />
+            <TeamCard  name="Aval Singhal" position="PHOTOGRAPHY COORDINATOR"/>
           </MDBRow>
           <MDBRow className="justify-content-center  mt-y">
-            <TeamCard  name="Aval Singhal" position="PHOTOGRAPHY COORDINATOR"/>
+            <TeamCard name="Subham Kumar Soni" position="WEB COORDINATOR"/>
             <TeamCard name="Karra Anand" position="DESIGN COORDINATOR" />
             <TeamCard name="Rakesh Kumar" position="DESIGN COORDINATOR" />
           </MDBRow>
